@@ -1,0 +1,153 @@
+pre {
+	padding: 5px; line-height: 1;
+}
+pre code {
+	padding: 15px !important;
+}
+pre .comment {
+	margin-bottom: 0px; display: inline;
+}
+.hljs {
+	background: rgb(238, 238, 238); padding: 0.5em; display: block;
+}
+.hljs-header {
+	color: rgb(0, 0, 119);
+}
+.hljs-decorator {
+	color: rgb(0, 0, 119);
+}
+.hljs-annotation {
+	color: rgb(0, 0, 119);
+}
+.hljs-horizontal_rule {
+	color: rgb(0, 119, 0);
+}
+.hljs-link_url {
+	color: rgb(0, 119, 0);
+}
+.hljs-emphasis {
+	color: rgb(0, 119, 0);
+}
+.hljs-attribute {
+	color: rgb(0, 119, 0);
+}
+.hljs-emphasis {
+	font-style: italic;
+}
+.hljs-link_label {
+	color: rgb(221, 17, 68);
+}
+.hljs-strong {
+	color: rgb(221, 17, 68);
+}
+.hljs-value {
+	color: rgb(221, 17, 68);
+}
+.hljs-string {
+	color: rgb(221, 17, 68);
+}
+.scss .hljs-value .hljs-string {
+	color: rgb(221, 17, 68);
+}
+.hljs-strong {
+	font-weight: bold;
+}
+.hljs-blockquote {
+	color: rgb(153, 153, 136); font-style: italic;
+}
+.hljs-comment {
+	color: rgb(153, 153, 136); font-style: italic;
+}
+.asciidoc .hljs-title {
+	color: rgb(153, 0, 0);
+}
+.hljs-function .hljs-title {
+	color: rgb(153, 0, 0);
+}
+.hljs-class {
+	color: rgb(68, 85, 136);
+}
+.hljs-id {
+	color: teal;
+}
+.hljs-pseudo {
+	color: teal;
+}
+.hljs-constant {
+	color: teal;
+}
+.hljs-hexcolor {
+	color: teal;
+}
+.hljs-variable {
+	color: rgb(51, 102, 153);
+}
+.hljs-bullet {
+	color: rgb(153, 119, 0);
+}
+.hljs-javadoc {
+	color: rgb(153, 119, 0);
+}
+.hljs-pi {
+	color: rgb(51, 68, 187);
+}
+.hljs-doctype {
+	color: rgb(51, 68, 187);
+}
+.hljs-code {
+	color: rgb(0, 153, 153);
+}
+.hljs-number {
+	color: rgb(0, 153, 153);
+}
+.hljs-important {
+	color: rgb(255, 0, 0);
+}
+.smartquote {
+	color: rgb(153, 119, 0);
+}
+.hljs-label {
+	color: rgb(153, 119, 0);
+}
+.hljs-preprocessor {
+	color: rgb(85, 119, 153);
+}
+.hljs-pragma {
+	color: rgb(85, 119, 153);
+}
+.hljs-reserved {
+	color: rgb(0, 0, 0);
+}
+.hljs-keyword {
+	color: rgb(0, 0, 0);
+}
+.scss .hljs-value {
+	color: rgb(0, 0, 0);
+}
+.hljs-regexp {
+	color: rgb(136, 0, 136); background-color: rgb(255, 240, 255);
+}
+.hljs-symbol {
+	color: rgb(153, 0, 115);
+}
+.hljs-symbol .hljs-string {
+	color: rgb(170, 102, 0);
+}
+.hljs-tag {
+	color: rgb(0, 119, 0);
+}
+.hljs-at_rule {
+	color: rgb(0, 136, 136);
+}
+.hljs-at_rule .hljs-keyword {
+	color: rgb(0, 136, 136);
+}
+.hljs-at_rule .hljs-preprocessor {
+	color: rgb(136, 0, 136);
+}
+.scss .hljs-tag {
+	color: rgb(51, 51, 153);
+}
+.scss .hljs-attribute {
+	color: rgb(51, 51, 153);
+}

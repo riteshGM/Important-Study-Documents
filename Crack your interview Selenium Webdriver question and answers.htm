@@ -1,0 +1,2244 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://learn-automation.com/selenium-interview-questions-and-answers/">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:title" content="Be ready with Selenium Interview questions and answers">
+<meta name="twitter:title" content="Be ready with Selenium Interview questions and answers">
+<meta property="og:image" content="http://i2.wp.com/learn-automation.com/wp-content/uploads/2015/09/resume2.jpg?resize=150%2C150">
+<meta name="twitter:image:src" content="http://i2.wp.com/learn-automation.com/wp-content/uploads/2015/09/resume2.jpg?resize=150%2C150">
+<meta property="og:description" content="This post is mainly for people preparing for interviews.">
+<meta name="twitter:description" content="This post is mainly for people preparing for interviews.">
+<meta name="twitter:creator" content="@MukeshOtwani">
+<meta name="twitter:site" content="@MukeshOtwani">
+
+	<title>
+		Crack your interview Selenium Webdriver question and answers	</title>
+	<!--[if lt IE 9]>
+	<script src="http://learn-automation.com/wp-content/themes/squared/js/html5/dist/html5shiv.js"></script>
+	<script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+	<!--[if IE 8]>
+	<link rel="stylesheet" type="text/css" href="http://learn-automation.com/wp-content/themes/squared/css/ie8.css"/>
+	<![endif]-->
+	<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="http://learn-automation.com/wp-content/themes/squared/css/ie7.css"/>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	
+			<meta name="msvalidate.01" content="1DE63ABFCC7B4ED1A9CF9AB36E8CD999">
+<meta name="google-site-verification" content="LT3VDq2kretCKlVOs0OylHnVGjJoQmW6yTjRqIsylCE">
+<script src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/1314881782.js" id="aweber-wjs-334210927"></script><script src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/ca-pub-6188473808538246.js"></script><script src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/analytics.js" async=""></script><script async="" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6188473808538246",
+    enable_page_level_ads: true
+  });
+</script>	
+				<style type="text/css">
+			.thrive-adminbar-icon {
+				background: url('http://learn-automation.com/wp-content/plugins/thrive-visual-editor/editor/css/images/tcb-close-icon.png') no-repeat 0px 0px;
+				padding-left: 25px !important;
+				width: 20px !important;
+				height: 20px !important;
+			}
+		</style>
+	
+<!-- This site is optimized with the Yoast SEO plugin v3.4.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="This post has covered almost all Selenium Interview questions and answers which you can expect in interviews. I have updated some of the answers too.">
+<meta name="robots" content="noodp">
+<link rel="canonical" href="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/a_007.htm">
+<link rel="publisher" href="https://plus.google.com/u/0/+Mukeshotwani">
+<!-- / Yoast SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="Selenium Webdriver Tutorial, TestNG, Appium Tutorials » Be ready with Selenium Interview questions and answers Comments Feed" href="http://learn-automation.com/selenium-interview-questions-and-answers/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/learn-automation.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script type="text/javascript" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/wp-emoji-release.js"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="crayon-css" href="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/crayon.css" type="text/css" media="all">
+<link rel="stylesheet" id="squared-style-css" href="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="thrive-reset-css" href="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/reset.css" type="text/css" media="all">
+<link rel="stylesheet" id="thrive-main-style-css" href="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/main_red.css" type="text/css" media="all">
+<link rel="stylesheet" id="thrive-apprentice-style-css" href="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/apprentice_red.css" type="text/css" media="all">
+<!-- Inline jetpack_facebook_likebox -->
+<style id="jetpack_facebook_likebox-inline-css" type="text/css">
+.widget_facebook_likebox {
+	overflow: hidden;
+}
+
+</style>
+<link rel="stylesheet" id="jetpack_css-css" href="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/jetpack.css" type="text/css" media="all">
+<link rel="stylesheet" id="contactbuddy_css-css" href="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/contactbuddy.css" type="text/css" media="all">
+<script type="text/javascript" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/jquery.js"></script>
+<script type="text/javascript" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/jquery-migrate.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var related_posts_js_options = {"post_heading":"h4"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/related-posts.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"http:\/\/learn-automation.com\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/crayon.js"></script>
+<script type="text/javascript" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/compat.js"></script>
+<link rel="https://api.w.org/" href="http://learn-automation.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://learn-automation.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://learn-automation.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 4.5.3">
+<link rel="shortlink" href="http://wp.me/p5Tdva-vk">
+<link rel="alternate" type="application/json+oembed" href="http://learn-automation.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Flearn-automation.com%2Fselenium-interview-questions-and-answers%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://learn-automation.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Flearn-automation.com%2Fselenium-interview-questions-and-answers%2F&amp;format=xml">
+<script data-cfasync="false" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/a.js" data-sumo-platform="wordpress" data-sumo-site-id="b9718cb99a063107d4f7e255a39de6166bfa20342296f72727bb32fc2da4850e" async=""></script>
+<link rel="dns-prefetch" href="http://v0.wordpress.com/">
+<link rel="dns-prefetch" href="http://i0.wp.com/">
+<link rel="dns-prefetch" href="http://i1.wp.com/">
+<link rel="dns-prefetch" href="http://i2.wp.com/">
+<style type="text/css">img#wpstats{display:none}</style>		<style type="text/css">.wp-video-shortcode {
+				max-width: 100% !important;
+			}body { background:#; }.cnt .sAs .twr { background:#; }.cnt article h1 a { color:#343434; }.bSe h1 { color:#343434; }.bSe h5 { color:#343434; }.bSe h6 { color:#343434; }.cnt article p { color:#343434; }.cnt .bSe article { color:#343434; }.cnt article h1 a, .tve-woocommerce .bSe .awr .entry-title, .tve-woocommerce .bSe .awr .page-title{font-family:Lato,sans-serif;}.bSe h1{font-family:Lato,sans-serif;}.bSe h2,.tve-woocommerce .bSe h2{font-family:Lato,sans-serif;}.bSe h3,.tve-woocommerce .bSe h3{font-family:Lato,sans-serif;}.bSe h4{font-family:Lato,sans-serif;}.bSe h5{font-family:Lato,sans-serif;}.bSe h6{font-family:Lato,sans-serif;}#text_logo{font-family:Lato,sans-serif;}.cnt, .cnt article p, .bp-t, .tve-woocommerce .product p, .tve-woocommerce .products p{font-family:Lato,sans-serif;font-weight:400;}article strong {font-weight: bold;}.bSe h1, .hru h1, .bSe .entry-title { font-size:47px; }.cnt { font-size:17px; }.thrivecb { font-size:17px; }.out { font-size:17px; }.aut p { font-size:17px; }.cnt p { line-height:1.6em; }.lhgh { line-height:1.6em; }.dhgh { line-height:1.6em; }.lhgh { line-height:1.6em; }.dhgh { line-height:1.6em; }.thrivecb { line-height:1.6em; }.bSe a, .cnt article a { color:#f63d3d; }.bSe .faq h4{font-family:Lato,sans-serif;font-weight:400;}article strong {font-weight: bold;}header ul.menu > li > a { color:#e6e6e6; }header ul.menu > li >  a:hover { color:#f63d3d; }header nav > ul > li.current_page_item > a:hover { color:#f63d3d; }header nav > ul > li.current_menu_item > a:hover { color:#f63d3d; }header nav > ul > li.current_menu_item > a:hover { color:#f63d3d; }header nav > ul > li > a:active { color:#f63d3d; }header #logo > a > img { max-width:200px; }header ul.menu > li.h-cta > a { color:#FFFFFF!important; }header ul.menu > li.h-cta > a { background:#f63d3d; }header ul.menu > li.h-cta > a { border-color:#dc2323; }header ul.menu > li.h-cta > a:hover { color:#FFFFFF!important; }header ul.menu > li.h-cta > a:hover { background:#f75555; }header ul.menu > li.h-cta > a:hover { border-color:#dd3b3b; }</style>
+		
+<!-- BEGIN GADWP v4.9.3.1 Universal Tracking - https://deconf.com/google-analytics-dashboard-wordpress/ -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-55031197-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<!-- END GADWP Universal Tracking -->
+
+		
+<script src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/service.js" data-requiremodule="8dc42610-ae42-4164-90b1-573478b46574/service" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><link href="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/sme-popup.css" rel="stylesheet" type="text/css"><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+<body class="single single-post postid-1942 single-format-standard custom-background">
+
+
+<div class="flex-cnt">
+	<div class="mfu" id="floating_menu" data-float="float-scroll">
+				<header class="" style="">
+									<div class="side_logo wrp has_phone" id="head_wrp">
+				<div class="h-i">
+											
+						<div class="hmn">
+							<div class="awe rmn right"></div>
+							<div class="clear"></div>
+						</div>
+
+						
+												<div style="" class="mhl right" id="nav_right">
+																																	<!-- Cart Dropdown -->
+									<nav style="" class="right"><ul id="menu-mukesh1" class="menu"><li id="menu-item-1780" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children toplvl dropdown has-extended col-no-2 has-heading "><a href="http://learn-automation.com/selenium-introduction-and-automation-introduction/">Selenium</a><ul style="" class="sub-menu">	<li id="menu-item-1796" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://learn-automation.com/free-selenium-webdriver-tutorial/" class=" class=&quot;colch&quot; ">Free Online Selenium Webdriver tutorial for beginners</a></li>
+	<li id="menu-item-1742" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://learn-automation.com/advance-selenium-webdriver-tutorials/" class=" class=&quot;colch&quot; ">Step by Step guide for Advance Selenium webdriver tutorial</a></li>
+	<li id="menu-item-1745" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://learn-automation.com/jenkins-with-selenium/" class=" class=&quot;colch&quot; ">Jenkins with Selenium</a></li>
+	<li id="menu-item-1749" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://learn-automation.com/selenium-video-tutorials/" class=" class=&quot;colch&quot; ">Selenium Video Tutorials</a></li>
+	<li id="menu-item-1750" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://learn-automation.com/testng-tutorials-for-beginners/" class=" class=&quot;colch&quot; ">TestNG Tutorials</a></li>
+	<li id="menu-item-2102" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://learn-automation.com/appium-tutorial-for-beginners/" class=" class=&quot;colch&quot; ">Appium Tutorials</a></li>
+</ul></li>
+<li id="menu-item-3067" class="menu-item menu-item-type-custom menu-item-object-custom toplvl"><a href="http://learn-automation.usefedora.com/courses/selenium-frameworks-and-selenium-question-answers">Framework</a></li>
+<li id="menu-item-2769" class="menu-item menu-item-type-custom menu-item-object-custom toplvl"><a href="http://forumsforqa.com/">Selenium Forum</a></li>
+<li id="menu-item-3199" class="menu-item menu-item-type-custom menu-item-object-custom toplvl"><a href="http://learn-automation.com/selenium-training-program/">Training</a></li>
+<li id="menu-item-3198" class="menu-item menu-item-type-custom menu-item-object-custom toplvl"><a href="http://learn-automation.com/selenium-online-training/">Services</a></li>
+<li id="menu-item-1744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children toplvl dropdown"><a href="http://learn-automation.com/contact-us/">Contact us</a><ul style="" class="sub-menu">	<li id="menu-item-1741" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://learn-automation.com/about-me/" class=" class=&quot;colch&quot; ">About us</a></li>
+</ul></li>
+</ul></nav>																					</div>
+				
+					
+					<div class="clear"></div>
+				</div>
+			</div>
+					</header>
+	</div>
+	
+	
+					
+	<div class="hru tcbk" style="background-color: rgb(30, 115, 190); padding-top: 0px;">
+		<div class="hrui">
+			<div class="wrp">
+				<h1>
+					Be ready with Selenium Interview questions and answers				</h1>
+
+				<div class="hcc">
+					<a href="#comments">
+						100						Comments					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+	<section class="brd">
+		<div class="wrp">
+							<ul xmlns:v="http://rdf.data-vocabulary.org/#">
+					<li typeof="v:Breadcrumb"><a rel="v:url" property="v:title" class="home" href="http://learn-automation.com/"> Home<span> &gt;&gt; </span></a></li><li typeof="v:Breadcrumb"><a rel="v:url" property="v:title" href="http://learn-automation.com/SeleniumWebdriverTutorial/interview/">Interview</a></li><li typeof="v:Breadcrumb"><a class="no-link" rel="v:url" property="v:title" href="http://learn-automation.com/selenium-interview-questions-and-answers/"><span> &gt;&gt; </span>Be ready with Selenium Interview questions and answers</a></li>				</ul>
+					</div>
+	</section>
+
+	
+	<div class="wrp cnt"> <!-- Start the wrapper div -->
+
+
+
+<div class="bSeCont">
+		<section class="bSe left">
+
+													<article>
+		<div class="awr lnd hfp">
+
+		
+		
+		
+<!-- Quick Adsense WordPress Plugin: http://quicksense.net/ -->
+<div style="float:left;margin:10px 10px 10px 0;">
+<script async="" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/adsbygoogle.js"></script>
+<!-- 10SepLargeractangleInsidePost -->
+<ins data-adsbygoogle-status="done" class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-6188473808538246" data-ad-slot="7017666014"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;" frameborder="0" height="280" width="336"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">This post is mainly for people preparing for interviews.</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">Before posting Selenium Interview questions and answers let me clear that it totally depends on a number&nbsp;</span><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">of factors.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;"><strong><em>1- For which position you are applying.</em></strong></span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;"><strong><em>2- Who is taking your interview?</em></strong></span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;"><strong><em>3- For which company you are applying.&nbsp;</em></strong></span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;"><strong><em>4- Does Interviewer’s themselves knows about automation or not?</em></strong></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">You must be wondering why I am covering all these factors right. I have taken a couple&nbsp;</span><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">of interviews and based on my experience I will tell you what questions an Interviewer might ask.</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">If you are applying for Sr Automation Engg, Lead or Test Manager then be ready with some high-level&nbsp;</span><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">topics, which anyways I will be covering in this post.</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">However, if you are applying as a fresher, then you should be ready with some Java program and some Selenium related code.</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">Before
+ getting started keep in mind that there is not hard and fast rule that,
+ the interviewer will ask questions from a specific domain. It might 
+cover multiple domain/tools.</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;"><strong>&nbsp;</strong></span></p>
+<h2>Selenium Interview questions and answers</h2>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">1- What is Selenium Webdriver, Selenium RC, Selenium IDE and Selenium Grid and which version you have used?</span></p>
+<p><span style="font-size: 14pt;">Ans- I have posted a detailed article on this please check – <span style="color: #ff0000;"><a style="color: #ff0000;" href="http://learn-automation.com/difference-between-selenium-ide-rc-grid-and-webdriver/">Click here</a></span></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">2- Can you please explain Selenium Architecture?</span></p>
+<p><span style="font-size: 14pt;">Ans- Coming soon.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">3- Have you worked on different browsers? Have you ever performed Cross browser testing?</span></p>
+<p><span style="font-size: 14pt;">Ans- E</span><span style="font-size: 14pt;">very month a new browser is coming into the market&nbsp;</span><span style="font-size: 14pt;">and it becomes very important to test our web application on different browser. </span><span style="font-size: 14pt;">Selenium supports Cross browser testing. Please check the detailed&nbsp;</span><span style="font-size: 14pt;">article here. </span></p>
+<p><span style="font-size: 14pt; color: #ff0000;"><a style="color: #ff0000;" href="http://learn-automation.com/cross-browser-testing-using-selenium-webdriver/">Cross Browser Testing in Selenium</a></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">4- What type of test you have automated?</span></p>
+<p><span style="font-size: 14pt;">Ans- Automation mainly focuses on regression testing,smoke testing and some time you can for End to End test cases.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">5- How many test cases you have automated per day?</span></p>
+<p><span style="font-size: 14pt;">Ans- It&nbsp;totally depends&nbsp;on your manual test cases. </span>Sometimes<span style="font-size: 14pt;">&nbsp;we
+ can automate 3-4 test cases per day which contain limited operation and
+ some validation. Some test cases may take 1 day or more than&nbsp;</span><span style="font-size: 14pt;">one day as well.</span></p>
+<p><span style="font-size: 14pt;">It totally depends on test case complexity.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">6- How to work with Chrome, IE or any other third party driver? Why we need a separate&nbsp;</span><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">driver for them?</span></p>
+<p><span style="font-size: 14pt;">Ans- Selenium by default supports only
+ Firefox browser so in order to work with Chrome and IE browser &nbsp;we
+ need to download separate drivers for them and specify the path. I have
+ created the seperate post for IE and Chrome browser. In case you are 
+not aware of it then have a look.</span></p>
+<p><span style="font-size: 14pt; color: #ff0000;"><a style="color: #ff0000;" href="http://learn-automation.com/launch-chrome-browser-using-selenium-webdriver/">Execute test in chrome browser</a></span></p>
+<p><span style="font-size: 14pt; color: #ff0000;"><a style="color: #ff0000;" href="http://learn-automation.com/execute-selenium-script-in-ie-browser/">Execute test in IE browser</a></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">7- Have you created any framework? Which framework have you</span><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">&nbsp;used?</span></p>
+<p><span style="font-size: 14pt;">Ans- Coming soon.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">8- Can you please explain framework architecture?</span></p>
+<p><span style="font-size: 14pt;">Ans- Coming soon.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">9- What is POM (Page Object Model) and what is the need of it?</span></p>
+<p><span style="font-size: 14pt;">Ans- Coming soon.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">10- What are the challenges you have faced while automating your application?</span></p>
+<p>Ans- Coming soon.</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">11- What are the different type of exception available in Selenium? Have you faced any exception while automation?</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">12- What is Alert window/ JavaScript Alert and How to handle alert in Selenium Webdriver?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">13- How to handle multiple windows in Selenium?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">14- Have you ever worked on frames? In addition, how to handle frames in Selenium?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">15- What are different locators available in Selenium?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">16- Can you please explain XPATH&nbsp;</span><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">and CSS technique? How to </span><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">&nbsp;handle dynamic changing elements?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">17- How to verify checkbox (any element) is enable/disabled/ checked/Unchecked/ displayed/ not displayed?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">18- How to work with the dropdown</span><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">19- Have you worked with Web table (Calendar)? If yes then what was your approach.</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">20- Can you tell me some navigation commands?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">21- &nbsp; Difference between&nbsp;QUIT&nbsp;and Close?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">22- &nbsp; Can you find the number of links available on Webpage? In addition, How to find broken link on Webpage?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">23- What is&nbsp;Page&nbsp;Load&nbsp;Timeout?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">24-
+ Can you explain implicit wait, explicit wait and fluent wait and what 
+is the difference between all of them? Which one have you</span><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">&nbsp;used frequently?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">25- What is JavaScript Executor and where you have used JavaScript executor?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">26- How to capture Screenshot&nbsp;in Selenium?&nbsp;Can we capture screenshot only when a </span>test<span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">&nbsp;fails?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">27- What is Web Driver Listener and Usage of the same?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">28-How to scroll in Selenium Webdriver?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">29- Can you write login script for Gmail or any other application?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">30- How to upload files in Selenium?&nbsp;Have you ever used AutoIT?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">31- How to handle untrusted Certificate&nbsp;in Selenium?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">32- How to handle window authentication window in Selenium Webdriver?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">33- What is Firefox Profile?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">34- What are the issues or Challenges you faced while working with IE Browser?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">35- &nbsp; Have you ever faced any proxy issue if yes then how you handled?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">36- &nbsp; What is Actions class in Selenium (How to perform Mouse Hover, Keyboard events, DragAndDrop etc?)</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">37- Do we have object repository concept in Selenium if yes then please explain how we can achieve&nbsp;it?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">38- What is Headless testing? Can we capture Screenshot&nbsp;in Headless mode?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">39-Diffrence between findElement and FindElements?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">40- Can we highlight Element&nbsp;in Selenium?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">41- What is log4j And How to generate log files in Selenium?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">42-How to capture Page title, tooltip and error message and how to verify them?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">43-How to download files in Selenium?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">44- Have you ever performed Database&nbsp;testing in Selenium?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">45- Have you integrated Selenium with other tools like Sikuli, Ant, Maven, and Jenkins? If yes then how you have used them?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">46- Does Selenium support Mobile Automation if yes the How?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">47- What is Limitation of Selenium?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">48- Have you ever heard of POC?&nbsp;What is POC?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">49- What is ATLC (Automation Test life Cycle)?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">50- What is Automation Test Plan?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">51- What is ROI (Return of Investment) in Automation?</span></p>
+<p>&nbsp;</p>
+<h3><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">Selenium Webdriver/RC/IDE Interview questions and Answers</span></h3>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">All these questions that&nbsp;we discussed now that is the combination of all level (Beginner, Advance).</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">They
+ will definitely ask so many questions from Framework itself and they 
+will try to drag you in this topics because most of the people will 
+stuck&nbsp;</span><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">and the interviewer will get to know that person has actually worked on Selenium or not.</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">Please make sure you are giving proper answer</span></p>
+<!-- Quick Adsense WordPress Plugin: http://quicksense.net/ -->
+<div style="float:none;margin:10px 0 10px 0;text-align:center;">
+<script async="" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/adsbygoogle.js"></script>
+<!-- 12JuneResposiveLinkAdsNew -->
+<ins data-adsbygoogle-status="done" class="adsbygoogle" style="display: block; height: 15px;" data-ad-client="ca-pub-6188473808538246" data-ad-slot="7127829615" data-ad-format="link"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:15px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><ins id="aswift_1_anchor" style="display:block;border:none;height:15px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;" frameborder="0" height="15" width="728"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">52- Have you designed framework in your team or you are using existing framework, which already implemented by other members.</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">53- Can you create the design&nbsp;</span><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">of your framework?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">54- Which framework you have used and why?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">55- Can you create one sample script using your framework?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">There
+ is again no limitation or specific question so be ready with any type 
+of question but make sure whenever you are giving an answer it should 
+have a valid point or you can directly say that I am not sure about it.</span></p>
+<div id="attachment_1970" style="width: 310px" class="wp-caption aligncenter"><a href="http://i2.wp.com/learn-automation.com/wp-content/uploads/2015/09/sywht1.gif"><img class="wp-image-1970 size-full" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/sywht1.gif" alt="Selenium Interview Questions and Answers" height="304" width="300"></a><p class="wp-caption-text"><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">image src-reactiongifs.com</span></p></div>
+<p>&nbsp;</p>
+<h2>Selenium Interview questions and answers</h2>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">If you answer 6-7 out of 10 then it is enough.</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">We
+ have more question for you, which you must know because we all have 
+worked on TestNG with Selenium and it is one of my favorite Tool, which I
+ have used it with Selenium and I really enjoyed a lot.</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">Since
+ TestNG is not a very big tool so do not worry about it and it has very 
+good documentation on their official site so if you want to check then 
+check out below link –&nbsp;<em><strong><span style="color: #ff0000;"><a style="color: #ff0000;" href="http://testng.org/doc/documentation-main.html">http://testng.org/doc/documentation-main.html</a></span></strong></em></span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">Here is a list of questions for TestNG</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">56- What is TestNG?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">57- Why you have used TestNG in your framework? Can you compare JUNIT&nbsp;</span><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">with TestNG framework?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">58- What are different annotation present in TestNG?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">59- What is priority feature in TestNG? In addition, how we can use this?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">60- What is dependsOnMethods</span><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">&nbsp;and depends on group feature in TestNG?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">61- What is testng</span><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">.xml file in TestNG?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">62- How to group test cases in TestNG?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">63- How to execute multiple test cases in Selenium?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">64- How to execute parallel test cases in Selenium?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">65- What is TestNG listener?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">66- What is Data provider in TestNG?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">67- How to disable particular test case?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">68- How to generate reports in TestNG?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">69- How to generate log in TestNG?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">70- How to execute only failed test cases in Selenium?</span></p>
+<p>&nbsp;</p>
+<div id="attachment_1971" style="width: 510px" class="wp-caption aligncenter"><a href="http://i0.wp.com/learn-automation.com/wp-content/uploads/2015/09/BradshawOMG.gif"><img class="wp-image-1971 size-full" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/BradshawOMG.gif" alt="Selenium Interview Questions and Answers" height="362" width="500"></a><p class="wp-caption-text"><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">image src-reactiongifs.com</span></p></div>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">Now if an interviewer having&nbsp;</span><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">good
+ knowledge on Selenium and have worked on different tools then be ready 
+with other question too that will be related to Selenium only.</span></p>
+<p>&nbsp;</p>
+<div id="attachment_1972" style="width: 310px" class="wp-caption aligncenter"><a href="http://i1.wp.com/learn-automation.com/wp-content/uploads/2015/09/osh.gif"><img class="wp-image-1972 size-full" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/osh.gif" alt="Selenium Interview Questions and Answers" height="128" width="300"></a><p class="wp-caption-text"><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">image src-reactiongifs.com</span></p></div>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">We have so many tools in the market&nbsp;</span><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">that we can integrate with Selenium like Maven, Sikuli, Jenkins, AutoIT, Ant and so on.</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">I will try to summarize question-based</span><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">&nbsp;on the tools, which I have used.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;"><strong><em>Maven</em></strong></span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">71- Can you please explain what is apache maven and Apache ant?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">72- Do you have used Maven project in your organization? If yes then have you created build to execute your test?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">73- What is the difference between Simple Java project and Maven Project?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">74- What are different goal present in Maven?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">75- Can you please explain Maven life cycle?</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;"><strong><em>Sikuli</em></strong></span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">76- Have you heard of Sikuli? If yes, can you please explain what exactly Sikuli does?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">78- Advantage of Sikuli, Limitation of Sikuli.</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">79- How to integrate Sikuli with Selenium script?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">80- Can you tell us the scenario where you have used Sikuli with Selenium?</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;"><strong><em>Jenkins</em></strong></span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">This is very vast topic and very interested but as an automation tester, you will use it based on requirement</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">81- What is CI (Continuous integration) and what are different tools available in the market</span><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">.</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">82- How to integrate Jenkins with Selenium?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">83- How to schedule test cases for nightly execution?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">84- Can you send email through Jenkins?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">85-Jenkins master-slave</span><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">&nbsp;concept and so on?</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">Ra<strong><em>ndom Questions</em></strong></span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">86- What is robot class and where have we used this in Selenium?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">87- Be ready with some basic Java programs which every automation Engg should know</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">Like </span><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">string reverse , count the number of characters in a given string and so on.</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">If you will apply for Amazon, Flipkart then makes&nbsp;</span><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">sure you know Data structure very well because question level will be very high.</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">88- List down all locator with performance.</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">89- Find broken links on the Web&nbsp;</span><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">page.</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">90- How to read write excel files using Apache POI.</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">91- Have you ever done connection with Database using JDBC?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">92- Read CSV files.</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">93- How to read properties files in Selenium?</span></p>
+<p>Ans-</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">94- Does Selenium support mobile automation?</span></p>
+<p>Ans- Selenium support mobile automation using Selendroid and Appium.</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">95- What is Selendroid?</span></p>
+<p>Ans- Selendroid is an API to automate android mobile application. It 
+will only work with API level 18 and if you have android version 19 or 
+above then you have to use Appium.</p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">96- What is Appium?</span></p>
+<p>Ans- Appium is API to automate mobile applications on Android and IOS Platform. you can check complete tutorial from below link.</p>
+<p><span style="color: #0000ff;"><a style="color: #0000ff;" href="http://learn-automation.com/appium-tutorial-for-beginners/">Basic appium tutorial for mobile automation.</a></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">97- What is same origin policy in Selenium?</span></p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">98- What is Selenium grid, hub, node and commands that used in Selenium Grid?</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">99-What is the difference between / and // in XPATH</span><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">?</span></p>
+<p>Ans- This is very easy as compared to others <img src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/1f642.png" alt="🙂" class="emoji" draggable="false"> &nbsp;/ refer to next element just after the parent and // refer to all child element after the parent element.</p>
+<p><a href="http://learn-automation.com/how-to-write-dynamic-xpath-in-selenium/">Different ways to write Dynamic xpath in Selenium</a></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">100- Can we automate Flash application in Selenium?</span></p>
+<p>Ans- &nbsp; &nbsp;Yes partially we can do. We have some API which 
+allows you to automate flash application. I have posted article long 
+back which will cover the same. Kindly refer below link.</p>
+<p><a href="http://learn-automation.com/flash-testing-with-selenium-webdriver-selenium-tutorials/">Simple API to automate &nbsp;Flash Application.</a></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 18pt; font-family: 'comic sans ms', sans-serif;">I hope above question will help you. Feel free to comment below if any doubt or query.</span></p>
+<p><span style="font-size: 18pt; font-family: 'comic sans ms', sans-serif;">If you want to add any questions that I have missed out then suggest me in the comment&nbsp;</span><span style="font-size: 18pt; font-family: 'comic sans ms', sans-serif;">section so that I can add for others too.</span></p>
+<p><span style="font-size: 18pt; font-family: 'comic sans ms', sans-serif;"><em><strong>Finally Best of Luck <img src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/1f642.png" alt="🙂" class="emoji" draggable="false"></strong></em></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<!-- Quick Adsense WordPress Plugin: http://quicksense.net/ -->
+<div style="float:none;margin:10px 0 10px 0;text-align:center;">
+<script async="" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/adsbygoogle.js"></script>
+<!-- 12JuneResponsiveAd -->
+<ins data-adsbygoogle-status="done" class="adsbygoogle" style="display: block; height: 90px;" data-ad-client="ca-pub-6188473808538246" data-ad-slot="5790697216" data-ad-format="auto"><ins id="aswift_2_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:799px;background-color:transparent"><ins id="aswift_2_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:799px;background-color:transparent"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;" frameborder="0" height="90" width="799"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<div style="font-size:0px;height:0px;line-height:0px;margin:0;padding:0;clear:both"></div>
+<div style="display: block;" id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+<div class="jp-relatedposts-items jp-relatedposts-items-visual"><div class="jp-relatedposts-post jp-relatedposts-post0 jp-relatedposts-post-nothumbs" data-post-id="1781" data-post-format="false"><a data-position="0" data-origin="1942" rel="nofollow" title="Program to count  number of occurrences of word in a string|Selenium Tutorial
+
+While attending interviews you should be ready with some sample program which they might ask because they want to see how you are applying logics for a specific program. Today I am covering very basic program which simply check&nbsp;count &nbsp;number of occurrences of a word in a string. Program to…" href="http://learn-automation.com/program-to-count-number-of-occurrences-of-word-in-a-string/" class="jp-relatedposts-post-a jp-relatedposts-post-aoverlay"></a><h4 class="jp-relatedposts-post-title"><a data-position="0" data-origin="1942" rel="nofollow" title="Program to count  number of occurrences of word in a string|Selenium Tutorial
+
+While attending interviews you should be ready with some sample program which they might ask because they want to see how you are applying logics for a specific program. Today I am covering very basic program which simply check&nbsp;count &nbsp;number of occurrences of a word in a string. Program to…" href="http://learn-automation.com/program-to-count-number-of-occurrences-of-word-in-a-string/" class="jp-relatedposts-post-a">Program to count  number of occurrences of word in a string|Selenium Tutorial</a></h4><p style="max-height: 7.14286em;" class="jp-relatedposts-post-excerpt">While
+ attending interviews you should be ready with some sample program which
+ they might ask because they want to see how you are applying logics for
+ a specific program. Today I am covering very basic program which simply
+ check&nbsp;count &nbsp;number of occurrences of a word in a string. 
+Program to…</p><p class="jp-relatedposts-post-date">July 29, 2015</p><p class="jp-relatedposts-post-context">In "Basic Selenium"</p></div><div class="jp-relatedposts-post jp-relatedposts-post1 jp-relatedposts-post-thumbs" data-post-id="1935" data-post-format="false"><a data-position="1" data-origin="1942" rel="nofollow" title="How to Install Selenium Webdriver on windows
+
+Hello everyone, Welcome to Automation world. Just want to tell you that you have taken the right decision to move into Automation field.The World is changing drastically and every company is moving towards Automation Testing.Today we will discuss how to&nbsp;Download and Install Selenium webdriver. Before jumping to installation part&nbsp;just check…" href="http://learn-automation.com/install-selenium-webdriver-on-windows/" class="jp-relatedposts-post-a"><img class="jp-relatedposts-post-img" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/Complete-Selenium-Setup.png" alt="How to Install Selenium Webdriver on windows" width="350"></a><h4 class="jp-relatedposts-post-title"><a data-position="1" data-origin="1942" rel="nofollow" title="How to Install Selenium Webdriver on windows
+
+Hello everyone, Welcome to Automation world. Just want to tell you that you have taken the right decision to move into Automation field.The World is changing drastically and every company is moving towards Automation Testing.Today we will discuss how to&nbsp;Download and Install Selenium webdriver. Before jumping to installation part&nbsp;just check…" href="http://learn-automation.com/install-selenium-webdriver-on-windows/" class="jp-relatedposts-post-a">How to Install Selenium Webdriver on windows</a></h4><p class="jp-relatedposts-post-excerpt">Hello
+ everyone, Welcome to Automation world. Just want to tell you that you 
+have taken the right decision to move into Automation field.The World is
+ changing drastically and every company is moving towards Automation 
+Testing.Today we will discuss how to&nbsp;Download and Install Selenium 
+webdriver. Before jumping to installation part&nbsp;just check…</p><p class="jp-relatedposts-post-date">September 19, 2015</p><p class="jp-relatedposts-post-context">In "Basic Selenium"</p></div><div class="jp-relatedposts-post jp-relatedposts-post2 jp-relatedposts-post-thumbs" data-post-id="2058" data-post-format="false"><a data-position="2" data-origin="1942" rel="nofollow" title="How to use Implicit wait in selenium Webdriver
+
+What and How to use implicit wait in selenium Webdriver? If you have ever worked on any automation tool then you must be aware of Sync issues in script. It is one of biggest pain for an automation engineer to handle sync issue between elements. Sometimes application&nbsp;will not able to…" href="http://learn-automation.com/usage-of-implicit-wait-in-selenium-webdriver/" class="jp-relatedposts-post-a"><img class="jp-relatedposts-post-img" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/Implicit-wait-in-Selenium.png" alt="How to use Implicit wait in selenium Webdriver" width="350"></a><h4 class="jp-relatedposts-post-title"><a data-position="2" data-origin="1942" rel="nofollow" title="How to use Implicit wait in selenium Webdriver
+
+What and How to use implicit wait in selenium Webdriver? If you have ever worked on any automation tool then you must be aware of Sync issues in script. It is one of biggest pain for an automation engineer to handle sync issue between elements. Sometimes application&nbsp;will not able to…" href="http://learn-automation.com/usage-of-implicit-wait-in-selenium-webdriver/" class="jp-relatedposts-post-a">How to use Implicit wait in selenium Webdriver</a></h4><p class="jp-relatedposts-post-excerpt">What
+ and How to use implicit wait in selenium Webdriver? If you have ever 
+worked on any automation tool then you must be aware of Sync issues in 
+script. It is one of biggest pain for an automation engineer to handle 
+sync issue between elements. Sometimes application&nbsp;will not able 
+to…</p><p class="jp-relatedposts-post-date">October 29, 2015</p><p class="jp-relatedposts-post-context">In "Advance Selenium"</p></div></div></div>		<div class="clear"></div>
+		
+						<script type="text/javascript">
+		var _thrive_share_no_params = {'url': 
+"http://learn-automation.com/selenium-interview-questions-and-answers/"};
+
+		_thrive_share_no_params.facebook = true;		
+_thrive_share_no_params.twitter = true;		_thrive_share_no_params.google =
+ true;		_thrive_share_no_params.linkedin = true;		
+_thrive_share_no_params.pinterest = true;		jQuery( document ).ready( 
+function () {
+			ThriveApp.display_no_shares( _thrive_share_no_params );
+		} );
+	</script>
+<div style="display: none; top: 40px; bottom: auto; left: 52.5px;" class="ssf fpss">
+				<span class="cou" id="tt-share-count" style="display: none">
+            <b id="share_no_element">0</b>
+            <input id="tt-hidden-share-no" value="0" type="hidden">
+            <br>
+			Shares        </span>
+		<div class="scfm">
+					<div class="ss">
+				<a class="fb" href="http://www.facebook.com/sharer/sharer.php?u=http://learn-automation.com/selenium-interview-questions-and-answers/" onclick="return ThriveApp.open_share_popup(this.href, 545, 433);">
+					<span class="awe"></span>
+				</a>
+			</div>
+							<div class="ss">
+				<a class="tw" href="https://twitter.com/share?text=Be%20ready%20with%20Selenium%20Interview%20questions%20and%20answers:&amp;url=http://learn-automation.com/selenium-interview-questions-and-answers/&amp;via=MukeshOtwani" onclick="return ThriveApp.open_share_popup(this.href, 545, 433);">
+					<span class="awe"></span>
+				</a>
+			</div>
+							<div class="ss">
+				<a class="gg" href="https://plus.google.com/share?url=http://learn-automation.com/selenium-interview-questions-and-answers/" onclick="return ThriveApp.open_share_popup(this.href, 545, 433);">
+					<span class="awe"></span>
+				</a>
+			</div>
+							<div class="ss">
+				<a class="lk" href="https://www.linkedin.com/cws/share?url=http://learn-automation.com/selenium-interview-questions-and-answers/" onclick="return ThriveApp.open_share_popup(this.href, 545, 433);">
+					<span class="awe"></span>
+				</a>
+			</div>
+				
+			<div class="ss">
+				<a class="pt" href="#" onclick="return ThriveApp.open_share_popup('https://pinterest.com/pin/create/button/?url=http://learn-automation.com/selenium-interview-questions-and-answers/&amp;media=http://learn-automation.com/wp-content/uploads/2015/09/resume2.jpg', 545, 433);">
+					<span class="awe"></span>
+				</a>
+			</div>
+			</div>
+</div>
+					</div>
+	</article>
+<div class="rltpi clearfix">
+	<div class="awr">
+		<h5>Related Posts</h5>
+							<span>No related posts for this content</span>
+			</div>
+</div><div class="spr"></div>
+								<!-- TODO - the image has to link to the author page -->
+<article>
+	<div class="awr aut">
+		<div class="amg">
+			<a href="http://learn-automation.com/author/mukesh50/">
+				<div class="amgi" style="background-image: url('http://0.gravatar.com/avatar/ca8887d71336c8e77bac9105ef65e6dd?s=180&amp;d=monsterid&amp;r=g')"></div>
+			</a>
+		</div>
+		<div class="aat right">
+			<h4>About the Author</h4>
+			<p>I am Mukesh Otwani working professional in a beautiful city 
+Bangalore India. I completed by BE from RGPV university Bhopal.
+
+I have passion towards automation testing since couple of years I 
+started with Selenium then I got chance to work with other tools like 
+Maven, Ant, Git, GitHub, Jenkins, Sikuli, Selenium Builder etc.</p>
+		</div>
+		<div class="clear"></div>
+	</div>
+</article>			
+								
+	<script type="text/javascript">
+		_thriveCurrentPost = 1942;
+	</script>
+
+	<article id="comments">
+					<div class="awr">
+				<div class="ctb">
+					<h4 class="clearfix">
+						<span class="ftx txt_thrive_link_to_comments">Leave a Reply</span>
+						<span class="right">
+							100							comments						</span>
+					</h4>
+				</div>
+			</div>
+				<div class="awr">
+			
+			<div class="cmb" style="margin-left: 0px;" id="thrive_container_list_comments">
+															<!-- #comment-## -->
+								<div class="cmb" id="comment-3268">
+					<div class="cmc">
+						<div class="left">
+							<img alt="" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/e25ba3375bda532243c45f278473d628.png" srcset="http://2.gravatar.com/avatar/e25ba3375bda532243c45f278473d628?s=160&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">						</div>
+
+						<div class="ccr right">
+                            <span class="nam left">
+                                	                                <a href="http://learn-automation.com/" target="_blank" rel="nofollow">
+		                                Ranjit	                                </a>
+                                	                            		                            -
+		                            <span class="uDt">
+                                        	                               
+         a couple of days ago                                        
+                                    </span>
+	                                                        </span>
+															<a class="rpl reply right" href="#" id="link-reply-3268" cid="3268">
+									Reply								</a>
+														<div class="clear"></div>
+															<p></p><p>Hey Mukesh ,</p>
+<p>I have been watching your videos  from long time .   you are the solid guy  … Excellent Work !</p>
+<p>If possible can you email  me with those answers  <img src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/1f641.png" alt="🙁" class="emoji" draggable="false"></p>
+<p>Thanks &amp; Regards<br>
+Ranjit Koppula</p>
+<p></p>
+													</div>
+						<div class="clear"></div>
+					</div>
+					<div class="lrp" id="respond-container-3268" style="display: none;">
+						<h4 class="left">
+							Leave a Reply:
+						</h4>
+						<a href="#" class="crp right cancel_reply" cid="3268">
+							Cancel Reply						</a>
+
+						<div class="clear"></div>
+						<form action="http://learn-automation.com/wp-comments-post.php" method="post">
+															<label for="author">Name									<span>*</span></label>
+								<input author="author" id="author" placeholder="" name="author" type="text">
+								<br><br>
+								<label for="email">Email									<span>*</span></label>
+								<input author="email" id="email" placeholder="" name="email" type="text">
+								<br><br>
+								<label for="website">Website</label>
+								<input author="website" id="website" placeholder="" name="website" type="text">
+								<br><br>
+														<textarea class="textarea" name="comment" id="comment"></textarea>
+							<input id="comment_post_ID" value="1942" name="comment_post_ID" type="hidden">
+							<input id="comment_parent" value="3268" name="comment_parent" type="hidden">
+
+							<div class="btn medium right">
+								<input value="SUBMIT COMMENT" type="submit">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="lrp" id="respond-container-3268">
+				</div>
+							<ul class="children">
+								<div class="cmb" id="comment-3330">
+					<div class="cmc byAut">
+						<div class="left">
+							<img alt="" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/ca8887d71336c8e77bac9105ef65e6dd.png" srcset="http://0.gravatar.com/avatar/ca8887d71336c8e77bac9105ef65e6dd?s=160&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">						</div>
+
+						<div class="ccr right">
+                            <span class="nam left">
+                                	                                <a href="http://www.learn-automation.com/" target="_blank" rel="nofollow">
+		                                Mukesh Otwani	                                </a>
+                                	                            		                            -
+		                            <span class="uDt">
+                                        	                               
+         10 hours ago                                        
+                                    </span>
+	                                                        </span>
+															<a class="rpl reply right" href="#" id="link-reply-3330" cid="3330">
+									Reply								</a>
+														<div class="clear"></div>
+															<p></p><p>sent</p>
+<p></p>
+													</div>
+						<div class="clear"></div>
+					</div>
+					<div class="lrp" id="respond-container-3330" style="display: none;">
+						<h4 class="left">
+							Leave a Reply:
+						</h4>
+						<a href="#" class="crp right cancel_reply" cid="3330">
+							Cancel Reply						</a>
+
+						<div class="clear"></div>
+						<form action="http://learn-automation.com/wp-comments-post.php" method="post">
+															<label for="author">Name									<span>*</span></label>
+								<input author="author" id="author" placeholder="" name="author" type="text">
+								<br><br>
+								<label for="email">Email									<span>*</span></label>
+								<input author="email" id="email" placeholder="" name="email" type="text">
+								<br><br>
+								<label for="website">Website</label>
+								<input author="website" id="website" placeholder="" name="website" type="text">
+								<br><br>
+														<textarea class="textarea" name="comment" id="comment"></textarea>
+							<input id="comment_post_ID" value="1942" name="comment_post_ID" type="hidden">
+							<input id="comment_parent" value="3330" name="comment_parent" type="hidden">
+
+							<div class="btn medium right">
+								<input value="SUBMIT COMMENT" type="submit">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="lrp" id="respond-container-3330">
+				</div>
+							<!-- #comment-## -->
+</ul><!-- .children -->
+<!-- #comment-## -->
+								<div class="cmb" id="comment-3214">
+					<div class="cmc">
+						<div class="left">
+							<img alt="" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/f5a3cda4ca64f289405716698e0992db.png" srcset="http://0.gravatar.com/avatar/f5a3cda4ca64f289405716698e0992db?s=160&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">						</div>
+
+						<div class="ccr right">
+                            <span class="nam left">
+                                	                                <span class="uNM">Ashok</span>
+                                	                            		                            -
+		                            <span class="uDt">
+                                        	                               
+         a few days ago                                        
+                                    </span>
+	                                                        </span>
+															<a class="rpl reply right" href="#" id="link-reply-3214" cid="3214">
+									Reply								</a>
+														<div class="clear"></div>
+															<p></p><p>Very useful content.<br>
+I like so much.<br>
+Thanks so much for your effort Mukesh.<br>
+Can you send answers for these questions?</p>
+<p>Thanks,<br>
+Ashok</p>
+<p></p>
+													</div>
+						<div class="clear"></div>
+					</div>
+					<div class="lrp" id="respond-container-3214" style="display: none;">
+						<h4 class="left">
+							Leave a Reply:
+						</h4>
+						<a href="#" class="crp right cancel_reply" cid="3214">
+							Cancel Reply						</a>
+
+						<div class="clear"></div>
+						<form action="http://learn-automation.com/wp-comments-post.php" method="post">
+															<label for="author">Name									<span>*</span></label>
+								<input author="author" id="author" placeholder="" name="author" type="text">
+								<br><br>
+								<label for="email">Email									<span>*</span></label>
+								<input author="email" id="email" placeholder="" name="email" type="text">
+								<br><br>
+								<label for="website">Website</label>
+								<input author="website" id="website" placeholder="" name="website" type="text">
+								<br><br>
+														<textarea class="textarea" name="comment" id="comment"></textarea>
+							<input id="comment_post_ID" value="1942" name="comment_post_ID" type="hidden">
+							<input id="comment_parent" value="3214" name="comment_parent" type="hidden">
+
+							<div class="btn medium right">
+								<input value="SUBMIT COMMENT" type="submit">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="lrp" id="respond-container-3214">
+				</div>
+							<ul class="children">
+								<div class="cmb" id="comment-3227">
+					<div class="cmc byAut">
+						<div class="left">
+							<img alt="" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/ca8887d71336c8e77bac9105ef65e6dd.png" srcset="http://0.gravatar.com/avatar/ca8887d71336c8e77bac9105ef65e6dd?s=160&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">						</div>
+
+						<div class="ccr right">
+                            <span class="nam left">
+                                	                                <a href="http://www.learn-automation.com/" target="_blank" rel="nofollow">
+		                                Mukesh Otwani	                                </a>
+                                	                            		                            -
+		                            <span class="uDt">
+                                        	                               
+         a few days ago                                        
+                                    </span>
+	                                                        </span>
+															<a class="rpl reply right" href="#" id="link-reply-3227" cid="3227">
+									Reply								</a>
+														<div class="clear"></div>
+															<p></p><p>Hi Ashok,</p>
+<p>Kindly join the mailing list of my blog and when u join I will send all question in doc file <img src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/1f642.png" alt="🙂" class="emoji" draggable="false"></p>
+<p></p>
+													</div>
+						<div class="clear"></div>
+					</div>
+					<div class="lrp" id="respond-container-3227" style="display: none;">
+						<h4 class="left">
+							Leave a Reply:
+						</h4>
+						<a href="#" class="crp right cancel_reply" cid="3227">
+							Cancel Reply						</a>
+
+						<div class="clear"></div>
+						<form action="http://learn-automation.com/wp-comments-post.php" method="post">
+															<label for="author">Name									<span>*</span></label>
+								<input author="author" id="author" placeholder="" name="author" type="text">
+								<br><br>
+								<label for="email">Email									<span>*</span></label>
+								<input author="email" id="email" placeholder="" name="email" type="text">
+								<br><br>
+								<label for="website">Website</label>
+								<input author="website" id="website" placeholder="" name="website" type="text">
+								<br><br>
+														<textarea class="textarea" name="comment" id="comment"></textarea>
+							<input id="comment_post_ID" value="1942" name="comment_post_ID" type="hidden">
+							<input id="comment_parent" value="3227" name="comment_parent" type="hidden">
+
+							<div class="btn medium right">
+								<input value="SUBMIT COMMENT" type="submit">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="lrp" id="respond-container-3227">
+				</div>
+							<!-- #comment-## -->
+</ul><!-- .children -->
+<!-- #comment-## -->
+								<div class="cmb" id="comment-3212">
+					<div class="cmc">
+						<div class="left">
+							<img alt="" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/e1e372d7bb41784c52661f798b2788d7.png" srcset="http://2.gravatar.com/avatar/e1e372d7bb41784c52661f798b2788d7?s=160&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">						</div>
+
+						<div class="ccr right">
+                            <span class="nam left">
+                                	                                <span class="uNM">vishwanath</span>
+                                	                            		                            -
+		                            <span class="uDt">
+                                        	                               
+         a few days ago                                        
+                                    </span>
+	                                                        </span>
+															<a class="rpl reply right" href="#" id="link-reply-3212" cid="3212">
+									Reply								</a>
+														<div class="clear"></div>
+															<p></p><p>good work mukhesh…ur teaching way is excellent…easy to understand thank u</p>
+<p></p>
+													</div>
+						<div class="clear"></div>
+					</div>
+					<div class="lrp" id="respond-container-3212" style="display: none;">
+						<h4 class="left">
+							Leave a Reply:
+						</h4>
+						<a href="#" class="crp right cancel_reply" cid="3212">
+							Cancel Reply						</a>
+
+						<div class="clear"></div>
+						<form action="http://learn-automation.com/wp-comments-post.php" method="post">
+															<label for="author">Name									<span>*</span></label>
+								<input author="author" id="author" placeholder="" name="author" type="text">
+								<br><br>
+								<label for="email">Email									<span>*</span></label>
+								<input author="email" id="email" placeholder="" name="email" type="text">
+								<br><br>
+								<label for="website">Website</label>
+								<input author="website" id="website" placeholder="" name="website" type="text">
+								<br><br>
+														<textarea class="textarea" name="comment" id="comment"></textarea>
+							<input id="comment_post_ID" value="1942" name="comment_post_ID" type="hidden">
+							<input id="comment_parent" value="3212" name="comment_parent" type="hidden">
+
+							<div class="btn medium right">
+								<input value="SUBMIT COMMENT" type="submit">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="lrp" id="respond-container-3212">
+				</div>
+							<ul class="children">
+								<div class="cmb" id="comment-3228">
+					<div class="cmc byAut">
+						<div class="left">
+							<img alt="" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/ca8887d71336c8e77bac9105ef65e6dd.png" srcset="http://0.gravatar.com/avatar/ca8887d71336c8e77bac9105ef65e6dd?s=160&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">						</div>
+
+						<div class="ccr right">
+                            <span class="nam left">
+                                	                                <a href="http://www.learn-automation.com/" target="_blank" rel="nofollow">
+		                                Mukesh Otwani	                                </a>
+                                	                            		                            -
+		                            <span class="uDt">
+                                        	                               
+         a few days ago                                        
+                                    </span>
+	                                                        </span>
+															<a class="rpl reply right" href="#" id="link-reply-3228" cid="3228">
+									Reply								</a>
+														<div class="clear"></div>
+															<p></p><p>Thanks vishwanath <img src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/1f642.png" alt="🙂" class="emoji" draggable="false"></p>
+<p></p>
+													</div>
+						<div class="clear"></div>
+					</div>
+					<div class="lrp" id="respond-container-3228" style="display: none;">
+						<h4 class="left">
+							Leave a Reply:
+						</h4>
+						<a href="#" class="crp right cancel_reply" cid="3228">
+							Cancel Reply						</a>
+
+						<div class="clear"></div>
+						<form action="http://learn-automation.com/wp-comments-post.php" method="post">
+															<label for="author">Name									<span>*</span></label>
+								<input author="author" id="author" placeholder="" name="author" type="text">
+								<br><br>
+								<label for="email">Email									<span>*</span></label>
+								<input author="email" id="email" placeholder="" name="email" type="text">
+								<br><br>
+								<label for="website">Website</label>
+								<input author="website" id="website" placeholder="" name="website" type="text">
+								<br><br>
+														<textarea class="textarea" name="comment" id="comment"></textarea>
+							<input id="comment_post_ID" value="1942" name="comment_post_ID" type="hidden">
+							<input id="comment_parent" value="3228" name="comment_parent" type="hidden">
+
+							<div class="btn medium right">
+								<input value="SUBMIT COMMENT" type="submit">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="lrp" id="respond-container-3228">
+				</div>
+							<!-- #comment-## -->
+</ul><!-- .children -->
+<!-- #comment-## -->
+								<div class="cmb" id="comment-3106">
+					<div class="cmc">
+						<div class="left">
+							<img alt="" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/b055c605a79bf09f2129a05ac3097d59.png" srcset="http://2.gravatar.com/avatar/b055c605a79bf09f2129a05ac3097d59?s=160&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">						</div>
+
+						<div class="ccr right">
+                            <span class="nam left">
+                                	                                <span class="uNM">Amit Agrawal</span>
+                                	                            		                            -
+		                            <span class="uDt">
+                                        	                               
+         last week                                        
+                                    </span>
+	                                                        </span>
+															<a class="rpl reply right" href="#" id="link-reply-3106" cid="3106">
+									Reply								</a>
+														<div class="clear"></div>
+															<p></p><p>Hello Mukesh,</p>
+<p>Very Easy way of presentation.I have learnt alots.</p>
+<p>Could you please send me Selenium Interview Q&amp;A.</p>
+<p></p>
+													</div>
+						<div class="clear"></div>
+					</div>
+					<div class="lrp" id="respond-container-3106" style="display: none;">
+						<h4 class="left">
+							Leave a Reply:
+						</h4>
+						<a href="#" class="crp right cancel_reply" cid="3106">
+							Cancel Reply						</a>
+
+						<div class="clear"></div>
+						<form action="http://learn-automation.com/wp-comments-post.php" method="post">
+															<label for="author">Name									<span>*</span></label>
+								<input author="author" id="author" placeholder="" name="author" type="text">
+								<br><br>
+								<label for="email">Email									<span>*</span></label>
+								<input author="email" id="email" placeholder="" name="email" type="text">
+								<br><br>
+								<label for="website">Website</label>
+								<input author="website" id="website" placeholder="" name="website" type="text">
+								<br><br>
+														<textarea class="textarea" name="comment" id="comment"></textarea>
+							<input id="comment_post_ID" value="1942" name="comment_post_ID" type="hidden">
+							<input id="comment_parent" value="3106" name="comment_parent" type="hidden">
+
+							<div class="btn medium right">
+								<input value="SUBMIT COMMENT" type="submit">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="lrp" id="respond-container-3106">
+				</div>
+							<ul class="children">
+								<div class="cmb" id="comment-3119">
+					<div class="cmc byAut">
+						<div class="left">
+							<img alt="" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/ca8887d71336c8e77bac9105ef65e6dd.png" srcset="http://0.gravatar.com/avatar/ca8887d71336c8e77bac9105ef65e6dd?s=160&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">						</div>
+
+						<div class="ccr right">
+                            <span class="nam left">
+                                	                                <a href="http://www.learn-automation.com/" target="_blank" rel="nofollow">
+		                                Mukesh Otwani	                                </a>
+                                	                            		                            -
+		                            <span class="uDt">
+                                        	                               
+         last week                                        
+                                    </span>
+	                                                        </span>
+															<a class="rpl reply right" href="#" id="link-reply-3119" cid="3119">
+									Reply								</a>
+														<div class="clear"></div>
+															<p></p><p>Hey Amit,</p>
+<p>Thanks <img src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/1f642.png" alt="🙂" class="emoji" draggable="false"> You can join mailing list of my blog and once you join you will get all answers in doc file in your email.</p>
+<p></p>
+													</div>
+						<div class="clear"></div>
+					</div>
+					<div class="lrp" id="respond-container-3119" style="display: none;">
+						<h4 class="left">
+							Leave a Reply:
+						</h4>
+						<a href="#" class="crp right cancel_reply" cid="3119">
+							Cancel Reply						</a>
+
+						<div class="clear"></div>
+						<form action="http://learn-automation.com/wp-comments-post.php" method="post">
+															<label for="author">Name									<span>*</span></label>
+								<input author="author" id="author" placeholder="" name="author" type="text">
+								<br><br>
+								<label for="email">Email									<span>*</span></label>
+								<input author="email" id="email" placeholder="" name="email" type="text">
+								<br><br>
+								<label for="website">Website</label>
+								<input author="website" id="website" placeholder="" name="website" type="text">
+								<br><br>
+														<textarea class="textarea" name="comment" id="comment"></textarea>
+							<input id="comment_post_ID" value="1942" name="comment_post_ID" type="hidden">
+							<input id="comment_parent" value="3119" name="comment_parent" type="hidden">
+
+							<div class="btn medium right">
+								<input value="SUBMIT COMMENT" type="submit">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="lrp" id="respond-container-3119">
+				</div>
+							<ul class="children">
+								<div class="cmb" id="comment-3139">
+					<div class="cmc">
+						<div class="left">
+							<img alt="" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/d94f3c4f3976c767e447fc7c037af351.png" srcset="http://1.gravatar.com/avatar/d94f3c4f3976c767e447fc7c037af351?s=160&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">						</div>
+
+						<div class="ccr right">
+                            <span class="nam left">
+                                	                                <span class="uNM">Praveen</span>
+                                	                            		                            -
+		                            <span class="uDt">
+                                        	                               
+         last week                                        
+                                    </span>
+	                                                        </span>
+															<a class="rpl reply right" href="#" id="link-reply-3139" cid="3139">
+									Reply								</a>
+														<div class="clear"></div>
+															<p></p><p>Hi mukesh…..<br>
+How to get Answers for those questions…??</p>
+<p></p>
+													</div>
+						<div class="clear"></div>
+					</div>
+					<div class="lrp" id="respond-container-3139" style="display: none;">
+						<h4 class="left">
+							Leave a Reply:
+						</h4>
+						<a href="#" class="crp right cancel_reply" cid="3139">
+							Cancel Reply						</a>
+
+						<div class="clear"></div>
+						<form action="http://learn-automation.com/wp-comments-post.php" method="post">
+															<label for="author">Name									<span>*</span></label>
+								<input author="author" id="author" placeholder="" name="author" type="text">
+								<br><br>
+								<label for="email">Email									<span>*</span></label>
+								<input author="email" id="email" placeholder="" name="email" type="text">
+								<br><br>
+								<label for="website">Website</label>
+								<input author="website" id="website" placeholder="" name="website" type="text">
+								<br><br>
+														<textarea class="textarea" name="comment" id="comment"></textarea>
+							<input id="comment_post_ID" value="1942" name="comment_post_ID" type="hidden">
+							<input id="comment_parent" value="3139" name="comment_parent" type="hidden">
+
+							<div class="btn medium right">
+								<input value="SUBMIT COMMENT" type="submit">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="lrp" id="respond-container-3139">
+				</div>
+							<ul class="children">
+								<div class="cmb" id="comment-3144">
+					<div class="cmc byAut">
+						<div class="left">
+							<img alt="" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/ca8887d71336c8e77bac9105ef65e6dd.png" srcset="http://0.gravatar.com/avatar/ca8887d71336c8e77bac9105ef65e6dd?s=160&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">						</div>
+
+						<div class="ccr right">
+                            <span class="nam left">
+                                	                                <a href="http://www.learn-automation.com/" target="_blank" rel="nofollow">
+		                                Mukesh Otwani	                                </a>
+                                	                            		                            -
+		                            <span class="uDt">
+                                        	                               
+         last week                                        
+                                    </span>
+	                                                        </span>
+															<a class="rpl reply right" href="#" id="link-reply-3144" cid="3144">
+									Reply								</a>
+														<div class="clear"></div>
+															<p></p><p>Hi Praveen once you join mailing list you will get all answers in email.</p>
+<p></p>
+													</div>
+						<div class="clear"></div>
+					</div>
+					<div class="lrp" id="respond-container-3144" style="display: none;">
+						<h4 class="left">
+							Leave a Reply:
+						</h4>
+						<a href="#" class="crp right cancel_reply" cid="3144">
+							Cancel Reply						</a>
+
+						<div class="clear"></div>
+						<form action="http://learn-automation.com/wp-comments-post.php" method="post">
+															<label for="author">Name									<span>*</span></label>
+								<input author="author" id="author" placeholder="" name="author" type="text">
+								<br><br>
+								<label for="email">Email									<span>*</span></label>
+								<input author="email" id="email" placeholder="" name="email" type="text">
+								<br><br>
+								<label for="website">Website</label>
+								<input author="website" id="website" placeholder="" name="website" type="text">
+								<br><br>
+														<textarea class="textarea" name="comment" id="comment"></textarea>
+							<input id="comment_post_ID" value="1942" name="comment_post_ID" type="hidden">
+							<input id="comment_parent" value="3144" name="comment_parent" type="hidden">
+
+							<div class="btn medium right">
+								<input value="SUBMIT COMMENT" type="submit">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="lrp" id="respond-container-3144">
+				</div>
+							<!-- #comment-## -->
+</ul><!-- .children -->
+<!-- #comment-## -->
+</ul><!-- .children -->
+<!-- #comment-## -->
+</ul><!-- .children -->
+<!-- #comment-## -->
+								<div class="cmb" id="comment-2938">
+					<div class="cmc">
+						<div class="left">
+							<img alt="" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/51af638e23b04c2fff6e8136696dcee8.png" srcset="http://2.gravatar.com/avatar/51af638e23b04c2fff6e8136696dcee8?s=160&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">						</div>
+
+						<div class="ccr right">
+                            <span class="nam left">
+                                	                                <span class="uNM">Ashish Nangia</span>
+                                	                            		                            -
+		                            <span class="uDt">
+                                        	                               
+         3 weeks ago                                        
+                                    </span>
+	                                                        </span>
+															<a class="rpl reply right" href="#" id="link-reply-2938" cid="2938">
+									Reply								</a>
+														<div class="clear"></div>
+															<p></p><p>Hi Mukesh , </p>
+<p>Thanks a lot for all these stuff can you post some Java questions too which are asked in Selenium interviews .</p>
+<p>Thanks in advance<br>
+Ashish</p>
+<p></p>
+													</div>
+						<div class="clear"></div>
+					</div>
+					<div class="lrp" id="respond-container-2938" style="display: none;">
+						<h4 class="left">
+							Leave a Reply:
+						</h4>
+						<a href="#" class="crp right cancel_reply" cid="2938">
+							Cancel Reply						</a>
+
+						<div class="clear"></div>
+						<form action="http://learn-automation.com/wp-comments-post.php" method="post">
+															<label for="author">Name									<span>*</span></label>
+								<input author="author" id="author" placeholder="" name="author" type="text">
+								<br><br>
+								<label for="email">Email									<span>*</span></label>
+								<input author="email" id="email" placeholder="" name="email" type="text">
+								<br><br>
+								<label for="website">Website</label>
+								<input author="website" id="website" placeholder="" name="website" type="text">
+								<br><br>
+														<textarea class="textarea" name="comment" id="comment"></textarea>
+							<input id="comment_post_ID" value="1942" name="comment_post_ID" type="hidden">
+							<input id="comment_parent" value="2938" name="comment_parent" type="hidden">
+
+							<div class="btn medium right">
+								<input value="SUBMIT COMMENT" type="submit">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="lrp" id="respond-container-2938">
+				</div>
+							<ul class="children">
+								<div class="cmb" id="comment-2946">
+					<div class="cmc byAut">
+						<div class="left">
+							<img alt="" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/ca8887d71336c8e77bac9105ef65e6dd.png" srcset="http://0.gravatar.com/avatar/ca8887d71336c8e77bac9105ef65e6dd?s=160&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">						</div>
+
+						<div class="ccr right">
+                            <span class="nam left">
+                                	                                <a href="http://www.learn-automation.com/" target="_blank" rel="nofollow">
+		                                Mukesh Otwani	                                </a>
+                                	                            		                            -
+		                            <span class="uDt">
+                                        	                               
+         3 weeks ago                                        
+                                    </span>
+	                                                        </span>
+															<a class="rpl reply right" href="#" id="link-reply-2946" cid="2946">
+									Reply								</a>
+														<div class="clear"></div>
+															<p></p><p>Most welcome Ashish and glad to know you found it usefull.</p>
+<p></p>
+													</div>
+						<div class="clear"></div>
+					</div>
+					<div class="lrp" id="respond-container-2946" style="display: none;">
+						<h4 class="left">
+							Leave a Reply:
+						</h4>
+						<a href="#" class="crp right cancel_reply" cid="2946">
+							Cancel Reply						</a>
+
+						<div class="clear"></div>
+						<form action="http://learn-automation.com/wp-comments-post.php" method="post">
+															<label for="author">Name									<span>*</span></label>
+								<input author="author" id="author" placeholder="" name="author" type="text">
+								<br><br>
+								<label for="email">Email									<span>*</span></label>
+								<input author="email" id="email" placeholder="" name="email" type="text">
+								<br><br>
+								<label for="website">Website</label>
+								<input author="website" id="website" placeholder="" name="website" type="text">
+								<br><br>
+														<textarea class="textarea" name="comment" id="comment"></textarea>
+							<input id="comment_post_ID" value="1942" name="comment_post_ID" type="hidden">
+							<input id="comment_parent" value="2946" name="comment_parent" type="hidden">
+
+							<div class="btn medium right">
+								<input value="SUBMIT COMMENT" type="submit">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="lrp" id="respond-container-2946">
+				</div>
+							<!-- #comment-## -->
+</ul><!-- .children -->
+<!-- #comment-## -->
+								<div class="cmb" id="comment-2921">
+					<div class="cmc">
+						<div class="left">
+							<img alt="" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/8507b27c38dff59915f6cdde8559a548.png" srcset="http://2.gravatar.com/avatar/8507b27c38dff59915f6cdde8559a548?s=160&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">						</div>
+
+						<div class="ccr right">
+                            <span class="nam left">
+                                	                                <span class="uNM">Ranjith samalla</span>
+                                	                            		                            -
+		                            <span class="uDt">
+                                        	                               
+         3 weeks ago                                        
+                                    </span>
+	                                                        </span>
+															<a class="rpl reply right" href="#" id="link-reply-2921" cid="2921">
+									Reply								</a>
+														<div class="clear"></div>
+															<p></p><p>Hi Mukesh ,<br>
+good evening,</p>
+<p> You r doing good job for who are seeking for job.really it will very helpful to us.</p>
+<p>I have a lots of interview question with me based on company name, i 
+ll share all the question to u can u post all the question here with 
+answers.<br>
+god bless you,</p>
+<p></p>
+													</div>
+						<div class="clear"></div>
+					</div>
+					<div class="lrp" id="respond-container-2921" style="display: none;">
+						<h4 class="left">
+							Leave a Reply:
+						</h4>
+						<a href="#" class="crp right cancel_reply" cid="2921">
+							Cancel Reply						</a>
+
+						<div class="clear"></div>
+						<form action="http://learn-automation.com/wp-comments-post.php" method="post">
+															<label for="author">Name									<span>*</span></label>
+								<input author="author" id="author" placeholder="" name="author" type="text">
+								<br><br>
+								<label for="email">Email									<span>*</span></label>
+								<input author="email" id="email" placeholder="" name="email" type="text">
+								<br><br>
+								<label for="website">Website</label>
+								<input author="website" id="website" placeholder="" name="website" type="text">
+								<br><br>
+														<textarea class="textarea" name="comment" id="comment"></textarea>
+							<input id="comment_post_ID" value="1942" name="comment_post_ID" type="hidden">
+							<input id="comment_parent" value="2921" name="comment_parent" type="hidden">
+
+							<div class="btn medium right">
+								<input value="SUBMIT COMMENT" type="submit">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="lrp" id="respond-container-2921">
+				</div>
+							<ul class="children">
+								<div class="cmb" id="comment-2930">
+					<div class="cmc byAut">
+						<div class="left">
+							<img alt="" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/ca8887d71336c8e77bac9105ef65e6dd.png" srcset="http://0.gravatar.com/avatar/ca8887d71336c8e77bac9105ef65e6dd?s=160&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">						</div>
+
+						<div class="ccr right">
+                            <span class="nam left">
+                                	                                <a href="http://www.learn-automation.com/" target="_blank" rel="nofollow">
+		                                Mukesh Otwani	                                </a>
+                                	                            		                            -
+		                            <span class="uDt">
+                                        	                               
+         3 weeks ago                                        
+                                    </span>
+	                                                        </span>
+															<a class="rpl reply right" href="#" id="link-reply-2930" cid="2930">
+									Reply								</a>
+														<div class="clear"></div>
+															<p></p><p>Hey Ranjith,</p>
+<p>Thank you so much <img src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/1f642.png" alt="🙂" class="emoji" draggable="false"> Kindly share it will be really useful for others too.</p>
+<p></p>
+													</div>
+						<div class="clear"></div>
+					</div>
+					<div class="lrp" id="respond-container-2930" style="display: none;">
+						<h4 class="left">
+							Leave a Reply:
+						</h4>
+						<a href="#" class="crp right cancel_reply" cid="2930">
+							Cancel Reply						</a>
+
+						<div class="clear"></div>
+						<form action="http://learn-automation.com/wp-comments-post.php" method="post">
+															<label for="author">Name									<span>*</span></label>
+								<input author="author" id="author" placeholder="" name="author" type="text">
+								<br><br>
+								<label for="email">Email									<span>*</span></label>
+								<input author="email" id="email" placeholder="" name="email" type="text">
+								<br><br>
+								<label for="website">Website</label>
+								<input author="website" id="website" placeholder="" name="website" type="text">
+								<br><br>
+														<textarea class="textarea" name="comment" id="comment"></textarea>
+							<input id="comment_post_ID" value="1942" name="comment_post_ID" type="hidden">
+							<input id="comment_parent" value="2930" name="comment_parent" type="hidden">
+
+							<div class="btn medium right">
+								<input value="SUBMIT COMMENT" type="submit">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="lrp" id="respond-container-2930">
+				</div>
+							<!-- #comment-## -->
+</ul><!-- .children -->
+<!-- #comment-## -->
+								<div class="cmb" id="comment-2920">
+					<div class="cmc">
+						<div class="left">
+							<img alt="" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/8507b27c38dff59915f6cdde8559a548.png" srcset="http://2.gravatar.com/avatar/8507b27c38dff59915f6cdde8559a548?s=160&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">						</div>
+
+						<div class="ccr right">
+                            <span class="nam left">
+                                	                                <span class="uNM">ranjith samalla</span>
+                                	                            		                            -
+		                            <span class="uDt">
+                                        	                               
+         3 weeks ago                                        
+                                    </span>
+	                                                        </span>
+															<a class="rpl reply right" href="#" id="link-reply-2920" cid="2920">
+									Reply								</a>
+														<div class="clear"></div>
+															<p></p><p>Hi Mukesh,</p>
+<p>why do  w e use public static void main(String[] args) and can u explain clearly mainly why do we use (String[]  args) there.</p>
+<p></p>
+													</div>
+						<div class="clear"></div>
+					</div>
+					<div class="lrp" id="respond-container-2920" style="display: none;">
+						<h4 class="left">
+							Leave a Reply:
+						</h4>
+						<a href="#" class="crp right cancel_reply" cid="2920">
+							Cancel Reply						</a>
+
+						<div class="clear"></div>
+						<form action="http://learn-automation.com/wp-comments-post.php" method="post">
+															<label for="author">Name									<span>*</span></label>
+								<input author="author" id="author" placeholder="" name="author" type="text">
+								<br><br>
+								<label for="email">Email									<span>*</span></label>
+								<input author="email" id="email" placeholder="" name="email" type="text">
+								<br><br>
+								<label for="website">Website</label>
+								<input author="website" id="website" placeholder="" name="website" type="text">
+								<br><br>
+														<textarea class="textarea" name="comment" id="comment"></textarea>
+							<input id="comment_post_ID" value="1942" name="comment_post_ID" type="hidden">
+							<input id="comment_parent" value="2920" name="comment_parent" type="hidden">
+
+							<div class="btn medium right">
+								<input value="SUBMIT COMMENT" type="submit">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="lrp" id="respond-container-2920">
+				</div>
+							<ul class="children">
+								<div class="cmb" id="comment-2931">
+					<div class="cmc byAut">
+						<div class="left">
+							<img alt="" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/ca8887d71336c8e77bac9105ef65e6dd.png" srcset="http://0.gravatar.com/avatar/ca8887d71336c8e77bac9105ef65e6dd?s=160&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">						</div>
+
+						<div class="ccr right">
+                            <span class="nam left">
+                                	                                <a href="http://www.learn-automation.com/" target="_blank" rel="nofollow">
+		                                Mukesh Otwani	                                </a>
+                                	                            		                            -
+		                            <span class="uDt">
+                                        	                               
+         3 weeks ago                                        
+                                    </span>
+	                                                        </span>
+															<a class="rpl reply right" href="#" id="link-reply-2931" cid="2931">
+									Reply								</a>
+														<div class="clear"></div>
+															<p></p><p>Hey Ranjith,</p>
+<p>It means we can pass many parameters from cmd and we can use in our 
+program. I will create short video on this and will show how it works.</p>
+<p></p>
+													</div>
+						<div class="clear"></div>
+					</div>
+					<div class="lrp" id="respond-container-2931" style="display: none;">
+						<h4 class="left">
+							Leave a Reply:
+						</h4>
+						<a href="#" class="crp right cancel_reply" cid="2931">
+							Cancel Reply						</a>
+
+						<div class="clear"></div>
+						<form action="http://learn-automation.com/wp-comments-post.php" method="post">
+															<label for="author">Name									<span>*</span></label>
+								<input author="author" id="author" placeholder="" name="author" type="text">
+								<br><br>
+								<label for="email">Email									<span>*</span></label>
+								<input author="email" id="email" placeholder="" name="email" type="text">
+								<br><br>
+								<label for="website">Website</label>
+								<input author="website" id="website" placeholder="" name="website" type="text">
+								<br><br>
+														<textarea class="textarea" name="comment" id="comment"></textarea>
+							<input id="comment_post_ID" value="1942" name="comment_post_ID" type="hidden">
+							<input id="comment_parent" value="2931" name="comment_parent" type="hidden">
+
+							<div class="btn medium right">
+								<input value="SUBMIT COMMENT" type="submit">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="lrp" id="respond-container-2931">
+				</div>
+							<ul class="children">
+								<div class="cmb" id="comment-2942">
+					<div class="cmc">
+						<div class="left">
+							<img alt="" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/8507b27c38dff59915f6cdde8559a548.png" srcset="http://2.gravatar.com/avatar/8507b27c38dff59915f6cdde8559a548?s=160&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">						</div>
+
+						<div class="ccr right">
+                            <span class="nam left">
+                                	                                <span class="uNM">Ranjith samalla</span>
+                                	                            		                            -
+		                            <span class="uDt">
+                                        	                               
+         3 weeks ago                                        
+                                    </span>
+	                                                        </span>
+															<a class="rpl reply right" href="#" id="link-reply-2942" cid="2942">
+									Reply								</a>
+														<div class="clear"></div>
+															<p></p><p>Thanks Mukesh.</p>
+<p></p>
+													</div>
+						<div class="clear"></div>
+					</div>
+					<div class="lrp" id="respond-container-2942" style="display: none;">
+						<h4 class="left">
+							Leave a Reply:
+						</h4>
+						<a href="#" class="crp right cancel_reply" cid="2942">
+							Cancel Reply						</a>
+
+						<div class="clear"></div>
+						<form action="http://learn-automation.com/wp-comments-post.php" method="post">
+															<label for="author">Name									<span>*</span></label>
+								<input author="author" id="author" placeholder="" name="author" type="text">
+								<br><br>
+								<label for="email">Email									<span>*</span></label>
+								<input author="email" id="email" placeholder="" name="email" type="text">
+								<br><br>
+								<label for="website">Website</label>
+								<input author="website" id="website" placeholder="" name="website" type="text">
+								<br><br>
+														<textarea class="textarea" name="comment" id="comment"></textarea>
+							<input id="comment_post_ID" value="1942" name="comment_post_ID" type="hidden">
+							<input id="comment_parent" value="2942" name="comment_parent" type="hidden">
+
+							<div class="btn medium right">
+								<input value="SUBMIT COMMENT" type="submit">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="lrp" id="respond-container-2942">
+				</div>
+							<ul class="children">
+								<div class="cmb" id="comment-2943">
+					<div class="cmc byAut">
+						<div class="left">
+							<img alt="" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/ca8887d71336c8e77bac9105ef65e6dd.png" srcset="http://0.gravatar.com/avatar/ca8887d71336c8e77bac9105ef65e6dd?s=160&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">						</div>
+
+						<div class="ccr right">
+                            <span class="nam left">
+                                	                                <a href="http://www.learn-automation.com/" target="_blank" rel="nofollow">
+		                                Mukesh Otwani	                                </a>
+                                	                            		                            -
+		                            <span class="uDt">
+                                        	                               
+         3 weeks ago                                        
+                                    </span>
+	                                                        </span>
+															<a class="rpl reply right" href="#" id="link-reply-2943" cid="2943">
+									Reply								</a>
+														<div class="clear"></div>
+															<p></p><p>welcome mate</p>
+<p></p>
+													</div>
+						<div class="clear"></div>
+					</div>
+					<div class="lrp" id="respond-container-2943" style="display: none;">
+						<h4 class="left">
+							Leave a Reply:
+						</h4>
+						<a href="#" class="crp right cancel_reply" cid="2943">
+							Cancel Reply						</a>
+
+						<div class="clear"></div>
+						<form action="http://learn-automation.com/wp-comments-post.php" method="post">
+															<label for="author">Name									<span>*</span></label>
+								<input author="author" id="author" placeholder="" name="author" type="text">
+								<br><br>
+								<label for="email">Email									<span>*</span></label>
+								<input author="email" id="email" placeholder="" name="email" type="text">
+								<br><br>
+								<label for="website">Website</label>
+								<input author="website" id="website" placeholder="" name="website" type="text">
+								<br><br>
+														<textarea class="textarea" name="comment" id="comment"></textarea>
+							<input id="comment_post_ID" value="1942" name="comment_post_ID" type="hidden">
+							<input id="comment_parent" value="2943" name="comment_parent" type="hidden">
+
+							<div class="btn medium right">
+								<input value="SUBMIT COMMENT" type="submit">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="lrp" id="respond-container-2943">
+				</div>
+							<!-- #comment-## -->
+</ul><!-- .children -->
+<!-- #comment-## -->
+</ul><!-- .children -->
+<!-- #comment-## -->
+</ul><!-- .children -->
+<!-- #comment-## -->
+								<div class="cmb" id="comment-2895">
+					<div class="cmc">
+						<div class="left">
+							<img alt="" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/ab80dc54e9b862287fdf1f0bb1269c18.png" srcset="http://1.gravatar.com/avatar/ab80dc54e9b862287fdf1f0bb1269c18?s=160&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">						</div>
+
+						<div class="ccr right">
+                            <span class="nam left">
+                                	                                <span class="uNM">sudhr</span>
+                                	                            		                            -
+		                            <span class="uDt">
+                                        	                               
+         3 weeks ago                                        
+                                    </span>
+	                                                        </span>
+															<a class="rpl reply right" href="#" id="link-reply-2895" cid="2895">
+									Reply								</a>
+														<div class="clear"></div>
+															<p></p><p>hi,<br>
+ can u send the ans. for these questions</p>
+<p></p>
+													</div>
+						<div class="clear"></div>
+					</div>
+					<div class="lrp" id="respond-container-2895" style="display: none;">
+						<h4 class="left">
+							Leave a Reply:
+						</h4>
+						<a href="#" class="crp right cancel_reply" cid="2895">
+							Cancel Reply						</a>
+
+						<div class="clear"></div>
+						<form action="http://learn-automation.com/wp-comments-post.php" method="post">
+															<label for="author">Name									<span>*</span></label>
+								<input author="author" id="author" placeholder="" name="author" type="text">
+								<br><br>
+								<label for="email">Email									<span>*</span></label>
+								<input author="email" id="email" placeholder="" name="email" type="text">
+								<br><br>
+								<label for="website">Website</label>
+								<input author="website" id="website" placeholder="" name="website" type="text">
+								<br><br>
+														<textarea class="textarea" name="comment" id="comment"></textarea>
+							<input id="comment_post_ID" value="1942" name="comment_post_ID" type="hidden">
+							<input id="comment_parent" value="2895" name="comment_parent" type="hidden">
+
+							<div class="btn medium right">
+								<input value="SUBMIT COMMENT" type="submit">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="lrp" id="respond-container-2895">
+				</div>
+							<ul class="children">
+								<div class="cmb" id="comment-2897">
+					<div class="cmc byAut">
+						<div class="left">
+							<img alt="" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/ca8887d71336c8e77bac9105ef65e6dd.png" srcset="http://0.gravatar.com/avatar/ca8887d71336c8e77bac9105ef65e6dd?s=160&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">						</div>
+
+						<div class="ccr right">
+                            <span class="nam left">
+                                	                                <a href="http://www.learn-automation.com/" target="_blank" rel="nofollow">
+		                                Mukesh Otwani	                                </a>
+                                	                            		                            -
+		                            <span class="uDt">
+                                        	                               
+         3 weeks ago                                        
+                                    </span>
+	                                                        </span>
+															<a class="rpl reply right" href="#" id="link-reply-2897" cid="2897">
+									Reply								</a>
+														<div class="clear"></div>
+															<p></p><p>Hi,</p>
+<p>Once you join mailing list you will get all answer in doc file.</p>
+<p></p>
+													</div>
+						<div class="clear"></div>
+					</div>
+					<div class="lrp" id="respond-container-2897" style="display: none;">
+						<h4 class="left">
+							Leave a Reply:
+						</h4>
+						<a href="#" class="crp right cancel_reply" cid="2897">
+							Cancel Reply						</a>
+
+						<div class="clear"></div>
+						<form action="http://learn-automation.com/wp-comments-post.php" method="post">
+															<label for="author">Name									<span>*</span></label>
+								<input author="author" id="author" placeholder="" name="author" type="text">
+								<br><br>
+								<label for="email">Email									<span>*</span></label>
+								<input author="email" id="email" placeholder="" name="email" type="text">
+								<br><br>
+								<label for="website">Website</label>
+								<input author="website" id="website" placeholder="" name="website" type="text">
+								<br><br>
+														<textarea class="textarea" name="comment" id="comment"></textarea>
+							<input id="comment_post_ID" value="1942" name="comment_post_ID" type="hidden">
+							<input id="comment_parent" value="2897" name="comment_parent" type="hidden">
+
+							<div class="btn medium right">
+								<input value="SUBMIT COMMENT" type="submit">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="lrp" id="respond-container-2897">
+				</div>
+							<!-- #comment-## -->
+</ul><!-- .children -->
+<!-- #comment-## -->
+								<div class="cmb" id="comment-2846">
+					<div class="cmc">
+						<div class="left">
+							<img alt="" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/b00a182c6f348ba2ae4ef73c0a9241ca.png" srcset="http://2.gravatar.com/avatar/b00a182c6f348ba2ae4ef73c0a9241ca?s=160&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">						</div>
+
+						<div class="ccr right">
+                            <span class="nam left">
+                                	                                <span class="uNM">Vaishali</span>
+                                	                            		                            -
+		                            <span class="uDt">
+                                        	                               
+         4 weeks ago                                        
+                                    </span>
+	                                                        </span>
+															<a class="rpl reply right" href="#" id="link-reply-2846" cid="2846">
+									Reply								</a>
+														<div class="clear"></div>
+															<p></p><p>Hi Maukesh ,</p>
+<p>Please provide me the answers of questions .I joined the mailing list .</p>
+<p>Thanks<br>
+Vaishali</p>
+<p></p>
+													</div>
+						<div class="clear"></div>
+					</div>
+					<div class="lrp" id="respond-container-2846" style="display: none;">
+						<h4 class="left">
+							Leave a Reply:
+						</h4>
+						<a href="#" class="crp right cancel_reply" cid="2846">
+							Cancel Reply						</a>
+
+						<div class="clear"></div>
+						<form action="http://learn-automation.com/wp-comments-post.php" method="post">
+															<label for="author">Name									<span>*</span></label>
+								<input author="author" id="author" placeholder="" name="author" type="text">
+								<br><br>
+								<label for="email">Email									<span>*</span></label>
+								<input author="email" id="email" placeholder="" name="email" type="text">
+								<br><br>
+								<label for="website">Website</label>
+								<input author="website" id="website" placeholder="" name="website" type="text">
+								<br><br>
+														<textarea class="textarea" name="comment" id="comment"></textarea>
+							<input id="comment_post_ID" value="1942" name="comment_post_ID" type="hidden">
+							<input id="comment_parent" value="2846" name="comment_parent" type="hidden">
+
+							<div class="btn medium right">
+								<input value="SUBMIT COMMENT" type="submit">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="lrp" id="respond-container-2846">
+				</div>
+							<ul class="children">
+								<div class="cmb" id="comment-2853">
+					<div class="cmc byAut">
+						<div class="left">
+							<img alt="" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/ca8887d71336c8e77bac9105ef65e6dd.png" srcset="http://0.gravatar.com/avatar/ca8887d71336c8e77bac9105ef65e6dd?s=160&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">						</div>
+
+						<div class="ccr right">
+                            <span class="nam left">
+                                	                                <a href="http://www.learn-automation.com/" target="_blank" rel="nofollow">
+		                                Mukesh Otwani	                                </a>
+                                	                            		                            -
+		                            <span class="uDt">
+                                        	                               
+         4 weeks ago                                        
+                                    </span>
+	                                                        </span>
+															<a class="rpl reply right" href="#" id="link-reply-2853" cid="2853">
+									Reply								</a>
+														<div class="clear"></div>
+															<p></p><p>sent to email. Kindly check.</p>
+<p></p>
+													</div>
+						<div class="clear"></div>
+					</div>
+					<div class="lrp" id="respond-container-2853" style="display: none;">
+						<h4 class="left">
+							Leave a Reply:
+						</h4>
+						<a href="#" class="crp right cancel_reply" cid="2853">
+							Cancel Reply						</a>
+
+						<div class="clear"></div>
+						<form action="http://learn-automation.com/wp-comments-post.php" method="post">
+															<label for="author">Name									<span>*</span></label>
+								<input author="author" id="author" placeholder="" name="author" type="text">
+								<br><br>
+								<label for="email">Email									<span>*</span></label>
+								<input author="email" id="email" placeholder="" name="email" type="text">
+								<br><br>
+								<label for="website">Website</label>
+								<input author="website" id="website" placeholder="" name="website" type="text">
+								<br><br>
+														<textarea class="textarea" name="comment" id="comment"></textarea>
+							<input id="comment_post_ID" value="1942" name="comment_post_ID" type="hidden">
+							<input id="comment_parent" value="2853" name="comment_parent" type="hidden">
+
+							<div class="btn medium right">
+								<input value="SUBMIT COMMENT" type="submit">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="lrp" id="respond-container-2853">
+				</div>
+							<!-- #comment-## -->
+</ul><!-- .children -->
+<!-- #comment-## -->
+</div><!-- /comment_list -->
+
+			
+												<div class="ctb ctr" style="display: none;" id="thrive_container_preload_comments">
+						<img class="preloader" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/loading.gif" alt="">
+					</div>
+								<div class="lrp" id="thrive_container_form_add_comment" style="">
+					<h4>Leave a Reply:</h4>
+
+					<form action="http://learn-automation.com/wp-comments-post.php" method="post" id="commentform">
+													<label for="author">Name								<span>*</span></label>
+							<input id="author" author="author" class="text_field author" name="author" type="text">
+							<br><br>
+							<label for="email">E-Mail								<span>*</span></label>
+							<input id="email" author="email" class="text_field email" name="email" type="text">
+							<br><br>
+							<label>Website</label>
+							<input id="website" author="website" class="text_field website" name="url" type="text">
+							<br><br>
+												<textarea id="comment" name="comment" class="textarea"></textarea>
+												<div class="btn medium right">
+							<input value="SUBMIT COMMENT" type="submit">
+						</div>
+						<input name="comment_post_ID" value="1942" id="comment_post_ID" type="hidden">
+<input name="comment_parent" id="comment_parent" value="0" type="hidden">
+						<p style="display: none;"><input id="akismet_comment_nonce" name="akismet_comment_nonce" value="ae61ada511" type="hidden"></p>        <p>
+        <input value="1" id="aweber_checkbox" style="width:inherit;" name="aweber_signup_checkbox" type="checkbox">
+            <label for="aweber_checkbox">
+            Sign up to our newsletter!            </label>
+        </p>
+        <br>
+        <p class="comment-subscription-form"><input name="subscribe_comments" id="subscribe_comments" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;" type="checkbox"> <label class="subscribe-label" id="subscribe-label" for="subscribe_comments">Notify me of follow-up comments by email.</label></p><p class="comment-subscription-form"><input name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;" type="checkbox"> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog">Notify me of new posts by email.</label></p><p style="display: none;"></p>						<div class="clear"></div>
+					<input id="ak_js" name="ak_js" value="1470417703822" type="hidden"></form>
+				</div>
+					</div>
+	</article>
+	<div id="comment-bottom"></div>
+			
+
+									<div class="spr"></div>
+					<div class="awr ctr pgn clearfix">
+																			<a class="page-numbers nxt" href="http://learn-automation.com/install-selenium-webdriver-on-windows/">←Previous post </a>
+																									<a class="page-numbers prv" href="http://learn-automation.com/advance-selenium-reporting-with-screenshots-2/">Next post→</a>
+											</div>
+
+				
+							</section>
+	</div>
+
+		<div class="sAsCont">
+				<aside class="sAs right">
+							<section id="text-26"><div class="scn"><p class="ttl">Search topic</p>			<div class="textwidget"><style type="text/css">
+@import url(//www.google.com/cse/api/branding.css);
+</style>
+<div class="cse-branding-bottom" style="background-color:#FFFFFF;color:#000000">
+  <div class="cse-branding-form">
+    <form action="http://learn-automation.com/search/" id="cse-search-box">
+      <div>
+        <input name="cx" value="partner-pub-6188473808538246:1199914817" type="hidden">
+        <input name="cof" value="FORID:10" type="hidden">
+        <input name="ie" value="UTF-8" type="hidden">
+        <input name="q" size="55" type="text">
+        <input name="sa" value="Search" type="submit">
+      </div>
+    </form>
+  </div>
+  <div class="cse-branding-logo">
+    <img src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/poweredby_FFFFFF.gif" alt="Google">
+  </div>
+  <div class="cse-branding-text">
+    Custom Search
+  </div>
+</div>
+</div>
+		</div></section><section id="text-24"><div class="scn">			<div class="textwidget"><script async="" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/adsbygoogle.js"></script>
+<!-- 17SepSideBarLargeSkyscraper -->
+<ins data-adsbygoogle-status="done" class="adsbygoogle" style="display:inline-block;width:300px;height:600px" data-ad-client="ca-pub-6188473808538246" data-ad-slot="8677052418"><ins id="aswift_3_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent"><ins id="aswift_3_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_3" name="aswift_3" style="left:0;position:absolute;top:0;" frameborder="0" height="600" width="300"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+		</div></section><section id="text-28"><div class="scn">			<div class="textwidget"><script async="" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/adsbygoogle.js"></script>
+<!-- NewMatchedContentAds27July -->
+<ins data-adsbygoogle-status="done" class="adsbygoogle" style="display: block; height: 780px;" data-ad-client="ca-pub-6188473808538246" data-ad-slot="8071338013" data-ad-format="autorelaxed"><ins id="aswift_4_expand" style="display:inline-table;border:none;height:780px;margin:0;padding:0;position:relative;visibility:visible;width:227px;background-color:transparent"><ins id="aswift_4_anchor" style="display:block;border:none;height:780px;margin:0;padding:0;position:relative;visibility:visible;width:227px;background-color:transparent"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_4" name="aswift_4" style="left:0;position:absolute;top:0;" frameborder="0" height="780" width="227"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+		</div></section><section id="text-27"><div class="scn">			<div class="textwidget"><script async="" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/adsbygoogle.js"></script>
+<!-- 12JuneVerticalAdsResponsive -->
+<ins data-adsbygoogle-status="done" class="adsbygoogle" style="display: block; height: 90px;" data-ad-client="ca-pub-6188473808538246" data-ad-slot="4034762410" data-ad-format="link"><ins id="aswift_5_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:200px;background-color:transparent"><ins id="aswift_5_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:200px;background-color:transparent"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_5" name="aswift_5" style="left:0;position:absolute;top:0;" frameborder="0" height="90" width="200"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+		</div></section><section id="aweberwebformpluginwidgetoptions"><div class="scn"><p class="ttl"></p><div class="AW-Form-1314881782"><div><style type="text/css">#af-form-1314881782
+ .af-body 
+.af-textWrap{width:98%;display:block;float:none;}#af-form-1314881782 
+.af-body input.text, #af-form-1314881782 .af-body 
+textarea{background-color:#FFFFFF;border-color:#D9D9D9;border-width:1px;border-style:solid;color:#C7C7C7;text-decoration:none;font-style:normal;font-weight:normal;font-size:24px;font-family:Verdana,
+ sans-serif;}#af-form-1314881782 .af-body input.text:focus, 
+#af-form-1314881782 .af-body 
+textarea:focus{background-color:#FFFAD6;border-color:#030303;border-width:1px;border-style:solid;}#af-form-1314881782
+ .af-body 
+label.previewLabel{display:block;float:none;text-align:left;width:auto;color:#CCCCCC;text-decoration:none;font-style:normal;font-weight:normal;font-size:24px;font-family:Helvetica,
+ sans-serif;}#af-form-1314881782 
+.af-body{padding-bottom:15px;padding-top:15px;background-repeat:no-repeat;background-position:inherit;background-image:none;color:#CCCCCC;font-size:11px;font-family:Verdana,
+ sans-serif;}#af-form-1314881782 
+.af-quirksMode{padding-right:60px;padding-left:60px;}#af-form-1314881782
+ .af-standards 
+.af-element{padding-right:60px;padding-left:60px;}#af-form-1314881782 
+.buttonContainer 
+input.submit{background-color:#0479C2;background-image:url("//aweber.com/images/forms/plain/buttons/grey.png");color:#FFFFFF;text-decoration:none;font-style:normal;font-weight:normal;font-size:24px;font-family:Helvetica,
+ sans-serif;}#af-form-1314881782 .buttonContainer 
+input.submit{width:auto;}#af-form-1314881782 
+.buttonContainer{text-align:center;}#af-form-1314881782 
+button,#af-form-1314881782 input,#af-form-1314881782 
+submit,#af-form-1314881782 textarea,#af-form-1314881782 
+select,#af-form-1314881782 label,#af-form-1314881782 
+optgroup,#af-form-1314881782 
+option{float:none;position:static;margin:0;}#af-form-1314881782 
+div{margin:0;}#af-form-1314881782 form,#af-form-1314881782 
+textarea,.af-form-wrapper,.af-form-close-button,#af-form-1314881782 
+img{float:none;color:inherit;position:static;background-color:none;border:none;margin:0;padding:0;}#af-form-1314881782
+ input,#af-form-1314881782 button,#af-form-1314881782 
+textarea,#af-form-1314881782 select{font-size:100%;}#af-form-1314881782 
+select,#af-form-1314881782 label,#af-form-1314881782 
+optgroup,#af-form-1314881782 
+option{padding:0;}#af-form-1314881782,#af-form-1314881782 
+.quirksMode{width:100%;max-width:275px;}#af-form-1314881782.af-quirksMode{overflow-x:hidden;}#af-form-1314881782{background-color:#00698F;border-color:#632A63;border-width:2px;border-style:solid;}#af-form-1314881782{display:block;}#af-form-1314881782{overflow:hidden;}.af-body
+ .af-textWrap{text-align:left;}.af-body 
+input.image{border:none!important;}.af-body input.submit,.af-body 
+input.image,.af-form .af-element 
+input.button{float:none!important;}.af-body 
+input.text{width:100%;float:none;padding:2px!important;}.af-body.af-standards
+ input.submit{padding:4px 12px;}.af-clear{clear:both;}.af-element 
+label{text-align:left;display:block;float:left;}.af-element{padding-bottom:5px;padding-top:5px;}.af-form-wrapper{text-indent:0;}.af-form{text-align:left;margin:auto;}.af-quirksMode
+ 
+.af-element{padding-left:0!important;padding-right:0!important;}.lbl-right
+ .af-element label{text-align:right;}body {}</style><form method="post" class="af-form-wrapper" accept-charset="UTF-8" action="https://www.aweber.com/scripts/addlead.pl" target="_blank"><div style="display: none;"><input name="meta_web_form_id" value="1314881782" type="hidden"><input name="meta_split_id" value="" type="hidden"><input name="listname" value="awlist4269687" type="hidden"><input name="redirect" value="http://www.aweber.com/thankyou-coi.htm?m=text" id="redirect_09f6c4b4e7aea98a82bf7d3a78e02c93" type="hidden"><input name="meta_adtracking" value="My_Web_Form_3" type="hidden"><input name="meta_message" value="1" type="hidden"><input name="meta_required" value="name,email" type="hidden"><input name="meta_tooltip" value="" type="hidden"></div><div id="af-form-1314881782" class="af-form"><div id="af-body-1314881782" class="af-body af-standards"><div class="af-element"><label class="previewLabel" for="awf_field-82268132">Name: </label><div class="af-textWrap"><input id="awf_field-82268132" name="name" class="text" onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="500" type="text"></div><div class="af-clear"></div></div><div class="af-element"><label class="previewLabel" for="awf_field-82268133">Email: </label><div class="af-textWrap"><input class="text" id="awf_field-82268133" name="email" tabindex="501" onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " type="text"></div><div class="af-clear"></div></div><div class="af-element buttonContainer"><input name="submit" id="af-submit-image-1314881782" class="image" style="background: none; max-width: 100%;" alt="Submit Form" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/grey.png" tabindex="502" type="image"><div class="af-clear"></div></div></div></div></form><script type="text/javascript">//
+ Special handling for facebook iOS since it cannot open new 
+windows(function() {    if (navigator.userAgent.indexOf('FBIOS') !== -1 
+|| navigator.userAgent.indexOf('Twitter for iPhone') !== -1) {        
+document.getElementById('af-form-1314881782').parentElement.removeAttribute('target');
+    }})();</script><script type="text/javascript">    <!--    
+(function() {        var IE = /*@cc_on!@*/false;        if (!IE) { 
+return; }        if (document.compatMode && document.compatMode == 
+'BackCompat') {            if 
+(document.getElementById("af-form-1314881782")) {                
+document.getElementById("af-form-1314881782").className = 'af-form 
+af-quirksMode';            }            if 
+(document.getElementById("af-body-1314881782")) {                
+document.getElementById("af-body-1314881782").className = "af-body 
+inline af-quirksMode";            }            if 
+(document.getElementById("af-header-1314881782")) {                
+document.getElementById("af-header-1314881782").className = "af-header 
+af-quirksMode";            }            if 
+(document.getElementById("af-footer-1314881782")) {                
+document.getElementById("af-footer-1314881782").className = "af-footer 
+af-quirksMode";            }        }    })();    --></script></div></div>
+                        <script type="text/javascript">(function(d,s,id) {
+                            var js;
+                            var fjs = d.getElementsByTagName(s)[0];
+                            if (d.getElementById(id)) return; js = d.createElement(s);
+                            js.id = id; js.src = "http://forms.aweber.com/form/82/1314881782.js";
+                            fjs.parentNode.insertBefore(js, fjs);
+                            }(document, "script", "aweber-wjs-334210927"));
+                        </script></div></section><section id="facebook-likebox-2"><div class="scn"><p class="ttl"><a href="https://www.facebook.com/SeleniumWebdriverMukesh">Stay connected via Facebook</a></p>		<div class=" fb_reset" id="fb-root"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe src="http://staticxx.facebook.com/connect/xd_arbiter/r/Lcj5EtQ5qmD.js?version=42#channel=f1782735b294d0e&amp;origin=http%3A%2F%2Flearn-automation.com" style="border: medium none;" tabindex="-1" title="Facebook Cross Domain Communication Frame" aria-hidden="true" id="fb_xdm_frame_http" scrolling="no" allowfullscreen="true" allowtransparency="true" name="fb_xdm_frame_http" frameborder="0"></iframe><iframe src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/Lcj5EtQ5qmD_002.htm" style="border: medium none;" tabindex="-1" title="Facebook Cross Domain Communication Frame" aria-hidden="true" id="fb_xdm_frame_https" scrolling="no" allowfullscreen="true" allowtransparency="true" name="fb_xdm_frame_https" frameborder="0"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+		<div fb-iframe-plugin-query="app_id=249643311490&amp;container_width=227&amp;height=432&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FSeleniumWebdriverMukesh&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=false&amp;width=340" fb-xfbml-state="rendered" class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/SeleniumWebdriverMukesh" data-width="340" data-height="432" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><span style="vertical-align: bottom; width: 227px; height: 230px;"><iframe class="" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/page.htm" style="border: medium none; visibility: visible; width: 227px; height: 230px;" title="fb:page Facebook Social Plugin" scrolling="no" allowfullscreen="true" allowtransparency="true" name="f9a962444de882" frameborder="0" height="432px" width="340px"></iframe></span></div>
+		</div></section>		<section class="widget tabs_widget" id="widget_thrive_tabs-2">
+			<div class="scn">
+								<div class="scT">
+					<ul class="tabs clearfix">
+																			<li class="tS" style="width: 50%">
+								<a href="">Popular post</a>
+							</li>
+													<li style="width: 50%">
+								<a href="">Recent post</a>
+							</li>
+											</ul>
+											<div class="scTC scTC0" style="display: block">
+																							<div class="txt left  noImageTab">
+									<p><a href="http://learn-automation.com/selenium-integration-with-jenkins/">Complete Guide for Selenium integration with jenkins Maven</a></p>
+									<i>
+																			</i>
+								</div>
+								<div class="clear">&nbsp;</div>
+																							<div class="txt left  noImageTab">
+									<p><a href="http://learn-automation.com/scroll-in-appium-for-android-and-ios/">Different way to Scroll in Appium in Android and IOS devices.</a></p>
+									<i>
+																			</i>
+								</div>
+								<div class="clear">&nbsp;</div>
+																							<div class="txt left  noImageTab">
+									<p><a href="http://learn-automation.com/selenium-interview-questions-and-answers/">Be ready with Selenium Interview questions and answers</a></p>
+									<i>
+																			</i>
+								</div>
+								<div class="clear">&nbsp;</div>
+																							<div class="txt left  noImageTab">
+									<p><a href="http://learn-automation.com/advance-selenium-reporting-with-screenshots/">Advance Selenium Reporting with Screenshots</a></p>
+									<i>
+																			</i>
+								</div>
+								<div class="clear">&nbsp;</div>
+																							<div class="txt left  noImageTab">
+									<p><a href="http://learn-automation.com/how-to-write-dynamic-xpath-in-selenium/">How to write Dynamic XPath in Selenium</a></p>
+									<i>
+																			</i>
+								</div>
+								<div class="clear">&nbsp;</div>
+													</div>
+												<div class="scTC scTC1">
+																							<div class="txt left  noImageTab">
+									<p><a href="http://learn-automation.com/use-firefox-selenium-using-geckodriver-selenium-3/">How to use Firefox in Selenium using geckodriver in Selenium 3</a></p>
+									<i>
+																			</i>
+								</div>
+								<div class="clear">&nbsp;</div>
+																							<div class="txt left  noImageTab">
+									<p><a href="http://learn-automation.com/selenium-grid-for-remote-execution/">Complete setup of Selenium Grid 2.0 with Hub and Node setup</a></p>
+									<i>
+																			</i>
+								</div>
+								<div class="clear">&nbsp;</div>
+																							<div class="txt left  noImageTab">
+									<p><a href="http://learn-automation.com/parallel-execution-in-selenium/">How to perform parallel execution in selenium Webdriver using TestNG</a></p>
+									<i>
+																			</i>
+								</div>
+								<div class="clear">&nbsp;</div>
+																							<div class="txt left  noImageTab">
+									<p><a href="http://learn-automation.com/integration-of-cucumber-with-selenium-webdriver/">How to integrate Cucumber with Selenium webdriver</a></p>
+									<i>
+																			</i>
+								</div>
+								<div class="clear">&nbsp;</div>
+																							<div class="txt left  noImageTab">
+									<p><a href="http://learn-automation.com/pass-parameters-to-autoit-script-selenium/">Simple way to pass parameters to AutoIT script for file upload</a></p>
+									<i>
+																			</i>
+								</div>
+								<div class="clear">&nbsp;</div>
+													</div>
+										</div>
+		</div></section>
+		<section id="archives-3"><div class="scn"><p class="ttl">Archives</p>		<label class="screen-reader-text" for="archives-dropdown-3">Archives</label>
+		<select id="archives-dropdown-3" name="archive-dropdown" onchange="document.location.href=this.options[this.selectedIndex].value;">
+			
+			<option selected="selected" value="">Select Month</option>
+				<option value="http://learn-automation.com/2016/08/"> August 2016 &nbsp;(1)</option>
+	<option value="http://learn-automation.com/2016/07/"> July 2016 &nbsp;(2)</option>
+	<option value="http://learn-automation.com/2016/06/"> June 2016 &nbsp;(2)</option>
+	<option value="http://learn-automation.com/2016/05/"> May 2016 &nbsp;(5)</option>
+	<option value="http://learn-automation.com/2016/04/"> April 2016 &nbsp;(3)</option>
+	<option value="http://learn-automation.com/2016/03/"> March 2016 &nbsp;(3)</option>
+	<option value="http://learn-automation.com/2015/12/"> December 2015 &nbsp;(3)</option>
+	<option value="http://learn-automation.com/2015/11/"> November 2015 &nbsp;(4)</option>
+	<option value="http://learn-automation.com/2015/10/"> October 2015 &nbsp;(4)</option>
+	<option value="http://learn-automation.com/2015/09/"> September 2015 &nbsp;(4)</option>
+	<option value="http://learn-automation.com/2015/08/"> August 2015 &nbsp;(3)</option>
+	<option value="http://learn-automation.com/2015/07/"> July 2015 &nbsp;(2)</option>
+	<option value="http://learn-automation.com/2015/06/"> June 2015 &nbsp;(5)</option>
+	<option value="http://learn-automation.com/2015/05/"> May 2015 &nbsp;(8)</option>
+	<option value="http://learn-automation.com/2015/04/"> April 2015 &nbsp;(12)</option>
+	<option value="http://learn-automation.com/2015/03/"> March 2015 &nbsp;(54)</option>
+
+		</select>
+		</div></section>			
+		</aside>
+			</div>
+<div class="clear"></div>
+</div>
+</div> <!-- Close the wrapper div -->
+
+
+<footer>
+		<div class="ftw">
+		<div class="wrp">
+						<div class="clear"></div>
+		</div>
+	</div>
+	<div class="fmn">
+		<div class="wrp">
+			<div class="fmw left">
+								<p class="credits">
+											Copyright text 2016 by Selenium Webdriver tutorial. 																&nbsp;&nbsp;-&nbsp;&nbsp;Designed by <a href="http://www.thrivethemes.com/" target="_blank" style="text-decoration: underline;">Thrive Themes</a>
+						| Powered by <a style="text-decoration: underline;" href="http://www.wordpress.org/" target="_blank">WordPress</a>
+									</p>
+			</div>
+			<div class="fsw right">
+									<ul class="clearfix">
+													<li>
+								<a href="http://learn-automation.com/selenium-interview-questions-and-answers/Public%20Profilehttps://in.linkedin.com/in/mukesh-otwani-93631b99" target="_blank">
+									<span class="awe"></span>
+								</a>
+							</li>
+																			<li>
+								<a href="https://www.facebook.com/SeleniumWebdriverMukesh/" target="_blank">
+									<span class="awe"></span>
+								</a>
+							</li>
+																			<li>
+								<a href="https://twitter.com/MukeshOtwani" target="_blank">
+									<span class="awe"></span>
+								</a>
+							</li>
+																			<li>
+								<a href="https://plus.google.com/u/0/+Mukeshotwani/posts" target="_blank">
+									<span class="awe"></span>
+								</a>
+							</li>
+																			<li>
+								<a href="https://www.youtube.com/channel/UCcTII5pbZYkU4fgFtb4uesg" target="_blank">
+									<span class="awe"></span>
+								</a>
+							</li>
+																	</ul>
+							</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	</footer>
+
+<div id="tve_notification_box"></div>				<script type="text/javascript">
+					jQuery( ".tabs_widget .scT ul li" ).on( 'click', function ( e ) {
+						var $li = jQuery( this ),
+							tabs_wrapper = $li.parents( ".tabs_widget" ).first(),
+							target_tab = tabs_wrapper.find( ".scTC" ).eq( $li.index() );
+						tabs_wrapper.find( ".tS" ).removeClass( "tS" );
+						$li.addClass( 'tS' );
+						tabs_wrapper.find( ".scTC" ).hide();
+						target_tab.show();
+						e.preventDefault();
+					} );
+				</script>
+				<script type="text/javascript" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/form.js"></script>
+<script type="text/javascript" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/photon.js"></script>
+<script type="text/javascript" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/devicepx-jetpack.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var ThriveApp = 
+{"ajax_url":"http:\/\/learn-automation.com\/wp-admin\/admin-ajax.php","lazy_load_comments":"1","comments_loaded":"0","theme_uri":"http:\/\/learn-automation.com\/wp-content\/themes\/squared","translations":{"ProductDetails":"Product
+ Details"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/script.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var tve_dash_front = {"ajaxurl":"http:\/\/learn-automation.com\/wp-admin\/admin-ajax.php","is_crawler":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/frontend.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var ThriveApprentice = 
+{"ajax_url":"http:\/\/learn-automation.com\/wp-admin\/admin-ajax.php","current_post_id":"1942","lang":{"remove_from_fav":"Remove
+ from Favorites","add_to_fav":"Mark as 
+Favorite"},"progress_status":{"new":"new","started":"started","completed":"completed"}};
+/*
+ ]]> */
+</script>
+<script type="text/javascript" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/thrive-apprentice.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var jpfbembed = {"appid":"249643311490","locale":"en_US"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/facebook-embed.js"></script><div id="fb-root"></div>
+<script type="text/javascript" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/wp-embed.js"></script>
+<script type="text/javascript" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/e-201631.js" async="" defer="defer"></script>
+<script type="text/javascript">
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:4.1.1',blog:'87041624',post:'1942',tz:'5.5',srv:'learn-automation.com'} ]);
+	_stq.push([ 'clickTrackerInit', '87041624', '1942' ]);
+</script>
+
+
+<ins data-adsbygoogle-status="done" style="display: none; width: auto; height: auto;" class="adsbygoogle"><ins id="aswift_6_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent"><ins id="aswift_6_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_6" name="aswift_6" style="left:0;position:absolute;top:0;" frameborder="0" height="0" width="0"></iframe></ins></ins></ins><iframe id="sumome-jquery-iframe" style="display: none;"></iframe><img id="wpstats" alt=":)" src="Crack%20your%20interview%20Selenium%20Webdriver%20question%20and%20answers_files/g.gif" height="5" width="6"><a href="javascript:void(0);" title="SumoMe" style="background-color: rgb(0, 115, 183); border-radius: 3px 0px 0px 3px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); position: fixed; display: block ! important; z-index: 2147483647; padding: 0px; width: 44px; height: 40px; text-indent: -10000px; opacity: 1; top: 40px; right: -40px;"><span style="display: block; width: 40px; height: 40px; background: white url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPBJREFUeNpi/P//PwMtAeOoBSPAAobi7fVAuomh15OwTcXbO4AkMxCXEam+mAlIaQLxNCCHkQjDy4G4hAT1liALDgBxBhDPAwoy41BcDzUcBjLwWoJwzAGYBSCQAMSLMCwp3l4BJBuwGIPdEoThIHCAESr4DEhKQgWXAXEiMIx/AcXLgOxOAiE9A4izwHGCavgbIBaDWbAESEYjadoMxHuAeCKRiQVkyUe0YFwLtDSEBeYVNAt8oZhYkIFFDBz0TMgcKgMkC3o97wDJp1Q0HBT+V5F9wAANc2qBg7CMyITuJWoGD10sGC2uRy2gHAAEGACB725KrIq6EgAAAABJRU5ErkJggg==&quot;) no-repeat scroll 8px 8px; margin-left: 4px; border-radius: 3px 0px 0px 3px; margin-right: 0px;"></span></a><iframe style="display: none;"></iframe><div style="position:fixed; top:0; left:0; overflow:hidden;"><input style="position:absolute; left:-300px;" id="focus_retriever" readonly="true" type="text"></div></body></html>
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Minified using disk
+Page Caching using disk: enhanced
+
+ Served from: learn-automation.com @ 2016-08-05 22:05:50 by W3 Total Cache -->

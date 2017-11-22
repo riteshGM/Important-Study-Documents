@@ -1,0 +1,122 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style>
+#wrapper{
+    width:300px;
+    height:600px;
+    position:absolute;
+    left:0px;
+    top: 0px;
+    overflow: hidden;
+}
+.anim{
+    transition: all 0.3s linear;
+}
+#people{
+    
+}
+#background{
+    transform: scale(1.05);
+}
+</style>
+</head><body><div id="wrapper">
+<div id="ribbon" style="position:absolute;top:0px;z-index:100000;display:none">
+    <img src="ad_data/2booking_300x600-patti.gif">
+</div>
+<div style="position:absolute;top:0px;left:0px;z-index:1000">
+    <video style="display: none;" autoplay="autoplay" id="homescreen">
+        <source src="ad_data/300x600.mp4" type="video/mp4"> 
+    </video>
+</div>
+<div id="ad" style="display: block;">
+<div style="position:absolute;top:0px;left:0px;height:600px">
+    <img class="anim" id="background" style="bottom: 0px; position: absolute; transform: scale(1.05); filter: brightness(1);" src="ad_data/BG.jpg">
+    <img class="anim" id="people" style="position: absolute; bottom: 0px; filter: brightness(1); transform: scale(1);" src="ad_data/mattdamon.png">
+    <img style="position:absolute" src="ad_data/text3.png">
+</div>
+<div style="position:absolute;top:0px;overflow:hidden;height:160px;width:300px;background:white;left:0px">
+  <video id="trailer" style="position:absolute;top:0px" muted="true">
+    <source src="ad_data/300x160.mp4" type="video/mp4">
+  </video>
+</div>
+<div id="lastframe" style="display: block; position: absolute; top: 400px; left: 0px; z-index: 1000; width: 300px;">
+    
+</div>
+</div>
+</div>
+<a target="_blank" style="top:0px;left:0px;width:300px;height:600px;display:inline-block;z-index:2000;position:absolute" href="https://ad.hockeycurve.com/clk.php?redirect=https%3A%2F%2Fin.bookmyshow.com%2Fmumbai%2Fmovies%2Fjason-bourne-3d%2FET00044584%3Futm_source%3Dhcurve%26utm_medium%3Ddisplay%26utm_campaign%3Dremarketing&amp;tracking=https%3A%2F%2Fadclick.g.doubleclick.net%2Faclk%3Fsa%3DL%26ai%3DCM4nfIcukV9KJDNbTogOJyJ-gD_SH7ppFz9HQtdgCwI23ARABIABg5ermg7wOggEXY2EtcHViLTYxODg0NzM4MDg1MzgyNDbIAQmpAlcCMILFEFA-qAMBqgSpAU_QH-eoKUiffARhYkg3PBSB6jtuyussvnTLL7dzWAN-mCnFd-9-oeRXw-Wladr2p8wI_aRsqsVZj23d5NGrX5u_uyzWxv_CQRWOHqz7NMbiesO_ZFg9Yh8L7xluHuajTcrLTKcTYF_RwLjlCQyT4ZCHdqDsduEh-dZDJfWhmJVouEA-nr0nOEypv_roGcfUoqVO77AkErP7uaScZDX2jn8Nv51ZzEAcQPGABpfnn471t_HrRqAGIagHpr4b2AcA%26num%3D1%26sig%3DAOD64_3Pr6Hk0be1VKfjtFwWtcRPOMsnWQ%26client%3Dca-pub-6188473808538246%26adurl%3D&amp;stats=eyJhZHRhZyI6IjI3MDc1OTZjIiwiYmNhbXAiOiJqYiIsImJyb3dzZXIiOiJGaXJlZm94IiwiYnRhZyI6ImFkZTViZmM4IiwiY2FtcGFpZ24iOiJicmFuZCIsImNpZCI6IjMwNCIsImNsaWVudCI6Im5iYyIsImRldmljZSI6ImRlc2t0b3AiLCJkaW1lbnNpb24iOiIzMDB4NjAwIiwiZG9tYWluIjoibGVhcm4tYXV0b21hdGlvbi5jb20iLCJmY2F0IjoiamIiLCJoY2lkIjoicHJldGFyZ2V0aW5nIiwicGFydG5lciI6ImhjdXJ2ZSIsInRva2VuX2lkIjoiNTcxZjQ4NjFhNWM0NGY2MTUzNTM0NjdhZTFiNGQxMWMifQ%3D%3D&amp;token_id=571f4861a5c44f615353467ae1b4d11c">
+</a>
+<script>
+    var json = {"adtag":"2707596c","bcamp":"jb","browser":"Firefox","btag":"ade5bfc8","campaign":"brand","cid":"304","click_macro":"https://adclick.g.doubleclick.net/aclk?sa=L\u0026ai=CM4nfIcukV9KJDNbTogOJyJ-gD_SH7ppFz9HQtdgCwI23ARABIABg5ermg7wOggEXY2EtcHViLTYxODg0NzM4MDg1MzgyNDbIAQmpAlcCMILFEFA-qAMBqgSpAU_QH-eoKUiffARhYkg3PBSB6jtuyussvnTLL7dzWAN-mCnFd-9-oeRXw-Wladr2p8wI_aRsqsVZj23d5NGrX5u_uyzWxv_CQRWOHqz7NMbiesO_ZFg9Yh8L7xluHuajTcrLTKcTYF_RwLjlCQyT4ZCHdqDsduEh-dZDJfWhmJVouEA-nr0nOEypv_roGcfUoqVO77AkErP7uaScZDX2jn8Nv51ZzEAcQPGABpfnn471t_HrRqAGIagHpr4b2AcA\u0026num=1\u0026sig=AOD64_3Pr6Hk0be1VKfjtFwWtcRPOMsnWQ\u0026client=ca-pub-6188473808538246\u0026adurl=","client":"nbc","creativedata":"{}","device":"desktop","dimension":"300x600","domain":"learn-automation.com","fcat":"jb","hcid":"pretargeting","partner":"hcurve","pdata":"{}","stats":"eyJhZHRhZyI6IjI3MDc1OTZjIiwiYmNhbXAiOiJqYiIsImJyb3dzZXIiOiJGaXJlZm94IiwiYnRhZyI6ImFkZTViZmM4IiwiY2FtcGFpZ24iOiJicmFuZCIsImNpZCI6IjMwNCIsImNsaWVudCI6Im5iYyIsImRldmljZSI6ImRlc2t0b3AiLCJkaW1lbnNpb24iOiIzMDB4NjAwIiwiZG9tYWluIjoibGVhcm4tYXV0b21hdGlvbi5jb20iLCJmY2F0IjoiamIiLCJoY2lkIjoicHJldGFyZ2V0aW5nIiwicGFydG5lciI6ImhjdXJ2ZSIsInRva2VuX2lkIjoiNTcxZjQ4NjFhNWM0NGY2MTUzNTM0NjdhZTFiNGQxMWMifQ==","token_id":"571f4861a5c44f615353467ae1b4d11c"};
+    if(window.location.href.indexOf("geoid=1007768")!=-1 || window.location.href.indexOf("geoid=1007785")!=-1){
+        document.getElementById("ribbon").style["display"] = "block";
+    }
+    var elem = document.getElementsByTagName('a')[0];
+    if(json['click_macro']){
+        elem.href = elem.href
+        var target = json['click_macro'];
+        var url = elem.href;
+        elem.href = "https://ad.hockeycurve.com/clk.php?redirect="+encodeURIComponent(url)+"&tracking="+encodeURIComponent(target)+"&stats="+encodeURIComponent(json['stats'])+"&token_id="+encodeURIComponent(json['token_id']);
+    }
+    var vid = document.getElementById("homescreen");
+    // vid.playbackRate = 10
+    window.onmouseover = function(){
+        document.getElementById("background").style["transform"] = "scale(1)"
+        document.getElementById("background").style["-webkit-transform"] = "scale(1)"
+        document.getElementById("background").style["filter"] = "brightness(0.8)"
+        document.getElementById("background").style["-webkit-filter"] = "brightness(0.8)"
+        
+        document.getElementById("people").style["filter"] = "brightness(1.3)"
+        document.getElementById("people").style["-webkit-filter"] = "brightness(1.3)"
+        document.getElementById("people").style["transform"] = "scale(1.05)"
+        document.getElementById("people").style["-webkit-transform"] = "scale(1.05)"
+    }
+    window.onmouseout = function(){
+        document.getElementById("background").style["transform"] = "scale(1.05)"
+        document.getElementById("background").style["-webkit-transform"] = "scale(1.05)"
+        document.getElementById("background").style["filter"] = "brightness(1)"
+        document.getElementById("background").style["-webkit-filter"] = "brightness(1)"
+        
+        document.getElementById("people").style["filter"] = "brightness(1)"
+        document.getElementById("people").style["-webkit-filter"] = "brightness(1)"
+        document.getElementById("people").style["transform"] = "scale(1)"
+        document.getElementById("people").style["-webkit-transform"] = "scale(1)"
+    }
+    vid.onended = function() {
+        this.style["display"] = "none"
+        document.getElementById("ad").style["display"] = "block";
+        document.getElementById("trailer").play();
+    };
+    document.getElementById("trailer").onended = function(){
+        document.getElementById("lastframe").style["display"] = "block";
+    }
+    
+var trigger_iframe = function(src){
+    try{
+        var body = document.getElementsByTagName('body')[0];
+        var iframe = document.createElement('iframe');
+        iframe.src = src;
+        iframe.style['display'] = 'none'
+        body.appendChild(iframe);
+    }
+    catch(e){exception(e)}
+}
+var ishover = false;
+var triggered = false;
+function triggerHover(){
+    if(ishover && !triggered && json['click_macro']){
+        triggered = true;
+        trigger_iframe("piggyback?redirect=hcid&token_id="+json["token_id"]);
+        trigger_iframe("hover?redirect=hcid&stats="+json["stats"]+"&token_id="+json["token_id"]);
+    }
+}
+window.addEventListener("mouseover",function(){
+    if(!ishover){
+        ishover = true;
+        setTimeout(triggerHover,2000)
+    }
+})
+window.addEventListener("mouseout",function(){
+    ishover = false;
+})
+
+</script></body></html>

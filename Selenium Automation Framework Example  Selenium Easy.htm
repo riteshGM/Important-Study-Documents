@@ -1,0 +1,1373 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0085)https://www.seleniumeasy.com/selenium-tutorials/selenium-automation-framework-example -->
+<!DOCTYPE html PUBLIC "" ""><!--[if lt IE 7]> <html class="ie6 ie" lang="en" dir="ltr"> <![endif]--><!--[if IE 7]>    <html class="ie7 ie" lang="en" dir="ltr"> <![endif]--><!--[if IE 8]>    <html class="ie8 ie" lang="en" dir="ltr"> <![endif]--><!--[if IE 9]>    <html class="ie9 ie" lang="en" dir="ltr"> <![endif]--><!--[if !IE]> --><HTML 
+lang="en" dir="ltr"><!-- <![endif]--><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+   
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"> <LINK href="http://plus.google.com/113160911704961579558" 
+rel="author"> <LINK href="https://www.seleniumeasy.com/sites/default/files/favicon_0_0.ico" 
+rel="shortcut icon" type="image/vnd.microsoft.icon"> 
+<META name="description" content="We provide basic selenium tutorials with working examples step-by-step through the fundamental and progresses to complex examples covering all the concepts of selenium webdriver, testng, junit"> 
+<META name="keywords" content="selenium tutorial, selenium tutorials, selenium webdriver tutorial, selenium framework, selenium automation, selenium automation framework, automation framework, test automation framework"> 
+<META name="robots" content="follow, index"> 
+<META name="GENERATOR" content="MSHTML 11.00.9600.18349"> <LINK href="http://seleniumeasy.com/sites/default/files/seleniumEasy_0.jpg" 
+rel="image_src"> <LINK href="https://www.seleniumeasy.com/selenium-tutorials/selenium-automation-framework-example" 
+rel="canonical"> <LINK href="https://www.seleniumeasy.com/node/94" rel="shortlink"> 
+<LINK href="https://plus.google.com/113160911704961579558" rel="author"> 
+<META name="original-source" content="http://seleniumeasy.com"> 
+<META content="Selenium Easy" property="og:site_name"> 
+<META content="article" property="og:type"> 
+<META content="https://www.seleniumeasy.com/selenium-tutorials/selenium-automation-framework-example" 
+property="og:url"> 
+<META content="Selenium Automation Framework Example" property="og:title"> 
+<META name="twitter:card" content="summary"> 
+<META name="twitter:creator" content="@seleniumeasy"> 
+<META name="twitter:url" content="https://www.seleniumeasy.com/selenium-tutorials/selenium-automation-framework-example"> 
+<META name="twitter:title" content="Selenium Automation Framework Example"> 
+<META content="Selenium Automation Framework Example" itemprop="name"> 
+<META name="dcterms.title" content="Selenium Automation Framework Example"> 
+<META name="dcterms.subject" content="selenium tutorials"> 
+<META name="dcterms.type" content="Text"> 
+<META name="dcterms.format" content="text/html"> 
+<META name="dcterms.identifier" content="https://www.seleniumeasy.com/selenium-tutorials/selenium-automation-framework-example"> 
+<META name="dcterms.language" content="en">   <!-- Set the viewport width to device width for mobile --> 
+  
+<META name="viewport" content="width=device-width, initial-scale=1.0">   
+<TITLE>Selenium Automation Framework Example | Selenium Easy</TITLE>   <LINK 
+href="Selenium%20Automation%20Framework%20Example%20%20Selenium%20Easy_files/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Selenium%20Automation%20Framework%20Example%20%20Selenium%20Easy_files/css_dNjoLykUaXxlfZUkIye3MAW13oSIHdzMLc6t3PoIP7I.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Selenium%20Automation%20Framework%20Example%20%20Selenium%20Easy_files/css_03Ft03S8p39MV2PcrcUar9q9eoevJZX6n6AkqnSl99k.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Selenium%20Automation%20Framework%20Example%20%20Selenium%20Easy_files/css_xO7QhncWhplUGST4cjjtJnAyNi_M2mLLo3R9xMpOPEc.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Selenium%20Automation%20Framework%20Example%20%20Selenium%20Easy_files/css_nTr55mbZYlMSsBXnLjRgu7jXCLkPIwg_iGLiIvrYokQ.css" 
+rel="stylesheet" type="text/css" media="print"> <LINK href="Selenium%20Automation%20Framework%20Example%20%20Selenium%20Easy_files/css_5KryX9Xbil4qx_uIqnVaZjWzsCJrRBFvOx5GWMoeDYU.css" 
+rel="stylesheet" type="text/css" media="all">   <!--[if IE 7]>
+  <link rel="stylesheet" href="/themes/open_framework-7.x-2.06/fontawesome/css/font-awesome-ie7.min.css">
+  <![endif]--> 
+  <!-- IE Fix for HTML5 Tags -->   <!--[if lt IE 9]>
+    <script src="/themes/open_framework-7.x-2.06/js/html5shiv.js"></script>
+  <![endif]--> 
+</HEAD> 
+<BODY class="html not-front not-logged-in one-sidebar sidebar-second page-node page-node- page-node-94 node-type-article photobg       ">
+<SCRIPT>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46729791-2', 'auto');
+  ga('send', 'pageview');
+
+</SCRIPT>
+     <A class="element-invisible element-focusable" href="https://www.seleniumeasy.com/selenium-tutorials/selenium-automation-framework-example#content">
+selenium tutorial</A> <A class="element-invisible element-focusable" href="https://www.seleniumeasy.com/selenium-tutorials/selenium-automation-framework-example#main-nav" 
+data-toggle="collapse" data-target=".nav-collapse">testing tools</A> <!-- /#skipnav --> <!-- /#admin-shortcuts --> 
+<DIV class="clearfix header" id="header" role="banner">
+<DIV class="container">
+<DIV class="row">
+<DIV class="span4">
+<DIV class="site-logo" id="logo"><A title="Home" href="https://www.seleniumeasy.com/" 
+rel="home"><IMG role="presentation" alt="Selenium Easy" src="Selenium%20Automation%20Framework%20Example%20%20Selenium%20Easy_files/seleniumEasy_0.jpg"> 
+</A></DIV><!-- /#logo -->                 
+<DIV id="name-and-slogan">
+<DIV class="site-name" id="site-name"><A title="Home" href="https://www.seleniumeasy.com/" 
+rel="home">Selenium Easy</A></DIV>
+<DIV class="site-slogan" id="site-slogan">Complete Automation Testing 
+Tutorials</DIV></DIV><!-- /#name-and-slogan -->       </DIV>
+<DIV class="span8">
+<DIV class="row-fluid header-content" id="header-content">
+<DIV class="region region-header clearfix">
+<DIV class="clearfix block block-block" id="block-block-36">
+<DIV class="content">
+<SCRIPT src="Selenium%20Automation%20Framework%20Example%20%20Selenium%20Easy_files/f.txt" async=""></SCRIPT>
+<!-- ResponsiveContent -->
+<P><INS class="adsbygoogle" style="display: block;" data-ad-format="auto" 
+data-ad-slot="4340163025" data-ad-client="ca-pub-8248225602828359"></INS></P>
+<SCRIPT>
+<!--//--><![CDATA[// ><!--
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+//--><!]]>
+</SCRIPT>
+ </DIV></DIV></DIV><!-- /.region --> </DIV><!-- /#header-content -->	    
+</DIV></DIV></DIV></DIV><!-- /#header --> 
+<DIV class="clearfix site-main-menu" id="main-menu">
+<DIV class="container">
+<DIV class="navbar">
+<DIV class="navbar-inner">
+<DIV class="container">
+<DIV class="nav-search" id="nav-search">
+<DIV class="region region-search-box clearfix">
+<DIV class="clearfix block block-search" id="block-search-form" role="search">
+<DIV class="content">
+<FORM id="search-block-form" action="/selenium-tutorials/selenium-automation-framework-example" 
+method="post" accept-charset="UTF-8">
+<DIV>
+<DIV class="container-inline">
+<H2 class="element-invisible">Search form</H2>
+<DIV class="form-item form-type-textfield form-item-search-block-form"><LABEL 
+class="element-invisible" for="edit-search-block-form--2">Search 
+</LABEL><INPUT name="search_block_form" title="Enter the terms you wish to search for." class="input-medium search-query form-text" id="edit-search-block-form--2" type="text" size="15" maxlength="128" placeholder="Search this site..." value=""> 
+</DIV> 
+<DIV class="form-actions form-wrapper" id="edit-actions--2"><INPUT name="submit" 
+class="btn-search form-submit" id="edit-submit--2" type="image" alt="Search" 
+src="Selenium%20Automation%20Framework%20Example%20%20Selenium%20Easy_files/searchbutton.png"></DIV><INPUT name="form_build_id" type="hidden" value="form-HTAWmXDTa2v6_oIl6bKZ0mXlGyFfwsgl6CrmvLBZ0qc"> 
+<INPUT name="form_id" type="hidden" value="search_block_form"> 
+</DIV></DIV></FORM></DIV></DIV></DIV><!-- /.region -->  </DIV><A class="btn btn-navbar collapsed" 
+data-toggle="collapse" data-target=".nav-collapse"><SPAN 
+class="icon-bar"></SPAN><SPAN class="icon-bar"></SPAN><SPAN 
+class="icon-bar"></SPAN></A>
+<DIV class="nav-collapse collapse"><NAV id="main-nav" role="navigation">
+<UL class="menu nav">
+  <LI class="first leaf"><A title="" 
+  href="https://www.seleniumeasy.com/">Home</A></LI>
+  <LI class="leaf"><A title="" href="https://www.seleniumeasy.com/selenium-tutorials">Selenium</A></LI>
+  <LI class="leaf"><A title="" href="https://www.seleniumeasy.com/testng-tutorials">TestNG</A></LI>
+  <LI class="leaf"><A title="" href="https://www.seleniumeasy.com/junit-tutorials">JUnit</A></LI>
+  <LI class="leaf"><A title="" href="https://www.seleniumeasy.com/maven-tutorials">MAVEN</A></LI>
+  <LI class="leaf"><A title="" 
+  href="https://www.seleniumeasy.com/ant-tutorials">ANT</A></LI>
+  <LI class="leaf"><A title="" 
+  href="https://www.seleniumeasy.com/jxl-tutorials">JXL</A></LI>
+  <LI class="leaf"><A title="" href="https://www.seleniumeasy.com/appium-tutorials">Appium</A></LI>
+  <LI class="leaf"><A title="" href="http://seleniumeasy.com/apachepoi-tutorials">Apache 
+  Poi</A></LI>
+  <LI class="leaf"><A title="" href="https://www.seleniumeasy.com/log4j-tutorials">Log4j</A></LI>
+  <LI class="last expanded dropdown"><A title="" class="dropdown-toggle" href="https://www.seleniumeasy.com/" 
+  data-toggle="dropdown" data-target="#">More.. <SPAN class="caret"></SPAN></A>
+  <UL class="dropdown-menu">
+    <LI class="first leaf"><A title="" href="https://www.seleniumeasy.com/jenkins-tutorials">Jenkins 
+    Tutorials</A></LI>
+    <LI class="leaf"><A title="" href="https://www.seleniumeasy.com/jmeter-tutorials">JMeter 
+    Tutorials</A></LI>
+    <LI class="leaf"><A title="" href="https://www.seleniumeasy.com/protractor-angularjs-tutorials">Protractor</A></LI>
+    <LI class="leaf"><A title="" href="https://www.seleniumeasy.com/java-tutorials">Java 
+    Tutorials for Selenium</A></LI>
+    <LI class="leaf"><A title="" href="https://www.seleniumeasy.com/manual-testing">Manual 
+    Testing</A></LI>
+    <LI class="leaf"><A title="" href="http://seleniumeasy.com/fluentautomation-tutorials">FluentAutomation</A></LI>
+    <LI class="leaf"><A 
+    href="https://www.seleniumeasy.com/interview-questions">Interview 
+    Questions</A></LI>
+    <LI class="leaf"><A title="" href="https://www.seleniumeasy.com/itext-tutorials">iText</A></LI>
+    <LI class="last leaf"><A href="https://www.seleniumeasy.com/jfreechart-tutorials">JFree 
+    Chart</A></LI></UL></LI></UL><!-- /#primary-menu -->                             
+            </NAV></DIV></DIV></DIV></DIV></DIV></DIV><!-- /#main-menu --> 
+<DIV class="clearfix main" id="main" role="main">
+<DIV class="container">
+<DIV class="row-fluid main-top" id="main-top">
+<DIV class="region region-main-top clearfix">
+<DIV class="clearfix block block-easy-breadcrumb" id="block-easy-breadcrumb-easy-breadcrumb">
+<DIV class="content">
+<DIV class="easy-breadcrumb"><A class="easy-breadcrumb_segment easy-breadcrumb_segment-front" 
+href="https://www.seleniumeasy.com/">Home</A><SPAN class="easy-breadcrumb_segment-separator"> 
+&gt;&gt; </SPAN><A class="easy-breadcrumb_segment easy-breadcrumb_segment-1" 
+href="https://www.seleniumeasy.com/selenium-tutorials">Selenium 
+Tutorials</A><SPAN class="easy-breadcrumb_segment-separator"> &gt;&gt; </SPAN><A 
+class="easy-breadcrumb_segment easy-breadcrumb_segment-title" href="https://www.seleniumeasy.com/selenium-tutorials/selenium-automation-framework-example">Selenium 
+Automation Framework Example</A></DIV></DIV></DIV></DIV><!-- /.region -->  
+</DIV>
+<DIV class="row main-content" id="main-content">
+<DIV class="mc-content span9" id="content">
+<DIV class="content-wrapper" id="content-wrapper">
+<DIV class="row-fluid content-head" id="content-head">
+<H1 class="title" id="page-title"> Selenium Automation Framework Example 
+</H1></DIV>
+<DIV class="row-fluid content-top" id="content-top">
+<DIV class="region region-content-top clearfix">
+<DIV class="clearfix block block-block" id="block-block-37">
+<DIV class="content">
+<SCRIPT src="Selenium%20Automation%20Framework%20Example%20%20Selenium%20Easy_files/f.txt" async=""></SCRIPT>
+<!-- ResponsiveHighlighted -->
+<P><INS class="adsbygoogle" style="display: block;" data-ad-format="auto" 
+data-ad-slot="1665898222" data-ad-client="ca-pub-8248225602828359"></INS></P>
+<SCRIPT>
+<!--//--><![CDATA[// ><!--
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+//--><!]]>
+</SCRIPT>
+ </DIV></DIV></DIV><!-- /.region -->  </DIV>
+<DIV class="row-fluid content-body" id="content-body">
+<DIV class="region region-content clearfix"><ARTICLE class="node node-article clearfix" 
+id="node-94" typeof="sioc:Item foaf:Document" about="/selenium-tutorials/selenium-automation-framework-example"><SPAN 
+class="rdf-meta element-hidden" property="dc:title" content="Selenium Automation Framework Example"></SPAN><SPAN 
+class="rdf-meta element-hidden" property="sioc:num_replies" content="85" 
+datatype="xsd:integer"></SPAN>    
+<DIV class="content">
+<DIV class="field field-name-body field-type-text-with-summary field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P><B>Introduction to Automation testing:</B></P>
+<P>Testing is an essential part of a software development process. While testing 
+intermediate versions of products/projects being developed, testing team needs 
+to execute a number of test cases. In addition, prior to release every new 
+version, it is mandatory that the version is passed through a set of 
+“regression” and “smoke” tests. Most of all such tests are standard for every 
+new version of product/project, and therefore can be automated in order to save 
+human resources and time for executing them.</P>
+<P><B>Benefits of using automated testing are the following:</B></P>
+<UL>
+  <LI>Reduction of tests’ time execution and human resources required</LI>
+  <LI>Complete control over the tests’ results (“actual results” vs “expected 
+  results”)</LI>
+  <LI>Possibility to quickly change test’s preconditions and input data, and 
+  re-run the tests dynamically with multiple sets of data</LI></UL>
+<P><B>Automation workflow for the application can be presented as 
+follows:</B></P>
+<UL>
+  <LI>First of all it is required to identify tasks that an application has to 
+  accomplish.</LI>
+  <LI>Second, a set of necessary input data has to be created.</LI>
+  <LI>Third, expected results have to be defined in order one can judge that an 
+  application (a requested feature) works correspondingly.</LI>
+  <LI>Fourth, Executes a test.</LI>
+  <LI>Finally, Compares expected results with actual results, and decides 
+  whether the test has been passed successfully.</LI></UL>
+<P><B>Environment Specifications: </B></P>
+<OL>
+  <LI>Selenium Webdriver (Supports all major browsers, we use Mozilla, chrome 
+  and IE)</LI>
+  <LI>Eclipse IDE</LI>
+  <LI>Java</LI>
+  <LI>TestNG</LI>
+  <LI>AutoIT Tool (Used to handle Windows popups for Document <A href="http://seleniumeasy.com/tags/upload">Uploads</A> 
+  and <A href="http://seleniumeasy.com/selenium-tutorials/how-to-download-a-file-with-webdriver">Downloads</A>.)</LI>
+  <LI><A href="http://seleniumeasy.com/jxl-tutorials">JExcel</A> or <A href="http://seleniumeasy.com/apachepoi-tutorials">Apache 
+  POI</A> to perform operations with excel like read, write and update the excel 
+  sheet</LI></OL>
+<P><B>This Framework has the following tools:</B></P>
+<P><B>1. Selenium - </B>Selenium is a well know open source testing framework, 
+which is widely used for testing Web-based applications. It has different 
+components and in that Webdriver has rendered the Selenium Remote Control 
+obsolete, and is commonly referred to as Selenium 2.0.</P>
+<P>Selenium Webdriver&nbsp;supports most of all browsers to run your test cases 
+and many programming languages like C#, Java, Python, Ruby, .Net, Perl, PHP, 
+etc.. to create and modify your test scripts.</P>
+<P><B>2. Eclipse IDE</B>: Eclipse is an integrated development environment (IDE) 
+for Java. The Eclipse IDE is the most known product of the Eclipse Open Source 
+project.</P>
+<P><B>3. <A href="http://seleniumeasy.com/testng-tutorials">TestNG</A></B> - Is 
+a testing framework inspired from JUnit and NUnit. It has extended new 
+functionalities which made it more powerful and easier than the other testing 
+frameworks.</P>
+<P>It supports <A href="http://seleniumeasy.com/testng-tutorials/configuring-reportng-with-testng-to-generate-html-reports">ReportNG 
+(simple HTML reporting plug-in)</A> and XLST (Graphical / Pictorial reports) 
+plug-ins to customize or extend the default TestNG reporting style.</P>
+<P>TestNG also provides ability to implement 'IReporter' an interface which can 
+be implemented to generate a <A href="http://seleniumeasy.com/testng-tutorials/testng-customize-emailable-html-report-example">Customized 
+TestNG report</A> by users. It has 'generateReport()' method which will be 
+invoked after all the suite has completed its execution and gives the report 
+into the specified output directory.</P>
+<P><B>4. <A href="http://seleniumeasy.com/tags/autoit">AutoIT</A></B> - AutoIt 
+v3 is a freeware BASIC-like scripting language designed for automating the 
+Windows GUI and general scripting. It uses a combination of simulated 
+keystrokes, mouse movement and window/control manipulation in order to automate 
+tasks which is not possible with selenium.</P>
+<P>You can also refer the other frameworks available here <A href="http://seleniumeasy.com/selenium-tutorials/keyword-driven-framework-example">Keyword 
+Driven Framework</A> and <A href="http://seleniumeasy.com/selenium-tutorials/page-object-model-framework-introduction">Page 
+Object Model Framework</A></P>
+<P><B>File Formats Used in the Framework:</B></P>
+<OL>
+  <LI><EM><A href="http://seleniumeasy.com/selenium-tutorials/read-data-from-properties-file-using-java-selenium">Properties 
+  file</A></EM> – We use properties file to store and retrieve the UI elements 
+  of an application or a website and data set file paths. It contains id of the 
+  elements, name, xpath or Css selector etc.</LI>
+  <LI><EM>Excel files</EM> – Excel files are used to pass multiple sets of data 
+  to the application.</LI>
+  <LI><EM>Xml file</EM> – Is used to execute the test scripts. Based on the 
+  package or classes or Tests mentioned in the xml file scripts will be 
+  executed.</LI></OL>
+<P>
+<SCRIPT type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+    google_ad_client = "ca-pub-8248225602828359";
+    google_ad_slot = "8691877828";
+    google_ad_width = 180;
+    google_ad_height = 90;
+
+//--><!]]>
+</SCRIPT>
+<!-- ContentTextLinkAd -->
+<SCRIPT src="Selenium%20Automation%20Framework%20Example%20%20Selenium%20Easy_files/f(1).txt" type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+
+//--><!]]>
+</SCRIPT>
+</P>
+<P><B>The following figure explains physical structure of files required for <A 
+href="http://seleniumeasy.com/selenium-tutorials/automation-test-framework-methodologies">Test 
+Automation Framework</A></B></P>
+<P><IMG alt="Project Structure" src="Selenium%20Automation%20Framework%20Example%20%20Selenium%20Easy_files/projectstructure.png"></P>
+<P><B>The Project Folder Structure:</B> All the basic required folders are 
+created with the sub folders and classes under each folder:--</P>
+<P><IMG alt="Automation Project Folder structure" src="Selenium%20Automation%20Framework%20Example%20%20Selenium%20Easy_files/projectfolderstructure.png"></P>
+<P><B>The Following explains the structure in detail:-</B></P>
+<P><B>1.&nbsp;</B><B><A href="http://seleniumeasy.com/selenium-tutorials/ui-map-object-repository-using-properties-file">UI 
+Map / Object Repository</A></B></P>
+<P>UIMap is a concept for defining, storing, and serving UI elements of an 
+application or a website. The UIMap properties file contains a set of 
+‘key-value’ pairs, where key is an alias of the UI element, and a value is the 
+locator. <A href="http://seleniumeasy.com/selenium-tutorials/ui-map-object-repository-using-properties-file">Click 
+here for more..</A></P>
+<P>2.&nbsp;<B><A href="http://seleniumeasy.com/selenium-tutorials/test-data-in-automation-framework">Data 
+Set / Test Data</A></B></P>
+<P>Data set stores the data files, Script reads test data from external data 
+sources and executes test based on it.&nbsp;Data sets increases test coverage by 
+performing testing with various inputs and reduce the number of overall test 
+scripts needed to implement all the test cases. <A href="http://seleniumeasy.com/selenium-tutorials/test-data-in-automation-framework">Click 
+here for more..</A></P>
+<P>3.&nbsp;<B><A href="http://seleniumeasy.com/selenium-tutorials/test-automation-scripts-structure">Test 
+Automation Scripts</A></B></P>
+<P>A test is considered as a single action or a sequence of actions, that 
+defines whether a specific feature meets functional requirements.&nbsp;It has 
+multiple test files / packages / class files which will be executed based on the 
+configurations defined in testng.xml. <A href="http://seleniumeasy.com/selenium-tutorials/test-automation-scripts-structure">Click 
+here for more..</A></P>
+<P>4.&nbsp;<B><A href="http://seleniumeasy.com/selenium-tutorials/reporting-structure-in-selenium-automation-framework">Reports 
+/ Executed Results</A></B></P>
+<P>Test report/results is a document which contains summary of test 
+activities.&nbsp;After execution is completed, it is very important to 
+communicate the test results and findings to the project manager along with the 
+<A href="http://seleniumeasy.com/testng-tutorials/how-to-take-screenshot-for-only-failed-tests-using-webdriver">screenshots 
+for failed tests</A> and with that decisions can be made for the release. <A 
+href="http://seleniumeasy.com/selenium-tutorials/reporting-structure-in-selenium-automation-framework">Click 
+here for More..</A></P>
+<P><B>5. <A href="http://seleniumeasy.com/selenium-tutorials/configuration-in-automation-framework"> 
+TestNG xml file </A></B></P>
+<P>In order to create a test suite and run separate test cases, we need 
+framework which drives the automation. Here testng.xml can be called as "driver" 
+which drives several test cases automated using selenium code.&nbsp;Advantage of 
+using TestNG with Selenium is of running multiple test cases from multiple 
+classes using xml configuration file .<A href="http://seleniumeasy.com/selenium-tutorials/configuration-in-automation-framework">Click 
+here for More..</A></P>
+<P>&nbsp;</P></DIV></DIV></DIV>
+<UL class="flippy">
+  <LI class="prev"><A title="‹ Integra Micro Systems Testing interview questions pattern" 
+  href="https://www.seleniumeasy.com/manual-testing/integra-micro-systems-testing-interview-questions-pattern">‹ 
+  Integra Micro Systems Testing interview questions pattern</A>          </LI>   
+              
+  <LI class="next"><A title="UI Map or Object Repository using Properties File ›" 
+  href="https://www.seleniumeasy.com/selenium-tutorials/ui-map-object-repository-using-properties-file">UI 
+  Map or Object Repository using Properties File ›</A>          </LI>   </UL>
+<DIV class="field field-name-field-tags field-type-taxonomy-term-reference field-label-above">
+<DIV class="field-label">Tags:&nbsp;</DIV>
+<DIV class="field-items">
+<DIV class="field-item even" rel="dc:subject"><A href="https://www.seleniumeasy.com/tags/frameworks" 
+property="rdfs:label skos:prefLabel" typeof="skos:Concept" 
+datatype="">Frameworks</A></DIV></DIV></DIV>
+<DIV class="field field-name-field-selenium-category field-type-taxonomy-term-reference field-label-above">
+<DIV class="field-label">Selenium Tutorials:&nbsp;</DIV>
+<DIV class="field-items">
+<DIV class="field-item even"><A href="https://www.seleniumeasy.com/selenium-tutorials" 
+property="rdfs:label skos:prefLabel" typeof="skos:Concept" datatype="">Selenium 
+Tutorials</A></DIV></DIV></DIV></DIV>
+<UL class="links inline">
+  <LI class="comment-add first last active"><A title="Share your thoughts and opinions related to this posting." 
+  class="active" href="https://www.seleniumeasy.com/selenium-tutorials/selenium-automation-framework-example#comment-form">Add 
+  new comment</A></LI></UL> 
+<DIV class="comment-wrapper" id="comments">
+<H2 class="title">Comments</H2><A id="comment-128"></A> 
+<DIV class="comment comment-by-anonymous clearfix" typeof="sioc:Post sioct:Comment" 
+about="/comment/128#comment-128">
+<H3 property="dc:title" datatype=""><A class="permalink" href="https://www.seleniumeasy.com/comment/128#comment-128" 
+rel="bookmark">Folder structure</A></H3>
+<DIV class="submitted"><A class="permalink" href="https://www.seleniumeasy.com/comment/128#comment-128" 
+rel="bookmark">Permalink</A>    <SPAN property="dc:date dc:created" content="2014-06-04T21:16:29-04:00" 
+datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <SPAN class="username" 
+xml:lang="" property="foaf:name" typeof="sioc:UserAccount" datatype="">Ravi 
+patil</SPAN> on Wed, 06/04/2014 - 21:16</SPAN>  </DIV>
+<DIV class="content"><SPAN class="rdf-meta element-hidden" rel="sioc:reply_of" 
+resource="/selenium-tutorials/selenium-automation-framework-example"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>Hi,<BR>     Your website is very good and it is very helpful for me. In the 
+above folder structure screen shot i am not able to see the Test automation 
+folder structure/ Test scripts.</P></DIV></DIV></DIV></DIV>
+<UL class="links inline">
+  <LI class="comment-reply first last"><A href="https://www.seleniumeasy.com/comment/reply/94/128">reply</A></LI></UL></DIV><A 
+id="comment-129"></A> 
+<DIV class="comment comment-by-anonymous clearfix" typeof="sioc:Post sioct:Comment" 
+about="/comment/129#comment-129">
+<H3 property="dc:title" datatype=""><A class="permalink" href="https://www.seleniumeasy.com/comment/129#comment-129" 
+rel="bookmark">could you please provide the sample project</A></H3>
+<DIV class="submitted"><A class="permalink" href="https://www.seleniumeasy.com/comment/129#comment-129" 
+rel="bookmark">Permalink</A>    <SPAN property="dc:date dc:created" content="2014-06-26T00:06:09-04:00" 
+datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <SPAN class="username" 
+xml:lang="" property="foaf:name" typeof="sioc:UserAccount" 
+datatype="">mahaveer</SPAN> on Thu, 06/26/2014 - 00:06</SPAN>  </DIV>
+<DIV class="content"><SPAN class="rdf-meta element-hidden" rel="sioc:reply_of" 
+resource="/selenium-tutorials/selenium-automation-framework-example"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>Hi could you please provide the sample of this project to 
+download</P></DIV></DIV></DIV></DIV>
+<UL class="links inline">
+  <LI class="comment-reply first last"><A href="https://www.seleniumeasy.com/comment/reply/94/129">reply</A></LI></UL></DIV><A 
+id="comment-130"></A> 
+<DIV class="comment comment-by-anonymous clearfix" typeof="sioc:Post sioct:Comment" 
+about="/comment/130#comment-130">
+<H3 property="dc:title" datatype=""><A class="permalink" href="https://www.seleniumeasy.com/comment/130#comment-130" 
+rel="bookmark">selenium framework</A></H3>
+<DIV class="submitted"><A class="permalink" href="https://www.seleniumeasy.com/comment/130#comment-130" 
+rel="bookmark">Permalink</A>    <SPAN property="dc:date dc:created" content="2014-06-30T06:47:45-04:00" 
+datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <SPAN class="username" 
+xml:lang="" property="foaf:name" typeof="sioc:UserAccount" 
+datatype="">gseek</SPAN> on Mon, 06/30/2014 - 06:47</SPAN>  </DIV>
+<DIV class="content"><SPAN class="rdf-meta element-hidden" rel="sioc:reply_of" 
+resource="/selenium-tutorials/selenium-automation-framework-example"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>looking for a sample selenium framework</P></DIV></DIV></DIV></DIV>
+<UL class="links inline">
+  <LI class="comment-reply first last"><A href="https://www.seleniumeasy.com/comment/reply/94/130">reply</A></LI></UL></DIV><A 
+id="comment-131"></A> 
+<DIV class="comment comment-by-anonymous clearfix" typeof="sioc:Post sioct:Comment" 
+about="/comment/131#comment-131">
+<H3 property="dc:title" datatype=""><A class="permalink" href="https://www.seleniumeasy.com/comment/131#comment-131" 
+rel="bookmark">Please provide a simple</A></H3>
+<DIV class="submitted"><A class="permalink" href="https://www.seleniumeasy.com/comment/131#comment-131" 
+rel="bookmark">Permalink</A>    <SPAN property="dc:date dc:created" content="2014-07-02T09:07:57-04:00" 
+datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <SPAN class="username" 
+xml:lang="" property="foaf:name" typeof="sioc:UserAccount" datatype="">Neeraj 
+Kumar</SPAN> on Wed, 07/02/2014 - 09:07</SPAN>  </DIV>
+<DIV class="content"><SPAN class="rdf-meta element-hidden" rel="sioc:reply_of" 
+resource="/selenium-tutorials/selenium-automation-framework-example"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>Please provide a simple example with 2-3 forms which automate using 
+selenium.</P>
+<P>Thanks<BR>Neeraj<BR>email: <A 
+href="mailto:toneeraj14@gmail.com">toneeraj14@gmail.com</A></P></DIV></DIV></DIV></DIV>
+<UL class="links inline">
+  <LI class="comment-reply first last"><A href="https://www.seleniumeasy.com/comment/reply/94/131">reply</A></LI></UL></DIV><A 
+id="comment-132"></A> 
+<DIV class="comment comment-by-anonymous clearfix" typeof="sioc:Post sioct:Comment" 
+about="/comment/132#comment-132">
+<H3 property="dc:title" datatype=""><A class="permalink" href="https://www.seleniumeasy.com/comment/132#comment-132" 
+rel="bookmark">Sample framework</A></H3>
+<DIV class="submitted"><A class="permalink" href="https://www.seleniumeasy.com/comment/132#comment-132" 
+rel="bookmark">Permalink</A>    <SPAN property="dc:date dc:created" content="2014-07-06T10:42:41-04:00" 
+datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <SPAN class="username" 
+xml:lang="" property="foaf:name" typeof="sioc:UserAccount" 
+datatype="">Prabhudutta Mallik</SPAN> on Sun, 07/06/2014 - 10:42</SPAN>  </DIV>
+<DIV class="content"><SPAN class="rdf-meta element-hidden" rel="sioc:reply_of" 
+resource="/selenium-tutorials/selenium-automation-framework-example"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>Hi can i get the sample framework</P></DIV></DIV></DIV></DIV>
+<UL class="links inline">
+  <LI class="comment-reply first last"><A href="https://www.seleniumeasy.com/comment/reply/94/132">reply</A></LI></UL></DIV><A 
+id="comment-133"></A> 
+<DIV class="comment comment-by-anonymous clearfix" typeof="sioc:Post sioct:Comment" 
+about="/comment/133#comment-133">
+<H3 property="dc:title" datatype=""><A class="permalink" href="https://www.seleniumeasy.com/comment/133#comment-133" 
+rel="bookmark">sample of this project to download</A></H3>
+<DIV class="submitted"><A class="permalink" href="https://www.seleniumeasy.com/comment/133#comment-133" 
+rel="bookmark">Permalink</A>    <SPAN property="dc:date dc:created" content="2014-07-08T06:53:56-04:00" 
+datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <SPAN class="username" 
+xml:lang="" property="foaf:name" typeof="sioc:UserAccount" datatype="">MANISH 
+KUMAR</SPAN> on Tue, 07/08/2014 - 06:53</SPAN>  </DIV>
+<DIV class="content"><SPAN class="rdf-meta element-hidden" rel="sioc:reply_of" 
+resource="/selenium-tutorials/selenium-automation-framework-example"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>Hi ,</P>
+<P>Your tutorial is very impressive .Could you please share "sample of this 
+project to download".Pls share at <A 
+href="mailto:er08.manish@gmail.com">er08.manish@gmail.com</A></P>
+<P>Thanks<BR>Manish</P></DIV></DIV></DIV></DIV>
+<UL class="links inline">
+  <LI class="comment-reply first last"><A href="https://www.seleniumeasy.com/comment/reply/94/133">reply</A></LI></UL></DIV><A 
+id="comment-137"></A> 
+<DIV class="comment comment-by-anonymous clearfix" typeof="sioc:Post sioct:Comment" 
+about="/comment/137#comment-137">
+<H3 property="dc:title" datatype=""><A class="permalink" href="https://www.seleniumeasy.com/comment/137#comment-137" 
+rel="bookmark">Framework Design</A></H3>
+<DIV class="submitted"><A class="permalink" href="https://www.seleniumeasy.com/comment/137#comment-137" 
+rel="bookmark">Permalink</A>    <SPAN property="dc:date dc:created" content="2014-07-21T02:25:32-04:00" 
+datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <SPAN class="username" 
+xml:lang="" property="foaf:name" typeof="sioc:UserAccount" 
+datatype="">Rupali</SPAN> on Mon, 07/21/2014 - 02:25</SPAN>  </DIV>
+<DIV class="content"><SPAN class="rdf-meta element-hidden" rel="sioc:reply_of" 
+resource="/selenium-tutorials/selenium-automation-framework-example"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>Hi,<BR>I want design framework for upcoming project using C# and 
+Selenium.Please let me know how to plan framework as i have know or rough idea 
+about the project.</P></DIV></DIV></DIV></DIV>
+<UL class="links inline">
+  <LI class="comment-reply first last"><A href="https://www.seleniumeasy.com/comment/reply/94/137">reply</A></LI></UL></DIV><A 
+id="comment-140"></A> 
+<DIV class="comment comment-by-anonymous clearfix" typeof="sioc:Post sioct:Comment" 
+about="/comment/140#comment-140">
+<H3 property="dc:title" datatype=""><A class="permalink" href="https://www.seleniumeasy.com/comment/140#comment-140" 
+rel="bookmark">Sample Project</A></H3>
+<DIV class="submitted"><A class="permalink" href="https://www.seleniumeasy.com/comment/140#comment-140" 
+rel="bookmark">Permalink</A>    <SPAN property="dc:date dc:created" content="2014-07-30T02:38:33-04:00" 
+datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <SPAN class="username" 
+xml:lang="" property="foaf:name" typeof="sioc:UserAccount" 
+datatype="">Labaen</SPAN> on Wed, 07/30/2014 - 02:38</SPAN>  </DIV>
+<DIV class="content"><SPAN class="rdf-meta element-hidden" rel="sioc:reply_of" 
+resource="/selenium-tutorials/selenium-automation-framework-example"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>I need a sample project.</P></DIV></DIV></DIV></DIV>
+<UL class="links inline">
+  <LI class="comment-reply first last"><A href="https://www.seleniumeasy.com/comment/reply/94/140">reply</A></LI></UL></DIV><A 
+id="comment-141"></A> 
+<DIV class="comment comment-by-anonymous clearfix" typeof="sioc:Post sioct:Comment" 
+about="/comment/141#comment-141">
+<H3 property="dc:title" datatype=""><A class="permalink" href="https://www.seleniumeasy.com/comment/141#comment-141" 
+rel="bookmark">Selenium framework </A></H3>
+<DIV class="submitted"><A class="permalink" href="https://www.seleniumeasy.com/comment/141#comment-141" 
+rel="bookmark">Permalink</A>    <SPAN property="dc:date dc:created" content="2014-08-02T12:47:20-04:00" 
+datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <SPAN class="username" 
+xml:lang="" property="foaf:name" typeof="sioc:UserAccount" 
+datatype="">udaya</SPAN> on Sat, 08/02/2014 - 12:47</SPAN>  </DIV>
+<DIV class="content"><SPAN class="rdf-meta element-hidden" rel="sioc:reply_of" 
+resource="/selenium-tutorials/selenium-automation-framework-example"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>its very helpfull pls send the framework</P></DIV></DIV></DIV></DIV>
+<UL class="links inline">
+  <LI class="comment-reply first last"><A href="https://www.seleniumeasy.com/comment/reply/94/141">reply</A></LI></UL></DIV><A 
+id="comment-142"></A> 
+<DIV class="comment comment-by-anonymous clearfix" typeof="sioc:Post sioct:Comment" 
+about="/comment/142#comment-142">
+<H3 property="dc:title" datatype=""><A class="permalink" href="https://www.seleniumeasy.com/comment/142#comment-142" 
+rel="bookmark">please share this framework.</A></H3>
+<DIV class="submitted"><A class="permalink" href="https://www.seleniumeasy.com/comment/142#comment-142" 
+rel="bookmark">Permalink</A>    <SPAN property="dc:date dc:created" content="2014-08-04T03:15:52-04:00" 
+datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <SPAN class="username" 
+xml:lang="" property="foaf:name" typeof="sioc:UserAccount" datatype="">Manoj 
+Barve</SPAN> on Mon, 08/04/2014 - 03:15</SPAN>  </DIV>
+<DIV class="content"><SPAN class="rdf-meta element-hidden" rel="sioc:reply_of" 
+resource="/selenium-tutorials/selenium-automation-framework-example"></SPAN>
+<DIV class="field field-name-comment-body field-type-text-long field-label-hidden">
+<DIV class="field-items">
+<DIV class="field-item even" property="content:encoded">
+<P>Hi,<BR>Please share this framework if possible at <A href="mailto:manoj.barve@gmail.com">manoj.barve@gmail.com</A></P></DIV></DIV></DIV></DIV>
+<UL class="links inline">
+  <LI class="comment-reply first last"><A href="https://www.seleniumeasy.com/comment/reply/94/142">reply</A></LI></UL></DIV>
+<H2 class="element-invisible">Pages</H2>
+<DIV class="item-list">
+<UL class="pager">
+  <LI class="pager-current first">1</LI> 
+  <LI class="pager-item"><A title="Go to page 2" href="https://www.seleniumeasy.com/selenium-tutorials/selenium-automation-framework-example?page=1">2</A></LI> 
+  <LI class="pager-item"><A title="Go to page 3" href="https://www.seleniumeasy.com/selenium-tutorials/selenium-automation-framework-example?page=2">3</A></LI> 
+  <LI class="pager-item"><A title="Go to page 4" href="https://www.seleniumeasy.com/selenium-tutorials/selenium-automation-framework-example?page=3">4</A></LI> 
+  <LI class="pager-item"><A title="Go to page 5" href="https://www.seleniumeasy.com/selenium-tutorials/selenium-automation-framework-example?page=4">5</A></LI> 
+  <LI class="pager-item"><A title="Go to page 6" href="https://www.seleniumeasy.com/selenium-tutorials/selenium-automation-framework-example?page=5">6</A></LI> 
+  <LI class="pager-item"><A title="Go to page 7" href="https://www.seleniumeasy.com/selenium-tutorials/selenium-automation-framework-example?page=6">7</A></LI> 
+  <LI class="pager-item"><A title="Go to page 8" href="https://www.seleniumeasy.com/selenium-tutorials/selenium-automation-framework-example?page=7">8</A></LI> 
+  <LI class="pager-item"><A title="Go to page 9" href="https://www.seleniumeasy.com/selenium-tutorials/selenium-automation-framework-example?page=8">9</A></LI> 
+  <LI class="pager-next"><A title="Go to next page" href="https://www.seleniumeasy.com/selenium-tutorials/selenium-automation-framework-example?page=1">next 
+  ›</A></LI> 
+  <LI class="pager-last last"><A title="Go to last page" href="https://www.seleniumeasy.com/selenium-tutorials/selenium-automation-framework-example?page=8">last 
+  »</A></LI> </UL></DIV>
+<H2 class="title comment-form">Add new comment</H2>
+<FORM class="comment-form" id="comment-form" action="/comment/reply/94" method="post" 
+accept-charset="UTF-8">
+<DIV>
+<DIV class="form-item form-type-textfield form-item-name"><LABEL 
+for="edit-name">Your name </LABEL><INPUT name="name" class="form-text" id="edit-name" type="text" size="30" maxlength="60"> 
+</DIV>
+<DIV class="form-item form-type-textfield form-item-subject"><LABEL for="edit-subject">Subject 
+</LABEL><INPUT name="subject" class="form-text" id="edit-subject" type="text" size="60" maxlength="64"> 
+</DIV>
+<DIV class="field-type-text-long field-name-comment-body field-widget-text-textarea form-wrapper" 
+id="edit-comment-body">
+<DIV id="comment-body-add-more-wrapper">
+<DIV class="text-format-wrapper">
+<DIV 
+class="form-item form-type-textarea form-item-comment-body-und-0-value"><LABEL 
+for="edit-comment-body-und-0-value">Comment <SPAN title="This field is required." 
+class="form-required">*</SPAN></LABEL>
+<DIV class="form-textarea-wrapper resizable"><TEXTAREA name="comment_body[und][0][value]" class="text-full form-textarea required" id="edit-comment-body-und-0-value" rows="5" cols="60"></TEXTAREA></DIV></DIV>
+<FIELDSET class="filter-wrapper form-wrapper" id="edit-comment-body-und-0-format">
+<DIV class="fieldset-wrapper">
+<DIV class="filter-help form-wrapper" id="edit-comment-body-und-0-format-help">
+<P><A href="https://www.seleniumeasy.com/filter/tips" target="_blank">More 
+information about text formats</A></P></DIV>
+<DIV class="filter-guidelines form-wrapper" id="edit-comment-body-und-0-format-guidelines">
+<DIV class="filter-guidelines-item filter-guidelines-plain_text">
+<H3>Plain text</H3>
+<UL class="tips">
+  <LI>No HTML tags allowed.</LI>
+  <LI>Web page addresses and e-mail addresses turn into links 
+automatically.</LI>
+  <LI>Lines and paragraphs break 
+automatically.</LI></UL></DIV></DIV></DIV></FIELDSET></DIV></DIV></DIV><INPUT name="form_build_id" type="hidden" value="form-mi9vUakQLQvOAuFFTGd_4d9MvTCFeyondn58K4XVZ8E"> 
+<INPUT name="form_id" type="hidden" value="comment_node_article_form"> 
+<FIELDSET class="captcha form-wrapper"><LEGEND><SPAN 
+class="fieldset-legend">CAPTCHA</SPAN></LEGEND>
+<DIV class="fieldset-wrapper">
+<DIV class="fieldset-description">This question is for testing whether or not 
+you are a human visitor and to prevent automated spam 
+submissions.</DIV><INPUT name="captcha_sid" type="hidden" value="5731208"> 
+<INPUT name="captcha_token" type="hidden" value="278fb7280e00dea8615480ebdeecd093"> 
+<IMG width="150" height="60" title="Image CAPTCHA" alt="Image CAPTCHA" src="Selenium%20Automation%20Framework%20Example%20%20Selenium%20Easy_files/image_captcha.jpg" 
+typeof="foaf:Image">
+<DIV class="form-item form-type-textfield form-item-captcha-response">   <LABEL 
+for="edit-captcha-response">What code is in the image? <SPAN title="This field is required." 
+class="form-required">*</SPAN></LABEL><INPUT name="captcha_response" class="form-text required" id="edit-captcha-response" type="text" size="15" maxlength="128"> 
+<DIV class="description">Enter the characters shown in the 
+image.</DIV></DIV></DIV></FIELDSET>
+<DIV class="form-actions form-wrapper" id="edit-actions"><INPUT name="op" class="form-submit" id="edit-submit" type="submit" value="Save"><INPUT name="op" class="form-submit" id="edit-preview" type="submit" value="Preview"></DIV></DIV></FORM></DIV></ARTICLE></DIV><!-- /.region --> 
+  </DIV>
+<DIV class="row-fluid content-bottom" id="content-bottom">
+<DIV class="region region-content-bottom clearfix">
+<DIV class="clearfix block block-block" id="block-block-50">
+<DIV class="content">
+<SCRIPT src="Selenium%20Automation%20Framework%20Example%20%20Selenium%20Easy_files/f.txt" async=""></SCRIPT>
+<!-- newBottomResponsive -->
+<P><INS class="adsbygoogle" style="display: block;" data-ad-format="auto" 
+data-ad-slot="4815712224" data-ad-client="ca-pub-8248225602828359"></INS></P>
+<SCRIPT>
+<!--//--><![CDATA[// ><!--
+ (adsbygoogle = window.adsbygoogle || []).push({}); 
+//--><!]]>
+</SCRIPT>
+ </DIV></DIV></DIV><!-- /.region -->  </DIV></DIV><!-- /#content-wrap -->       
+</DIV><!-- /#content -->             
+<DIV class="sidebar span3 site-sidebar-second" id="sidebar-second">
+<DIV class="row-fluid">
+<DIV class="region region-sidebar-second clearfix">
+<DIV class="clearfix block block-block" id="block-block-35">
+<DIV class="content">
+<SCRIPT src="Selenium%20Automation%20Framework%20Example%20%20Selenium%20Easy_files/f.txt" async=""></SCRIPT>
+<!-- NewAddUnit330X280 -->
+<P><INS class="adsbygoogle" style="display: block;" data-ad-format="auto" 
+data-ad-slot="8774070623" data-ad-client="ca-pub-8248225602828359"></INS></P>
+<SCRIPT>
+<!--//--><![CDATA[// ><!--
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+//--><!]]>
+</SCRIPT>
+ </DIV></DIV>
+<DIV class="clearfix block block-views" id="block-views-related-articles-block">
+<H2>Selenium Tutorials</H2>
+<DIV class="content">
+<DIV class="view view-related-articles view-id-related_articles view-display-id-block view-dom-id-e50eb85466f8610435ad777ad08cf8cb">
+<DIV class="view-content">
+<DIV class="item-list">
+<UL>
+  <LI class="views-row views-row-1 views-row-odd views-row-first">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/introduction-to-selenium">Introduction 
+  to selenium</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-2 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/basic-html-concepts-required-selenium">Basic 
+  HTML concepts required for Selenium</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-3 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/selenium-locators">Locators 
+  for Selenium</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-4 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/how-to-run-webdriver-in-chrome-browser">How 
+  to Run Webdriver in chrome browser?</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-5 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/how-to-run-webdriver-in-ie-browser">How 
+  to run webdriver in IE browser?</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-6 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/selenium-webdriver-using-eclipse">Selenium 
+  webdriver using Eclipse</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-7 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/synchronization-in-selenium-webdriver">Synchronization 
+  in Selenium Webdriver</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-8 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/xpath-tutorial-for-selenium">XPath 
+  tutorial for Selenium</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-9 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/css-selectors-tutorial-for-selenium-with-examples">CSS 
+  selectors for Selenium with example</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-10 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/firefox-notconnectedexception-with-selenium-webdriver">Firefox 
+  Not Connected Exception in Selenium</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-11 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/how-to-handle-windows-popups-using-selenium-webdriver">Handle 
+  windows popups using Selenium Webdriver</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-12 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/how-to-work-with-iframes-in-selenium-webdriver">Working 
+  with Frames in Selenium Webdriver</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-13 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/how-to-handle-javascript-alerts-confirmation-prompts">How 
+  to handle javascript alerts, confirmation and prompts?</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-14 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/firefox-profile-preferences-using-selenium-webdriver">Defining 
+  Firefox Profile preferences using Selenium Webdriver</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-15 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/why-automation-testing-required">Why 
+  Automation Testing is required?</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-16 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/importance-of-automation-testing">Importance 
+  of Automation Testing</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-17 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/how-to-perform-mouseover-action-in-selenium-webdriver">Mouse 
+  Hover Actions in Selenium Webdriver</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-18 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/staleelementreferenceexception-in-selenium-webdriver">StaleElementReference 
+  Exceptions in Selenium Webdriver</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-19 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/difference-between-webdriver-get-and-navigate">Difference 
+  between Webdriver get() and Webdriver navigate()</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-20 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/navigation-methods-webdriver-examples">Navigation 
+  Methods in Webdriver with Examples</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-21 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/how-to-handle-cookies-in-selenium-webdriver">Handling 
+  Cookies in Webdriver</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-22 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/how-to-add-cookie-with-selenium-webdriver">How 
+  to addcookie with Selenium Webdriver</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-23 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/how-to-delete-cookies-in-selenium-webdriver">How 
+  to delete Cookies in Selenium Webdriver</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-24 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/webdriver-methods">WebDriver 
+  Methods</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-25 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/automation-test-framework-methodologies">Automation 
+  Test Frameworks</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-26 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/take-screenshot-with-selenium-webdriver">Taking 
+  Screenshot using Webdriver</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-27 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/webdriver-select-methods-to-work-with-dropdowns">Webdriver 
+  SELECT Methods to work with Dropdowns</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-28 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/webdriver-select-methods-with-multiple-attribute">Webdriver 
+  Select with Multiple Attribute</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-29 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/handling-keyboard-events-and-mouse-hover-events-using-webdriver">Handling 
+  keyboard events and mouse hover events using Webdriver</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-30 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/set-browser-width-and-height-in-selenium-webdriver">Set 
+  browser width and height in Selenium Webdriver</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-31 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  class="active" href="https://www.seleniumeasy.com/selenium-tutorials/selenium-automation-framework-example">Selenium 
+  Automation Framework Example</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-32 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/ui-map-object-repository-using-properties-file">UI 
+  Map or Object Repository using Properties File</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-33 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/test-data-in-automation-framework">Test 
+  Data in automation framework</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-34 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/reporting-structure-in-selenium-automation-framework">Reporting 
+  Structure in Selenium Automation Framework</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-35 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/configuration-in-automation-framework">Test 
+  Configuration File / Executable File</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-36 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/uploading-file-with-selenium-webdriver">Uploading 
+  a file with Selenium Webdriver</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-37 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/upload-a-file-using-selenium-webdriver-with-autoit">Upload 
+  file using AutoIT</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-38 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/uploading-file-with-sendkeys-method">Uploading 
+  a file with sendKeys method</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-39 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/read-data-from-properties-file-using-java-selenium">Read 
+  data from Properties file using Java Selenium</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-40 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/scrolling-web-page-with-selenium-webdriver-using-java">Scrolling 
+  web page with Selenium Webdriver using java</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-41 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/keyword-driven-framework-example">Keyword 
+  Driven Framework Example</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-42 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/install-autoit-on-windows">Install 
+  AutoIt in Windows</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-43 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/examples-for-xpath-and-css-selectors">Examples 
+  with xpath and Css (ID, Name, Text and Links)</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-44 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/testing-in-multiple-browsers">Configure 
+  parallel execution of tests using TestNG selenium</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-45 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/working-with-checkbox-using-resuable-methods">Working 
+  with Checkbox using Resuable Methods</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-46 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/working-with-select-using-resuable-methods">Working 
+  with Select examples</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-47 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/webdriver-file-upload-using-robots">File 
+  upload using Robots</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-48 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/how-to-download-a-file-with-webdriver">Download 
+  file using selenium webdriver</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-49 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/perform-operations-on-new-window-using-webdriver">Perform 
+  operations on new window</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-50 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/page-object-model-framework-introduction">Introduction 
+  to Page Object Model Framework</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-51 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/mouse-hover-using-javascriptexecutor">Mouse 
+  hover using javaScript Executor</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-52 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/select-multiple-checkboxes">Working 
+  with Multiple Checkboxes with Safecheck</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-53 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/click-element-using-javascriptexecutor">Click 
+  element using JavaScriptExecutor</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-54 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/drag-and-drop-using-webdriver-action-class">Drag 
+  and Drop using Webdriver Action Class</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-55 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/webdriver-wait-examples">WebDriver 
+  Waits Examples</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-56 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/simple-page-object-model-framework-example">Simple 
+  Page Object Model example</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-57 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/how-to-double-click-on-element-using-webdriver">Double 
+  Click on element using Webdriver</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-58 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/right-click-context-menu-webdriver-example">Right 
+  Click Context Menu example</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-59 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/working-with-ajax-or-jquery-auto-complete-text-box-using-webdriver">Working 
+  with AutoComplete Text box</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-60 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/working-with-date-picker-calendar-using-webdriver">JQuery 
+  And KendoUI Date Picker Calendar example</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-61 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/how-to-work-with-ajax-controls-using-webdriver">Working 
+  with Ajax controls using Webdriver</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-62 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/how-to-get-attribute-values-using-webdriver">Get 
+  Attribute values using Webdriver</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-63 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/how-to-get-css-values-using-webdriver">Get 
+  Css values using Webdriver</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-64 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/resizing-a-web-element-using-webdriver-action-class-movebyoffset">Resizing 
+  a web element using movebyoffset</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-65 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/verify-file-after-downloading-using-webdriver-java">Validate 
+  Downloaded file after clicking on downloaded button/ link</A></SPAN>  
+  </DIV></LI>
+  <LI class="views-row views-row-66 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/verify-entries-in-exported-csv-file-using-webdriver-java">How 
+  to verify entries in Exported CSV file</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-67 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/element-is-not-clickable-at-point-selenium-webdriver-exception">Element 
+  is not clickable at point SeleniumWebdriverException</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-68 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/how-to-extract-pdf-text-and-verify-using-selenium-webdriver-java">Extract 
+  PDF text And Verify Text Present in PDF using WebDriver</A></SPAN>  
+</DIV></LI>
+  <LI class="views-row views-row-69 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/how-to-handle-authentication-popup-in-selenium-webdriver">Handling 
+  Authentication Window with WebDriver (In Firefox, Chrome and IE)</A></SPAN>  
+  </DIV></LI>
+  <LI class="views-row views-row-70 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/find-broken-images-in-a-webpage-using-webdriver-java">Find 
+  Broken / Invalid Images on a Page</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-71 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/how-to-find-broken-links-using-webdriver-java">Find 
+  out broken links on website using selenium webdriver and HTTP 
+  Client</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-72 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/how-to-verify-tooltip-text-with-selenium-webdriver-using-java">How 
+  to verify tooltip text with selenium webdriver using java</A></SPAN>  
+  </DIV></LI>
+  <LI class="views-row views-row-73 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/how-to-handle-ssl-certificates-untrusted-connection-in-selenium-webdriver">Handling 
+  Untrusted SSL certificates in Firefox browser</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-74 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/handling-security-certificates-chrome-and-ie-browser-using-webdriver">Handling 
+  Security Certificates in Chrome and IE browser using WebDriver</A></SPAN>  
+  </DIV></LI>
+  <LI class="views-row views-row-75 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/database-testing-example-with-selenium-using-java">Database 
+  testing using Java, Selenium, TestNG example</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-76 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/how-to-do-database-testing-using-selenium-webdriver-framework-example">How 
+  to do Database testing using Selenium Webdriver Framework Example</A></SPAN>  
+  </DIV></LI>
+  <LI class="views-row views-row-77 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/webdriver-event-listener-example">Webdriver 
+  Event Listener example</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-78 views-row-even">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/how-to-configure-selenium-grid">How 
+  to Setup a Hub and Node for Selenium Grid</A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-79 views-row-odd">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/parallel-execution-in-selenium-grid">Execute 
+  webdriver tests in Parallel using selenium Grid </A></SPAN>  </DIV></LI>
+  <LI class="views-row views-row-80 views-row-even views-row-last">
+  <DIV class="views-field views-field-title"><SPAN class="field-content"><A 
+  href="https://www.seleniumeasy.com/selenium-tutorials/page-factory-pattern-in-selenium-webdriver">Page 
+  Factory Design Pattern (Enhanced POM)</A></SPAN>  
+</DIV></LI></UL></DIV></DIV></DIV></DIV></DIV>
+<DIV class="clearfix block block-node" id="block-node-recent">
+<H2>Recent Post</H2>
+<DIV class="content">
+<TABLE>
+  <TBODY>
+  <TR class="odd">
+    <TD class="title-author">
+      <DIV class="node-title"><A href="https://www.seleniumeasy.com/jmeter-tutorials/http-request-sampler-example">JMeter 
+      HTTP Request Sampler Example</A></DIV>
+      <DIV class="node-author"><SPAN class="username" xml:lang="" property="foaf:name" 
+      typeof="sioc:UserAccount" about="/users/harrydev" 
+      datatype="">harrydev</SPAN></DIV></TD>
+    <TD class="edit"></TD>
+    <TD class="delete"></TD></TR>
+  <TR class="even">
+    <TD class="title-author">
+      <DIV class="node-title"><A href="https://www.seleniumeasy.com/jmeter-tutorials/how-jmeter-works-and-features">How 
+      to install Apache JMeter and Launch JMeter</A></DIV>
+      <DIV class="node-author"><SPAN class="username" xml:lang="" property="foaf:name" 
+      typeof="sioc:UserAccount" about="/users/harrydev" 
+      datatype="">harrydev</SPAN></DIV></TD>
+    <TD class="edit"></TD>
+    <TD class="delete"></TD></TR>
+  <TR class="odd">
+    <TD class="title-author">
+      <DIV class="node-title"><A href="https://www.seleniumeasy.com/jmeter-tutorials/thread-group-properties-elements-example-in-jmeter">Thread 
+      Group In JMeter With Examples</A></DIV>
+      <DIV class="node-author"><SPAN class="username" xml:lang="" property="foaf:name" 
+      typeof="sioc:UserAccount" about="/users/harrydev" 
+      datatype="">harrydev</SPAN></DIV></TD>
+    <TD class="edit"></TD>
+    <TD class="delete"></TD></TR>
+  <TR class="even">
+    <TD class="title-author">
+      <DIV class="node-title"><A href="https://www.seleniumeasy.com/jmeter-tutorials/elements-of-a-test-plan-in-jmeter">Elements 
+      of a Test Plan in JMeter</A></DIV>
+      <DIV class="node-author"><SPAN class="username" xml:lang="" property="foaf:name" 
+      typeof="sioc:UserAccount" about="/users/harrydev" 
+      datatype="">harrydev</SPAN></DIV></TD>
+    <TD class="edit"></TD>
+    <TD class="delete"></TD></TR>
+  <TR class="odd">
+    <TD class="title-author">
+      <DIV class="node-title"><A href="https://www.seleniumeasy.com/selenium-webdriver-tutorials">List 
+      of Selenium Webdriver Tutorials</A></DIV>
+      <DIV class="node-author"><SPAN class="username" xml:lang="" property="foaf:name" 
+      typeof="sioc:UserAccount" about="/users/harrydev" 
+      datatype="">harrydev</SPAN></DIV></TD>
+    <TD class="edit"></TD>
+    <TD class="delete"></TD></TR></TBODY></TABLE></DIV></DIV>
+<DIV class="clearfix block block-menu" 
+id="block-menu-menu-automation-framework">
+<H2>Automation Framework</H2>
+<DIV class="content">
+<UL class="menu nav">
+  <LI class="first leaf"><A title="" href="https://seleniumeasy.com/selenium-tutorials/selenium-automation-framework-example">Framework 
+  Structure</A></LI>
+  <LI class="leaf"><A title="" href="https://seleniumeasy.com/selenium-tutorials/ui-map-object-repository-using-properties-file">Object 
+  Repository</A></LI>
+  <LI class="leaf"><A title="" href="https://seleniumeasy.com/selenium-tutorials/test-data-in-automation-framework">Test 
+  Data</A></LI>
+  <LI class="leaf"><A title="" href="https://seleniumeasy.com/selenium-tutorials/test-automation-scripts-structure">Test 
+  Scripts</A></LI>
+  <LI class="leaf"><A title="" href="https://seleniumeasy.com/selenium-tutorials/reporting-structure-in-selenium-automation-framework">Reports</A></LI>
+  <LI class="last leaf"><A title="" href="https://seleniumeasy.com/selenium-tutorials/configuration-in-automation-framework">Configuration 
+  and Execution</A></LI></UL></DIV></DIV>
+<DIV class="clearfix block block-views" id="block-views-tags-cloud-block">
+<H2>Tags Cloud</H2>
+<DIV class="content">
+<DIV class="view view-tags-cloud view-id-tags_cloud view-display-id-block view-dom-id-c233371d1163a27785317807d75ac526">
+<DIV class="view-content">
+<DIV class="views-row views-row-1 views-row-odd views-row-first">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/appium-android">Appium 
+Android</A></SPAN>  </DIV><SPAN class="views-field views-field-nid"><SPAN class="field-content">(8)</SPAN> 
+ </SPAN>  </DIV>
+<DIV class="views-row views-row-2 views-row-even">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/asserts">Asserts</A></SPAN> 
+ </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(1)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-3 views-row-odd">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/autocomplete">AutoComplete</A></SPAN> 
+ </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(1)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-4 views-row-even">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/autoit">AutoIt</A></SPAN> 
+ </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(2)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-5 views-row-odd">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/taxonomy/term/37">Automation</A></SPAN> 
+ </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(3)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-6 views-row-even">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/buildxml">Build.xml</A></SPAN> 
+ </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(1)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-7 views-row-odd">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/checkboxes">Checkboxes</A></SPAN> 
+ </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(2)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-8 views-row-even">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/cookies">Cookies</A></SPAN> 
+ </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(3)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-9 views-row-odd">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/css">Css</A></SPAN> 
+ </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(2)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-10 views-row-even">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/css-examples">Css 
+Examples</A></SPAN>  </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(2)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-11 views-row-odd">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/database-testing">Database 
+Testing</A></SPAN>  </DIV><SPAN class="views-field views-field-nid"><SPAN class="field-content">(2)</SPAN> 
+ </SPAN>  </DIV>
+<DIV class="views-row views-row-12 views-row-even">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/dataprovider">DataProvider</A></SPAN> 
+ </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(1)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-13 views-row-odd">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/date-picker">Date 
+Picker</A></SPAN>  </DIV><SPAN class="views-field views-field-nid"><SPAN class="field-content">(1)</SPAN> 
+ </SPAN>  </DIV>
+<DIV class="views-row views-row-14 views-row-even">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/drag-and-drop">Drag 
+and Drop</A></SPAN>  </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(1)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-15 views-row-odd">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/excel">Excel</A></SPAN> 
+ </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(4)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-16 views-row-even">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/exceptions">Exceptions</A></SPAN> 
+ </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(4)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-17 views-row-odd">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/file-download">File 
+Download</A></SPAN>  </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(3)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-18 views-row-even">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/firefox-profile">Firefox 
+Profile</A></SPAN>  </DIV><SPAN class="views-field views-field-nid"><SPAN class="field-content">(2)</SPAN> 
+ </SPAN>  </DIV>
+<DIV class="views-row views-row-19 views-row-odd">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/frameworks">Frameworks</A></SPAN> 
+ </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(6)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-20 views-row-even">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/grid">Grid</A></SPAN> 
+ </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(2)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-21 views-row-odd">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/iframes">iFrames</A></SPAN> 
+ </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(1)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-22 views-row-even">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/images">Images</A></SPAN> 
+ </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(1)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-23 views-row-odd">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/taxonomy/term/45">Interview 
+Questions</A></SPAN>  </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(1)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-24 views-row-even">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/javascriptexecutor">JavascriptExecutor</A></SPAN> 
+ </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(3)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-25 views-row-odd">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/jenkins">Jenkins</A></SPAN> 
+ </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(1)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-26 views-row-even">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/taxonomy/term/35">JUnit</A></SPAN> 
+ </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(2)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-27 views-row-odd">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/keyword-driven">Keyword 
+Driven</A></SPAN>  </DIV><SPAN class="views-field views-field-nid"><SPAN class="field-content">(1)</SPAN> 
+ </SPAN>  </DIV>
+<DIV class="views-row views-row-28 views-row-even">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/listeners">Listeners</A></SPAN> 
+ </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(5)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-29 views-row-odd">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/log4j">Log4j</A></SPAN> 
+ </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(4)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-30 views-row-even">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/log4jxml">log4j.xml</A></SPAN> 
+ </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(1)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-31 views-row-odd">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/taxonomy/term/40">Manual 
+Testing</A></SPAN>  </DIV><SPAN class="views-field views-field-nid"><SPAN class="field-content">(1)</SPAN> 
+ </SPAN>  </DIV>
+<DIV class="views-row views-row-32 views-row-even">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/maven">Maven</A></SPAN> 
+ </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(5)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-33 views-row-odd">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/mouse-hover">Mouse 
+Hover</A></SPAN>  </DIV><SPAN class="views-field views-field-nid"><SPAN class="field-content">(2)</SPAN> 
+ </SPAN>  </DIV>
+<DIV class="views-row views-row-34 views-row-even">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/page-object-model">Page 
+Object Model</A></SPAN>  </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(2)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-35 views-row-odd">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/page-scroll">Page 
+Scroll</A></SPAN>  </DIV><SPAN class="views-field views-field-nid"><SPAN class="field-content">(1)</SPAN> 
+ </SPAN>  </DIV>
+<DIV class="views-row views-row-36 views-row-even">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/parallel-test">Parallel 
+Test</A></SPAN>  </DIV><SPAN class="views-field views-field-nid"><SPAN class="field-content">(3)</SPAN> 
+ </SPAN>  </DIV>
+<DIV class="views-row views-row-37 views-row-odd">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/performance-testing">Performance 
+Testing</A></SPAN>  </DIV><SPAN class="views-field views-field-nid"><SPAN class="field-content">(6)</SPAN> 
+ </SPAN>  </DIV>
+<DIV class="views-row views-row-38 views-row-even">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/properties-file">properties 
+file</A></SPAN>  </DIV><SPAN class="views-field views-field-nid"><SPAN class="field-content">(1)</SPAN> 
+ </SPAN>  </DIV>
+<DIV class="views-row views-row-39 views-row-odd">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/re-run-failed-tests">Re-Run 
+Failed Tests</A></SPAN>  </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(2)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-40 views-row-even">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/reusables">Reusables</A></SPAN> 
+ </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(2)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-41 views-row-odd">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/screenshot">Screenshot</A></SPAN> 
+ </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(3)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-42 views-row-even">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/select">Select</A></SPAN> 
+ </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(3)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-43 views-row-odd">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/taxonomy/term/36">Selenium</A></SPAN> 
+ </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(2)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-44 views-row-even">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/ssl-certificate">SSL 
+Certificate</A></SPAN>  </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(2)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-45 views-row-odd">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/taxonomy/term/41">Testing 
+Types</A></SPAN>  </DIV><SPAN class="views-field views-field-nid"><SPAN class="field-content">(1)</SPAN> 
+ </SPAN>  </DIV>
+<DIV class="views-row views-row-46 views-row-even">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/taxonomy/term/43">testNG</A></SPAN> 
+ </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(2)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-47 views-row-odd">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/tooltip">ToolTip</A></SPAN> 
+ </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(1)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-48 views-row-even">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/untrusted-connection">Untrusted 
+Connection</A></SPAN>  </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(1)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-49 views-row-odd">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/upload">Upload</A></SPAN> 
+ </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(5)</SPAN>  </SPAN>  </DIV>
+<DIV class="views-row views-row-50 views-row-even views-row-last">
+<DIV class="views-field views-field-name"><SPAN class="field-content"><A href="https://www.seleniumeasy.com/tags/waits">Waits</A></SPAN> 
+ </DIV><SPAN class="views-field views-field-nid"><SPAN 
+class="field-content">(3)</SPAN>  </SPAN>  </DIV></DIV></DIV></DIV></DIV>
+<DIV class="clearfix block block-block" id="block-block-38">
+<DIV class="content">
+<SCRIPT src="Selenium%20Automation%20Framework%20Example%20%20Selenium%20Easy_files/f.txt" async=""></SCRIPT>
+
+<P><INS class="adsbygoogle" style="display: block;" data-ad-format="auto" 
+data-ad-slot="7045948220" data-ad-client="ca-pub-8248225602828359"></INS></P>
+<SCRIPT>
+<!--//--><![CDATA[// ><!--
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+//--><!]]>
+</SCRIPT>
+ </DIV></DIV>
+<DIV class="clearfix block block-fb-likebox" id="block-fb-likebox-0">
+<DIV class="content">
+<DIV id="fb-root"></DIV>
+<DIV class="fb-page" data-show-posts="0" data-show-facepile="1" data-hide-cover="0" 
+data-height="500" data-width="340" data-href="https://www.facebook.com/seleniumeasy">
+<DIV class="fb-xfbml-parse-ignore">
+<BLOCKQUOTE cite="https://www.facebook.com/seleniumeasy"><A href="https://www.facebook.com/seleniumeasy">Like 
+  us on Facebook</A></BLOCKQUOTE></DIV></DIV></DIV></DIV></DIV><!-- /.region --> 
+</DIV></DIV><!-- /#sidebar-second -->           </DIV></DIV></DIV><!-- /#main, /#main-wrapper --> 
+<DIV class="clearfix site-footer" id="footer" role="contentinfo">
+<DIV class="container">
+<DIV class="row-fluid footer-content" id="footer-content">
+<DIV class="region region-footer clearfix">
+<DIV class="clearfix block block-block" id="block-block-28">
+<DIV class="content">
+<DIV id="footer">
+<DIV class="footbox">
+<H4>Home</H4>
+<UL>
+  <LI><A href="https://www.seleniumeasy.com/" rel="nofollow">Home</A></LI>
+  <LI><A href="https://www.seleniumeasy.com/about-us" 
+  rel="nofollow">About</A></LI>
+  <LI><A href="https://www.seleniumeasy.com/contact" 
+  rel="nofollow">Contact</A></LI>
+  <LI><A href="https://www.seleniumeasy.com/privacy-policy" 
+  rel="nofollow">Privacy Policy</A></LI>
+  <LI><A href="https://www.seleniumeasy.com/sitemap" rel="nofollow">Site 
+  Map</A></LI>
+  <LI><A href="http://dl.flipkart.com/dl/offers?affid=kdevendra3" target="_blank">Flipkart</A></LI>
+  <LI><A href="http://www.amazon.in/gp/goldbox/ref=as_li_ss_tl?ie=UTF8&amp;camp=3626&amp;creative=24822&amp;linkCode=ur2&amp;tag=seleeasy-21" 
+  target="_blank">Amazon IN</A></LI></UL></DIV>
+<DIV class="footbox">
+<H4>Tutorial Menu</H4>
+<UL>
+  <LI><A href="https://www.seleniumeasy.com/selenium-tutorials">Selenium 
+  Tutorials</A></LI>
+  <LI><A href="https://www.seleniumeasy.com/testng-tutorials">TestNG 
+  Tutorial</A></LI>
+  <LI><A href="https://www.seleniumeasy.com/junit-tutorials">JUnit 
+  Tutorial</A></LI>
+  <LI><A href="https://www.seleniumeasy.com/jxl-tutorials">JXL Tutorial</A></LI>
+  <LI><A href="https://www.seleniumeasy.com/apachepoi-tutorials">Apache 
+  POI</A></LI>
+  <LI><A href="https://www.seleniumeasy.com/ant-tutorials">ANT Tutorial</A></LI>
+  <LI><A href="https://www.seleniumeasy.com/maven-tutorials">Maven 
+  Tutorial</A></LI></UL></DIV>
+<DIV class="footbox">
+<H4>Selenium Tutorials</H4>
+<UL>
+  <LI><A 
+  href="https://www.seleniumeasy.com/selenium-webdriver-tutorials#basic">Basic 
+  Webdriver Tutorials</A></LI>
+  <LI><A href="https://www.seleniumeasy.com/selenium-webdriver-tutorials#advanced">Advanced 
+  Webdriver Tutorials</A></LI>
+  <LI><A href="https://www.seleniumeasy.com/selenium-webdriver-tutorials#frameworks">Selenium 
+  Framework Examples</A></LI>
+  <LI><A 
+  href="https://www.seleniumeasy.com/tags/javascriptexecutor">JavascriptExecutor 
+  Examples</A></LI></UL></DIV>
+<DIV class="footbox">
+<H4>Interview Questions</H4>
+<UL>
+  <LI><A 
+  href="https://www.seleniumeasy.com/interview-questions#testingconcepts">Testing 
+  Concepts</A></LI>
+  <LI><A href="https://www.seleniumeasy.com/interview-questions#quality">Quality 
+  Standards</A></LI>
+  <LI><A href="https://www.seleniumeasy.com/interview-questions#general">General 
+  Questions</A></LI>
+  <LI><A href="https://www.seleniumeasy.com/interview-questions#roles">Roles 
+  &amp; Responsibilities</A></LI>
+  <LI><A 
+  href="https://www.seleniumeasy.com/interview-questions#technology">Technology 
+  &amp; Environment</A></LI></UL></DIV></DIV></DIV></DIV></DIV><!-- /.region -->  
+</DIV></DIV></DIV><!-- /#footer --> 
+<SCRIPT src="Selenium%20Automation%20Framework%20Example%20%20Selenium%20Easy_files/js_jpJjaUC0z8JMIyav5oQrYykDRUb64rpaUDpB4Y9aklU.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Selenium%20Automation%20Framework%20Example%20%20Selenium%20Easy_files/js_OPGPIEKCDyDP9JKcmu2UUHKJtcnVHzWvUYu9N53PiZg.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Selenium%20Automation%20Framework%20Example%20%20Selenium%20Easy_files/js_52D7zwxhC9leCxWwO11x93a0x_n0qh-GFTiQfLi9FlM.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Selenium%20Automation%20Framework%20Example%20%20Selenium%20Easy_files/js_99DtzXQHSTbe24SO7vd93gZs1mihZfP_CY75N2F031I.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Selenium%20Automation%20Framework%20Example%20%20Selenium%20Easy_files/js_MWHzZ33m8W7SDvvpDTMiBOCxr_Ny_MbE15aTuep-mbE.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"open_framework","theme_token":"bPHATtYrkPskPQbiOgn-qpvwjsiIxqlKd4fvqqWgO7c","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.effect.min.js":1,"misc\/form.js":1,"sites\/all\/modules\/fb_likebox\/fb_likebox.js":1,"sites\/all\/modules\/back_to_top\/js\/back_to_top.js":1,"sites\/all\/libraries\/bootstrap\/js\/bootstrap.min.js":1,"sites\/all\/libraries\/highlightjs\/highlight.pack.js":1,"sites\/all\/modules\/highlightjs\/highlight_js.js":1,"sites\/all\/modules\/captcha\/captcha.js":1,"misc\/textarea.js":1,"modules\/filter\/filter.js":1,"themes\/open_framework-7.x-2.06\/bootstrap\/js\/bootstrap.min.js":1,"themes\/open_framework-7.x-2.06\/js\/open_framework.js":1,"themes\/open_framework-7.x-2.06\/js\/override.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/back_to_top\/css\/back_to_top.css":1,"sites\/all\/libraries\/bootstrap\/css\/bootstrap.min.css":1,"sites\/all\/libraries\/bootstrap\/css\/bootstrap-theme.min.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/libraries\/highlightjs\/styles\/default.css":1,"sites\/all\/modules\/flippy\/flippy.css":1,"modules\/filter\/filter.css":1,"sites\/all\/libraries\/fontawesome\/css\/font-awesome.css":1,"themes\/open_framework-7.x-2.06\/bootstrap\/css\/bootstrap.min.css":1,"themes\/open_framework-7.x-2.06\/bootstrap\/css\/bootstrap-responsive.min.css":1,"themes\/open_framework-7.x-2.06\/fontawesome\/css\/font-awesome.min.css":1,"themes\/open_framework-7.x-2.06\/css\/open_framework.css":1,"themes\/open_framework-7.x-2.06\/css\/ie.css":1,"themes\/open_framework-7.x-2.06\/css\/socialstyle.css":1,"themes\/open_framework-7.x-2.06\/css\/open_framework_print.css":1,"sites\/all\/modules\/highlightjs\/highlight_js.css":1,"sites\/all\/libraries\/highlightjs\/styles\/foundation.css":1}},"back_to_top":{"back_to_top_button_trigger":"100","back_to_top_prevent_on_mobile":1,"back_to_top_prevent_in_admin":1,"back_to_top_button_type":"image","back_to_top_button_text":"Back to top","#attached":{"library":[["system","ui"]]}},"urlIsAjaxTrusted":{"\/selenium-tutorials\/selenium-automation-framework-example":true,"\/comment\/reply\/94":true}});
+//--><!]]>
+</SCRIPT>
+   </BODY></HTML>

@@ -1,0 +1,75 @@
+@media print
+{
+a[href]::after {
+	content: none;
+}
+abbr[title]::after {
+	content: " (" attr(title) ")";
+}
+.ir a::after {
+	content: none;
+}
+a[href^='javascript:']::after {
+	content: none;
+}
+a[href^='#']::after {
+	content: none;
+}
+pre {
+	border: 1px solid rgb(153, 153, 153); border-image: none; page-break-inside: avoid;
+}
+blockquote {
+	border: 1px solid rgb(153, 153, 153); border-image: none; page-break-inside: avoid;
+}
+thead {
+	display: table-header-group;
+}
+tr {
+	page-break-inside: avoid;
+}
+img {
+	page-break-inside: avoid;
+}
+img {
+	max-width: 100% !important;
+}
+p {
+	orphans: 3; widows: 3;
+}
+h2 {
+	orphans: 3; widows: 3;
+}
+h3 {
+	orphans: 3; widows: 3;
+}
+h2 {
+	page-break-after: avoid;
+}
+h3 {
+	page-break-after: avoid;
+}
+.logged-in #toolbar {
+	display: none;
+}
+.logged-in .tabs {
+	display: none;
+}
+.book_add_child {
+	display: none;
+}
+.book_printer {
+	display: none;
+}
+.comment-add {
+	display: none;
+}
+#search-block-form {
+	display: none;
+}
+.site-main-menu {
+	display: none;
+}
+.comment-form {
+	display: none;
+}
+}
